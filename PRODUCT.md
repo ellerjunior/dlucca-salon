@@ -47,7 +47,7 @@ Visitors arrive primarily on mobile, often while comparing salons, checking a pr
 
 ## Evidence on Hand
 
-- Source brief: `/Users/o__priscila/Downloads/dlucca-salon-prompt-pack.md`.
+- Source brief: the Casa D'Lucca prompt pack supplied with the project.
 - Existing public salon site and Squarespace-hosted salon imagery.
 - Public Square booking catalog with current service names, prices, and durations.
 - Existing Cherry merchant slug `d-lucca-hair-beauty`.
