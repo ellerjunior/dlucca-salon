@@ -1,0 +1,750 @@
+{
+  "source": "https://book.squareup.com/appointments/1qxvwmck0vibcb/location/LDSYEV6DSTW7W/services",
+  "capturedAt": "2026-08-14T05:00:52.297Z",
+  "currency": "USD",
+  "services": [
+    {
+      "id": "24WVZ2N7NAW52EYNXV7NRSCU",
+      "sourceName": "Haircut + deep conditioner + blow dryer",
+      "description": null,
+      "priceType": "fixed",
+      "priceCents": 12000,
+      "priceDescription": null,
+      "durationSeconds": 5400,
+      "staffIds": [
+        "yxmedf699a7hbz"
+      ]
+    },
+    {
+      "id": "26H5REXSDTHHS3UO7NOGZWIK",
+      "sourceName": "PRP Under Eye Package of three",
+      "description": null,
+      "priceType": "fixed",
+      "priceCents": 160000,
+      "priceDescription": null,
+      "durationSeconds": 3600,
+      "staffIds": [
+        "wlno8s30z3js96",
+        "ibnn69hp638n5t"
+      ]
+    },
+    {
+      "id": "2IZAS2AJLSFASDJNTDUXR73K",
+      "sourceName": "Ultraformer MPT face and neck 1 session",
+      "description": null,
+      "priceType": "fixed",
+      "priceCents": 45000,
+      "priceDescription": null,
+      "durationSeconds": 3600,
+      "staffIds": [
+        "wlno8s30z3js96",
+        "ibnn69hp638n5t"
+      ]
+    },
+    {
+      "id": "47SDTXXXXGIFMP7J7XM37FE2",
+      "sourceName": "Keratin For Men",
+      "description": null,
+      "priceType": "fixed",
+      "priceCents": 10000,
+      "priceDescription": null,
+      "durationSeconds": 3600,
+      "staffIds": [
+        "yxmedf699a7hbz"
+      ]
+    },
+    {
+      "id": "4CMXR6N2PVGZBBSEMOQZVURI",
+      "sourceName": "Hair Therapy",
+      "description": null,
+      "priceType": "fixed",
+      "priceCents": 8000,
+      "priceDescription": null,
+      "durationSeconds": 3600,
+      "staffIds": [
+        "yxmedf699a7hbz"
+      ]
+    },
+    {
+      "id": "4GYYHTRK7XXUPS6Y7N4DJRM5",
+      "sourceName": "Lip filler 👄",
+      "description": null,
+      "priceType": "fixed",
+      "priceCents": 49999,
+      "priceDescription": null,
+      "durationSeconds": 3600,
+      "staffIds": [
+        "wlno8s30z3js96",
+        "ibnn69hp638n5t"
+      ]
+    },
+    {
+      "id": "5USSYNFAVUOIV6MASXHHFZK6",
+      "sourceName": "Underarm Wax",
+      "description": "clean e flawless\n",
+      "priceType": "fixed",
+      "priceCents": 3000,
+      "priceDescription": null,
+      "durationSeconds": 1800,
+      "staffIds": [
+        "6p1do8w0b0ao6d",
+        "yxmedf699a7hbz",
+        "ibnn69hp638n5t"
+      ]
+    },
+    {
+      "id": "67ZRKMDWAEJTXDW2TLVBKLNA",
+      "sourceName": "Keratin From Brazil Long Hair",
+      "description": null,
+      "priceType": "fixed",
+      "priceCents": 30000,
+      "priceDescription": null,
+      "durationSeconds": 10800,
+      "staffIds": [
+        "yxmedf699a7hbz"
+      ]
+    },
+    {
+      "id": "7DSVLMSRJXTMEHJTMSDB6ICP",
+      "sourceName": "Highlight short Hair by Dani",
+      "description": null,
+      "priceType": "fixed",
+      "priceCents": 15000,
+      "priceDescription": null,
+      "durationSeconds": 14400,
+      "staffIds": [
+        "ibnn69hp638n5t",
+        "yxmedf699a7hbz",
+        "6p1do8w0b0ao6d",
+        "wlno8s30z3js96",
+        "xtetvcgdj6y5n1"
+      ]
+    },
+    {
+      "id": "7HMMT4NTTWVCZVGQA3VFX3LH",
+      "sourceName": "Sculptra",
+      "description": null,
+      "priceType": "variable",
+      "priceCents": null,
+      "priceDescription": null,
+      "durationSeconds": 3600,
+      "staffIds": [
+        "wlno8s30z3js96",
+        "ibnn69hp638n5t"
+      ]
+    },
+    {
+      "id": "7UC5SRA5P6V66LT5DHMFOH2N",
+      "sourceName": "Highlights For Men's Hair",
+      "description": null,
+      "priceType": "fixed",
+      "priceCents": 10000,
+      "priceDescription": null,
+      "durationSeconds": 5400,
+      "staffIds": [
+        "yxmedf699a7hbz"
+      ]
+    },
+    {
+      "id": "AKR7EAPSVAWWOE2ALNOJ55LU",
+      "sourceName": "Hydofacial",
+      "description": "The treatment usually has 3–4 main steps:\n\t1.\tCleanse & Exfoliate\n\t•\tRemoves dead skin cells\n\t•\tOpens pores and smooths skin\n\t2.\tAcid Peel (Gentle)\n\t•\tMild glycolic/salicylic acids loosen dirt and oil\n\t•\tNo heavy peeling like chemical peels\n\t3.\tExtraction\n\t•\tA vacuum-like suction removes blackheads and impurities\n\t4.\tHydration & Serum Infusion\n\t•\tSkin is infused with hyaluronic acid, antioxidants, and peptides",
+      "priceType": "fixed",
+      "priceCents": 20000,
+      "priceDescription": null,
+      "durationSeconds": 3600,
+      "staffIds": [
+        "wlno8s30z3js96"
+      ]
+    },
+    {
+      "id": "ARFSCK73TDZ2SZCFAJK5EASU",
+      "sourceName": "Dysport",
+      "description": null,
+      "priceType": "variable",
+      "priceCents": null,
+      "priceDescription": "10 dollars a unit ",
+      "durationSeconds": 3600,
+      "staffIds": [
+        "wlno8s30z3js96"
+      ]
+    },
+    {
+      "id": "CGPPY26XJRTE7MQO7VOVYQZN",
+      "sourceName": "Shampo style and blow dry",
+      "description": null,
+      "priceType": "fixed",
+      "priceCents": 7000,
+      "priceDescription": null,
+      "durationSeconds": 5400,
+      "staffIds": [
+        "yxmedf699a7hbz",
+        "ibnn69hp638n5t"
+      ]
+    },
+    {
+      "id": "CNBZA4ZIXDE5GBVICK6EB7UA",
+      "sourceName": "Highlights Long Hair by Dani",
+      "description": null,
+      "priceType": "fixed",
+      "priceCents": 30000,
+      "priceDescription": null,
+      "durationSeconds": 21600,
+      "staffIds": [
+        "ibnn69hp638n5t",
+        "yxmedf699a7hbz",
+        "6p1do8w0b0ao6d",
+        "wlno8s30z3js96",
+        "xtetvcgdj6y5n1"
+      ]
+    },
+    {
+      "id": "DD7HPCJLADP2GNWIDEB32QMT",
+      "sourceName": "Highlights For Medium Hair",
+      "description": null,
+      "priceType": "fixed",
+      "priceCents": 40000,
+      "priceDescription": null,
+      "durationSeconds": 16200,
+      "staffIds": [
+        "yxmedf699a7hbz"
+      ]
+    },
+    {
+      "id": "DWB7357VHKIEDPQJWEKN2Y2W",
+      "sourceName": "Womens Hair Cut (blow dry not included)",
+      "description": null,
+      "priceType": "fixed",
+      "priceCents": 7000,
+      "priceDescription": null,
+      "durationSeconds": 3600,
+      "staffIds": [
+        "ibnn69hp638n5t",
+        "yxmedf699a7hbz",
+        "6p1do8w0b0ao6d",
+        "wlno8s30z3js96",
+        "xtetvcgdj6y5n1"
+      ]
+    },
+    {
+      "id": "E437HC2NG6W764QJDW6TXOML",
+      "sourceName": "Hair Extensions",
+      "description": null,
+      "priceType": "variable",
+      "priceCents": null,
+      "priceDescription": null,
+      "durationSeconds": 12600,
+      "staffIds": [
+        "yxmedf699a7hbz"
+      ]
+    },
+    {
+      "id": "ESSXPB4GEG72CJVO3UI6DXAM",
+      "sourceName": "Balayage Medium Hair",
+      "description": null,
+      "priceType": "fixed",
+      "priceCents": 40000,
+      "priceDescription": null,
+      "durationSeconds": 14400,
+      "staffIds": [
+        "yxmedf699a7hbz"
+      ]
+    },
+    {
+      "id": "FJTPGZAKOMPBAIPWB4KPEH4U",
+      "sourceName": "Brow Lamination",
+      "description": "Achieve fuller, more defined brows with this semi-permanent treatment that smooths and sets brow hairs in place.",
+      "priceType": "fixed",
+      "priceCents": 8000,
+      "priceDescription": null,
+      "durationSeconds": 3000,
+      "staffIds": [
+        "yxmedf699a7hbz"
+      ]
+    },
+    {
+      "id": "GWE57V73RZQ6XXECU7Y27GF6",
+      "sourceName": "Emscuplt session",
+      "description": null,
+      "priceType": "fixed",
+      "priceCents": 25000,
+      "priceDescription": null,
+      "durationSeconds": 1800,
+      "staffIds": [
+        "yxmedf699a7hbz"
+      ]
+    },
+    {
+      "id": "H5B2P7ELXYVQE2BMRXVP5IQG",
+      "sourceName": "Tox upper face",
+      "description": null,
+      "priceType": "fixed",
+      "priceCents": 50000,
+      "priceDescription": "10 unit ",
+      "durationSeconds": 3600,
+      "staffIds": [
+        "wlno8s30z3js96",
+        "ibnn69hp638n5t"
+      ]
+    },
+    {
+      "id": "HAXWNA432EY55NY3CZVTOE43",
+      "sourceName": "Women's Haircut and Blow Dry by Dani",
+      "description": null,
+      "priceType": "fixed",
+      "priceCents": 8000,
+      "priceDescription": null,
+      "durationSeconds": 1800,
+      "staffIds": [
+        "ibnn69hp638n5t",
+        "yxmedf699a7hbz",
+        "6p1do8w0b0ao6d",
+        "wlno8s30z3js96",
+        "xtetvcgdj6y5n1"
+      ]
+    },
+    {
+      "id": "HJ6M6F5DN4NV3STOAWEXEOIZ",
+      "sourceName": "Highlights For Long Hair",
+      "description": null,
+      "priceType": "fixed",
+      "priceCents": 50000,
+      "priceDescription": null,
+      "durationSeconds": 21600,
+      "staffIds": [
+        "yxmedf699a7hbz"
+      ]
+    },
+    {
+      "id": "HK3XPXAG54D4GHIFXWA75JJX",
+      "sourceName": "Aesthetic consultation",
+      "description": "Consultation with NP in regards to your aesthetic goals. 50 dollars apples towards any services booked.",
+      "priceType": "fixed",
+      "priceCents": 5000,
+      "priceDescription": null,
+      "durationSeconds": 1800,
+      "staffIds": [
+        "wlno8s30z3js96"
+      ]
+    },
+    {
+      "id": "JETE7VQCAZNRQKNZF4JYL7RW",
+      "sourceName": "Microneedling with PRP",
+      "description": null,
+      "priceType": "fixed",
+      "priceCents": 50000,
+      "priceDescription": null,
+      "durationSeconds": 3600,
+      "staffIds": [
+        "wlno8s30z3js96",
+        "ibnn69hp638n5t"
+      ]
+    },
+    {
+      "id": "K3LWWGJEDBVV66X6X25OCE24",
+      "sourceName": "HA Filler",
+      "description": null,
+      "priceType": "variable",
+      "priceCents": null,
+      "priceDescription": null,
+      "durationSeconds": 3600,
+      "staffIds": [
+        "wlno8s30z3js96"
+      ]
+    },
+    {
+      "id": "LEGYGDHGVDVYPAWB4ZV5QQP2",
+      "sourceName": "Oxygen Glow Detox Facial",
+      "description": "A refreshing deep-cleansing treatment designed to revive dull, tired skin and restore a healthy glow. This facial includes cleansing, exfoliation, extractions (if needed), and an oxygen-activating mask to boost radiance and circulation.\n\nFinished with customized hydration and SPF protection, leaving your skin balanced, luminous, and refreshed.\n\n⸻\n\nEnhance Your Facial:\n\n• Décolleté Oxygen Boost – $40\n• LED Light Therapy – $35\n• High-Frequency Treatment – $25",
+      "priceType": "fixed",
+      "priceCents": 16500,
+      "priceDescription": "165$",
+      "durationSeconds": 3600,
+      "staffIds": [
+        "ibnn69hp638n5t"
+      ]
+    },
+    {
+      "id": "LJ2ET2VGVDKXCJHDCOXRGTTF",
+      "sourceName": "Hair consultation with Flaviano",
+      "description": null,
+      "priceType": "fixed",
+      "priceCents": 0,
+      "priceDescription": null,
+      "durationSeconds": 1800,
+      "staffIds": [
+        "yxmedf699a7hbz"
+      ]
+    },
+    {
+      "id": "MBNE5AQ6MU2NQ55PC7CQP73G",
+      "sourceName": "Men's Hair Cut by Dani",
+      "description": null,
+      "priceType": "fixed",
+      "priceCents": 4000,
+      "priceDescription": null,
+      "durationSeconds": 2700,
+      "staffIds": [
+        "ibnn69hp638n5t",
+        "yxmedf699a7hbz",
+        "6p1do8w0b0ao6d",
+        "wlno8s30z3js96",
+        "xtetvcgdj6y5n1"
+      ]
+    },
+    {
+      "id": "MJMAQB652Y3R3SJ5MH54FRLX",
+      "sourceName": "Deep conditioner + Blow Dryer",
+      "description": null,
+      "priceType": "fixed",
+      "priceCents": 8000,
+      "priceDescription": null,
+      "durationSeconds": 5400,
+      "staffIds": [
+        "yxmedf699a7hbz"
+      ]
+    },
+    {
+      "id": "MR7IXZB4MMX5TQMDRPCW56TW",
+      "sourceName": "Men's Haircut",
+      "description": null,
+      "priceType": "fixed",
+      "priceCents": 6000,
+      "priceDescription": null,
+      "durationSeconds": 3600,
+      "staffIds": [
+        "yxmedf699a7hbz",
+        "ibnn69hp638n5t"
+      ]
+    },
+    {
+      "id": "NHYODTZ2ULJAO5I6DHZ3SHK7",
+      "sourceName": "PCA Sensi Peel",
+      "description": "A gentle peel designed for sensitive skin. Helps improve tone, texture, and fine lines with minimal irritation.",
+      "priceType": "fixed",
+      "priceCents": 15500,
+      "priceDescription": "155$",
+      "durationSeconds": 3600,
+      "staffIds": [
+        "ibnn69hp638n5t"
+      ]
+    },
+    {
+      "id": "NR37OV5BE6OBITXBSEN6VRED",
+      "sourceName": "Eyebrows Micropigmentation",
+      "description": null,
+      "priceType": "fixed",
+      "priceCents": 45000,
+      "priceDescription": "450$",
+      "durationSeconds": 7200,
+      "staffIds": [
+        "yxmedf699a7hbz"
+      ]
+    },
+    {
+      "id": "NWKBLILQ3IWBWRZMBTIQWNEZ",
+      "sourceName": "Microneedling With PDRN",
+      "description": "salmon sperm serum",
+      "priceType": "fixed",
+      "priceCents": 25000,
+      "priceDescription": null,
+      "durationSeconds": 3600,
+      "staffIds": [
+        "wlno8s30z3js96",
+        "ibnn69hp638n5t"
+      ]
+    },
+    {
+      "id": "OBIEXHQPSQXZU7PRBHUHUY5P",
+      "sourceName": "Upper Lip Waxing",
+      "description": "epilaçāo buço",
+      "priceType": "fixed",
+      "priceCents": 1000,
+      "priceDescription": null,
+      "durationSeconds": 600,
+      "staffIds": [
+        "yxmedf699a7hbz",
+        "ibnn69hp638n5t"
+      ]
+    },
+    {
+      "id": "OCOEDNMLODBTV4MGA6DVY3NM",
+      "sourceName": "Haircut for women (blow dry not include)",
+      "description": null,
+      "priceType": "fixed",
+      "priceCents": 10000,
+      "priceDescription": null,
+      "durationSeconds": 3600,
+      "staffIds": [
+        "yxmedf699a7hbz"
+      ]
+    },
+    {
+      "id": "OTWIPHOUVJPSZMC64NPRGBA6",
+      "sourceName": "Microneedling package of 3 session",
+      "description": null,
+      "priceType": "fixed",
+      "priceCents": 60000,
+      "priceDescription": null,
+      "durationSeconds": 1800,
+      "staffIds": [
+        "wlno8s30z3js96",
+        "ibnn69hp638n5t"
+      ]
+    },
+    {
+      "id": "PEWB4SQDV3I6JNQAKGOZNASZ",
+      "sourceName": "Waves",
+      "description": null,
+      "priceType": "fixed",
+      "priceCents": 10000,
+      "priceDescription": null,
+      "durationSeconds": 5400,
+      "staffIds": [
+        "yxmedf699a7hbz",
+        "ibnn69hp638n5t"
+      ]
+    },
+    {
+      "id": "PGNGCQQZANTV5EIGFILCXCXQ",
+      "sourceName": "Highlight Medium Length Hair by Dani",
+      "description": null,
+      "priceType": "fixed",
+      "priceCents": 20000,
+      "priceDescription": null,
+      "durationSeconds": 16200,
+      "staffIds": [
+        "ibnn69hp638n5t"
+      ]
+    },
+    {
+      "id": "PLQ6ILUTK6LNFIM5YVEPJ43H",
+      "sourceName": "Balayage Long Hair",
+      "description": null,
+      "priceType": "fixed",
+      "priceCents": 50000,
+      "priceDescription": null,
+      "durationSeconds": 16200,
+      "staffIds": [
+        "yxmedf699a7hbz"
+      ]
+    },
+    {
+      "id": "Q66KKC4J7E4TOLDEA554SY4T",
+      "sourceName": "PRP Undereye, One Treatment",
+      "description": null,
+      "priceType": "fixed",
+      "priceCents": 60000,
+      "priceDescription": null,
+      "durationSeconds": 3600,
+      "staffIds": [
+        "wlno8s30z3js96",
+        "ibnn69hp638n5t"
+      ]
+    },
+    {
+      "id": "QCHPJHYUNGWN47MTJUEODGBO",
+      "sourceName": "Microneedling with PRP package of 3",
+      "description": null,
+      "priceType": "fixed",
+      "priceCents": 130000,
+      "priceDescription": null,
+      "durationSeconds": 3600,
+      "staffIds": [
+        "wlno8s30z3js96",
+        "ibnn69hp638n5t"
+      ]
+    },
+    {
+      "id": "QZXVU7PH7GVALSELAWQTJFYF",
+      "sourceName": "Ultrafomer MPT, package of 3 sessions",
+      "description": null,
+      "priceType": "fixed",
+      "priceCents": 88000,
+      "priceDescription": null,
+      "durationSeconds": 3600,
+      "staffIds": [
+        "wlno8s30z3js96",
+        "ibnn69hp638n5t"
+      ]
+    },
+    {
+      "id": "RFJNOZ44B5W3R5ZS5XFFJYEY",
+      "sourceName": "Hair therapy with botox",
+      "description": "Short hair 150$\nMédio hair 200$\nLong hair 300$",
+      "priceType": "fixed",
+      "priceCents": 15000,
+      "priceDescription": "Up to 150$",
+      "durationSeconds": 7200,
+      "staffIds": [
+        "yxmedf699a7hbz"
+      ]
+    },
+    {
+      "id": "RG62FXSTWUBFX73T3BDTHPKD",
+      "sourceName": "PCA Inflamed Acne Peel",
+      "description": "Targets active acne, inflammation, and congested skin. Helps unclog pores and reduce breakouts.",
+      "priceType": "fixed",
+      "priceCents": 15000,
+      "priceDescription": null,
+      "durationSeconds": 3600,
+      "staffIds": [
+        "ibnn69hp638n5t"
+      ]
+    },
+    {
+      "id": "RZ6LEKDMBSNVUCIKAKHO6MBJ",
+      "sourceName": "Keratin From Brazil Medium Length Hair",
+      "description": null,
+      "priceType": "fixed",
+      "priceCents": 20000,
+      "priceDescription": null,
+      "durationSeconds": 7200,
+      "staffIds": [
+        "yxmedf699a7hbz"
+      ]
+    },
+    {
+      "id": "SIBGE422K7WPMOO2YZ72RQLM",
+      "sourceName": "Emscuplt Package of Three",
+      "description": "For abs or glutes",
+      "priceType": "fixed",
+      "priceCents": 50000,
+      "priceDescription": null,
+      "durationSeconds": 1800,
+      "staffIds": [
+        "yxmedf699a7hbz",
+        "wlno8s30z3js96"
+      ]
+    },
+    {
+      "id": "TDZUF7GZTF2FM5PDFOGTZVWA",
+      "sourceName": "Ultrafomer MPT One Session Face",
+      "description": null,
+      "priceType": "fixed",
+      "priceCents": 36000,
+      "priceDescription": null,
+      "durationSeconds": 3600,
+      "staffIds": [
+        "wlno8s30z3js96",
+        "ibnn69hp638n5t"
+      ]
+    },
+    {
+      "id": "UFB7OBTLUZZQLI3DAUSNJCV5",
+      "sourceName": "Lash Lifting",
+      "description": null,
+      "priceType": "fixed",
+      "priceCents": 8500,
+      "priceDescription": null,
+      "durationSeconds": 4800,
+      "staffIds": [
+        "ibnn69hp638n5t"
+      ]
+    },
+    {
+      "id": "V3CIDY5ZKOKYBWYV55EADW5Q",
+      "sourceName": "Root Color",
+      "description": null,
+      "priceType": "fixed",
+      "priceCents": 15000,
+      "priceDescription": null,
+      "durationSeconds": 9000,
+      "staffIds": [
+        "yxmedf699a7hbz",
+        "ibnn69hp638n5t"
+      ]
+    },
+    {
+      "id": "VODEAMJXBDD2DE7DF5YGEQP2",
+      "sourceName": "Makeup",
+      "description": null,
+      "priceType": "fixed",
+      "priceCents": 15000,
+      "priceDescription": null,
+      "durationSeconds": 5400,
+      "staffIds": [
+        "yxmedf699a7hbz",
+        "ibnn69hp638n5t"
+      ]
+    },
+    {
+      "id": "W4VQ5473JV4ORSVESZTTOYPY",
+      "sourceName": "Highlight Short Hair",
+      "description": null,
+      "priceType": "fixed",
+      "priceCents": 30000,
+      "priceDescription": null,
+      "durationSeconds": 14400,
+      "staffIds": [
+        "yxmedf699a7hbz"
+      ]
+    },
+    {
+      "id": "WJJFP7YQJMXXXX3DCRHUK4HP",
+      "sourceName": "PCA Brightening Peel (Hyperpigmentation)",
+      "description": "Improves uneven skin tone, dark spots, and sun damage while promoting radiance and clarity.",
+      "priceType": "fixed",
+      "priceCents": 16500,
+      "priceDescription": "165$",
+      "durationSeconds": 3600,
+      "staffIds": [
+        "ibnn69hp638n5t"
+      ]
+    },
+    {
+      "id": "WV67TN24Q33DEB72SJHJGLGL",
+      "sourceName": "Beard Trim by Dani",
+      "description": null,
+      "priceType": "fixed",
+      "priceCents": 2000,
+      "priceDescription": null,
+      "durationSeconds": 1500,
+      "staffIds": [
+        "ibnn69hp638n5t",
+        "yxmedf699a7hbz",
+        "6p1do8w0b0ao6d",
+        "wlno8s30z3js96",
+        "xtetvcgdj6y5n1"
+      ]
+    },
+    {
+      "id": "XIIA7ICCYYEERMPV5NAO6CQX",
+      "sourceName": "Makeup Artist",
+      "description": null,
+      "priceType": "fixed",
+      "priceCents": 25000,
+      "priceDescription": null,
+      "durationSeconds": 5400,
+      "staffIds": [
+        "yxmedf699a7hbz",
+        "ibnn69hp638n5t"
+      ]
+    },
+    {
+      "id": "XXTY3QCOLOMK4PEHEDNP6U4Y",
+      "sourceName": "Updo and Makeup",
+      "description": null,
+      "priceType": "fixed",
+      "priceCents": 40000,
+      "priceDescription": null,
+      "durationSeconds": 9000,
+      "staffIds": [
+        "yxmedf699a7hbz",
+        "ibnn69hp638n5t"
+      ]
+    },
+    {
+      "id": "YFUCXMZPML6C7QJOPEQTMDGP",
+      "sourceName": "All-Over Color",
+      "description": null,
+      "priceType": "fixed",
+      "priceCents": 20000,
+      "priceDescription": null,
+      "durationSeconds": 5400,
+      "staffIds": [
+        "yxmedf699a7hbz"
+      ]
+    }
+  ]
+}
