@@ -19,7 +19,7 @@ export const NAV_ITEMS = [
   { href: "/aesthetics", label: "Aesthetics" },
   { href: "/weddings", label: "Weddings" },
   { href: "/gallery", label: "Gallery" },
-  { href: "/financing", label: "Financing" },
+  { href: "/financing", label: "Payment Plans" },
   { href: "/contact", label: "Contact" },
 ] as const;
 

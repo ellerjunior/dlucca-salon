@@ -9,7 +9,6 @@ export function MapEmbed({ className = "" }: { className?: string }) {
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
       />
-      <span className="map-marker" aria-hidden="true" />
       <div className="map-fallback">
         <address>{ADDRESS}</address>
         <a className="inline-link label" href={MAPS_URL} {...EXTERNAL_PROPS}>Get directions</a>

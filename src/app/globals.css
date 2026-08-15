@@ -64,7 +64,6 @@
   --button-border: var(--color-ink);
   --nav-height: 6rem;
   --nav-height-compact: 4.25rem;
-  --service-row-border: var(--rule-subtle);
   --service-row-hover: var(--color-alabaster);
   --input-border: var(--color-sand);
   --input-error: var(--color-umber);
@@ -362,11 +361,6 @@ img {
   margin-block-start: 0.25rem;
 }
 
-.arch {
-  overflow: hidden;
-  border-radius: 50% 50% 0 0 / 22% 22% 0 0;
-}
-
 .media-frame {
   position: relative;
   overflow: hidden;
@@ -387,7 +381,6 @@ img {
 }
 
 .service-row {
-  border-block-end: 0.0625rem solid var(--service-row-border);
   transition: background var(--duration-micro) var(--ease-house);
 }
 
@@ -613,18 +606,6 @@ img {
   background: rgb(14 13 12 / 28%);
 }
 
-.map-marker {
-  position: absolute;
-  inset-block-start: 50%;
-  inset-inline-start: 50%;
-  z-index: 1;
-  width: 1.25rem;
-  height: 1.25rem;
-  transform: translate(-50%, -50%) rotate(45deg);
-  border: 0.0625rem solid var(--color-brass);
-  background: var(--color-void);
-}
-
 .map-fallback {
   position: absolute;
   inset-inline: 0;
@@ -796,9 +777,9 @@ img {
   color: inherit;
 }
 
-.site-nav__book::before { background: currentColor; }
-.site-nav__book:hover { color: var(--color-linen); }
-.site-nav[data-dark="true"]:not([data-solid="true"]) .site-nav__book:hover { color: var(--color-void); }
+.site-nav__book::before { background: var(--color-white); }
+.site-nav__book:hover,
+.site-nav__book:focus-visible { color: var(--color-void); }
 
 .mobile-nav,
 .mobile-menu {

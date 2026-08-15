@@ -5,7 +5,6 @@ export function Figure({
   alt,
   caption,
   sizes,
-  arch = false,
   priority = false,
   className = "",
   imageClassName = "",
@@ -14,14 +13,13 @@ export function Figure({
   alt: string;
   caption?: string;
   sizes: string;
-  arch?: boolean;
   priority?: boolean;
   className?: string;
   imageClassName?: string;
 }) {
   return (
     <figure className={className}>
-      <div className={`media-frame ${arch ? "arch" : ""}`} data-hover="true">
+      <div className="media-frame" data-hover="true">
         <ResponsiveImage
           image={image}
           alt={alt}

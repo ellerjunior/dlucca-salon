@@ -309,6 +309,48 @@
       ]
     }
   },
+  "hero-blonde-2026": {
+    "src": "/images/originals/hero-blonde-2026.png",
+    "width": 938,
+    "height": 1677,
+    "blurDataURL": "data:image/webp;base64,UklGRlIBAABXRUJQVlA4IEYBAADwBwCdASoYACsAPxl8sFOsp6QiqqoBkCMJYgCsBbIlMEkWt2H3GhfM7zbM/LGC6ZF0uxDfkWgU2oafF5vNCJIjqJMggkvTmAAAzi7JT9SVa2dyFhbfqwkyNj7+MkCq4cNYHtBMFcVkDWI8/5t1fZWQdrij1dPEh2B04pnKe6W23dmeovKobpBUS9xfNGz/hSHErQqLos6gnXwUvQSti+GH8Pwze/mnTWjabtYOKjVeeeK8Ic7KsCf3qLBrC3yHLyXbSQwxF7xNcvHJK/fSeSjTb+dug8mFZ6E+w0e0oizi5sso8vpEk6CFZZyRU5/Rf45PbEH3kXMQD6UfTxOZObBuV3mvrFC4LMRdaRVvM17IaHBqi6Rf34PvMXFOn6hglTgoIfN1oOXmCFfpxe171/tizM45BBDJM74QQEB9uWnk4/Zg6U7AAA==",
+    "formats": {
+      "avif": [
+        {
+          "src": "/images/generated/hero-blonde-2026-480.avif",
+          "width": 480,
+          "height": 858
+        },
+        {
+          "src": "/images/generated/hero-blonde-2026-768.avif",
+          "width": 768,
+          "height": 1373
+        },
+        {
+          "src": "/images/generated/hero-blonde-2026-938.avif",
+          "width": 938,
+          "height": 1677
+        }
+      ],
+      "webp": [
+        {
+          "src": "/images/generated/hero-blonde-2026-480.webp",
+          "width": 480,
+          "height": 858
+        },
+        {
+          "src": "/images/generated/hero-blonde-2026-768.webp",
+          "width": 768,
+          "height": 1373
+        },
+        {
+          "src": "/images/generated/hero-blonde-2026-938.webp",
+          "width": 938,
+          "height": 1677
+        }
+      ]
+    }
+  },
   "home-hero": {
     "src": "/images/originals/home-hero.jpg",
     "width": 755,

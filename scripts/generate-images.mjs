@@ -45,7 +45,7 @@ const logoSvg = await readFile(path.resolve("public/logo.svg"));
 const ogDir = path.resolve("public/og");
 await mkdir(ogDir, { recursive: true });
 const ogSources = {
-  home: "home-hero.jpg",
+  home: "hero-blonde-2026.png",
   story: "flaviano-wide.jpg",
   hair: "work-1533.jpg",
   aesthetics: "aesthetics-room.png",

@@ -17,7 +17,8 @@
 
 .home-hero__scrim {
   z-index: 1;
-  background: linear-gradient(90deg, rgb(14 13 12 / 78%) 0%, rgb(14 13 12 / 46%) 42%, transparent 76%);
+  background: var(--color-void);
+  opacity: 0.48;
 }
 
 .home-hero__content {
@@ -87,8 +88,13 @@
 .filmstrip__button picture { display: block; width: 100%; height: 100%; }
 .filmstrip__image { width: 100%; height: 100%; object-fit: cover; }
 .filmstrip__item figcaption { padding: 1rem 0 1.5rem; color: var(--color-sand); }
-.filmstrip__progress { height: 0.0625rem; margin-inline: var(--gutter); background: var(--color-umber); }
+.filmstrip__controls { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 1.5rem; margin-inline: var(--gutter); }
+.filmstrip__progress { height: 0.0625rem; background: var(--color-umber); }
 .filmstrip__progress span { display: block; width: 100%; height: 100%; transform-origin: left; background: var(--color-brass); transition: transform 100ms linear; }
+.filmstrip__navigation { display: flex; gap: 0.5rem; }
+.filmstrip__navigation button { position: relative; width: 3.25rem; height: 3.25rem; border: 0.0625rem solid var(--color-umber); background: transparent; color: var(--color-linen); cursor: pointer; transition: background var(--duration-micro) var(--ease-house), border-color var(--duration-micro) var(--ease-house), color var(--duration-micro) var(--ease-house), opacity var(--duration-micro) var(--ease-house); }
+.filmstrip__navigation button:hover:not(:disabled), .filmstrip__navigation button:focus-visible { border-color: var(--color-white); background: var(--color-white); color: var(--color-void); }
+.filmstrip__navigation button:disabled { color: var(--color-umber); cursor: default; opacity: 0.45; }
 
 .lightbox {
   width: 100vw;
@@ -125,7 +131,7 @@
 .lightbox__count { inset-inline-end: clamp(1rem, 3vw, 2.5rem); font-variant-numeric: tabular-nums; }
 
 .home-doors { display: grid; grid-template-columns: repeat(3, 1fr); }
-.home-door { display: grid; min-height: 52rem; grid-template-rows: minmax(25rem, 1fr) auto; border-inline-start: 0.0625rem solid var(--color-sand); transition: background var(--duration-micro) var(--ease-house); }
+.home-door { display: grid; min-height: 52rem; grid-template-rows: clamp(32rem, 45.5vw, 41rem) 1fr; border-inline-start: 0.0625rem solid var(--color-sand); transition: background var(--duration-micro) var(--ease-house); }
 .home-door:last-child { border-inline-end: 0.0625rem solid var(--color-sand); }
 .home-door:hover { background: var(--color-linen); }
 .home-door__image { height: 100%; }
@@ -154,12 +160,11 @@
   .home-invitation__image { grid-column: 8 / 13; }
   .home-doors { grid-template-columns: 1fr; }
   .home-door { min-height: 0; grid-template-columns: 0.9fr 1.1fr; grid-template-rows: 1fr; border-inline-end: 0.0625rem solid var(--color-sand); border-block-end: 0.0625rem solid var(--color-sand); }
-  .home-door__image { min-height: 30rem; }
+  .home-door__image { height: 100%; min-height: 30rem; aspect-ratio: auto; }
   .home-founder__image img { min-height: 38rem; }
 }
 
 @media (max-width: 767px) {
-  .home-hero__scrim { background: linear-gradient(90deg, rgb(14 13 12 / 78%) 0%, rgb(14 13 12 / 34%) 72%, transparent 100%); }
   .home-hero__content { align-content: end; padding-block-end: 7rem; }
   .home-hero__copy { grid-column: 1 / 7; }
   .home-hero__title { font-size: clamp(2.25rem, 9.4vw, 2.65rem); }
@@ -460,6 +465,7 @@
 .aesthetics-hero__media img { object-position: center; }
 .treatment-group + .treatment-group { margin-block-start: 8rem; }
 .treatment-group__header { margin-block-end: 3rem; }
+.treatment-group .disclosure { border-block-end: 0; }
 .treatment-detail-copy { display: grid; gap: 0.75rem; }
 .treatment-detail-copy p, .treatment-detail-copy ul { margin: 0; }
 .treatment-detail-copy ul { padding-inline-start: 1.25rem; }

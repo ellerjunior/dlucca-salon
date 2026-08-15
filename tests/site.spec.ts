@@ -17,7 +17,9 @@ test("mobile navigation opens, traps intent and closes", async ({ page, isMobile
   test.skip(!isMobile, "mobile project only");
   await page.goto("/");
   await page.getByRole("button", { name: "Open menu" }).click();
-  await expect(page.getByRole("navigation", { name: "Mobile navigation" })).toBeVisible();
+  const navigation = page.getByRole("navigation", { name: "Mobile navigation" });
+  await expect(navigation).toBeVisible();
+  await expect(navigation.getByRole("link", { name: "Payment Plans" })).toBeVisible();
   await page.keyboard.press("Escape");
   await expect(page.locator("#mobile-menu")).toHaveAttribute("aria-hidden", "true");
 });
@@ -57,6 +59,78 @@ test("home hero preserves its three-line lockup without clipping", async ({ page
 
   expect(measurements.map(({ text }) => text)).toEqual(["Chicago’s", "Brazilian beauty", "destination"]);
   expect(measurements.every(({ fits, visualLines }) => fits && visualLines === 1)).toBe(true);
+});
+
+test("desktop navigation uses Payment Plans and keeps Book legible on hover", async ({ page, isMobile }) => {
+  test.skip(isMobile, "desktop project only");
+
+  for (const route of ["/", "/aesthetics"]) {
+    await page.goto(route);
+    const navigation = page.locator(".desktop-nav");
+    await expect(navigation.getByRole("link", { name: "Payment Plans" })).toBeVisible();
+
+    const book = navigation.getByRole("link", { name: "Book", exact: true });
+    await book.hover();
+    await page.waitForTimeout(450);
+    const styles = await book.evaluate((element) => ({
+      color: getComputedStyle(element).color,
+      fill: getComputedStyle(element, "::before").backgroundColor,
+      transform: getComputedStyle(element, "::before").transform,
+    }));
+    expect(styles.color).toBe("rgb(14, 13, 12)");
+    expect(styles.fill).toBe("rgb(255, 255, 255)");
+    expect(styles.transform).toBe("matrix(1, 0, 0, 1, 0, 0)");
+  }
+});
+
+test("three home door photographs align on a 13-inch laptop viewport", async ({ page, isMobile }) => {
+  test.skip(isMobile, "desktop project only");
+  await page.setViewportSize({ width: 1280, height: 800 });
+  await page.goto("/");
+
+  const bottoms = await page.locator(".home-door__image").evaluateAll((elements) =>
+    elements.map((element) => element.getBoundingClientRect().bottom),
+  );
+  expect(bottoms).toHaveLength(3);
+  expect(Math.max(...bottoms) - Math.min(...bottoms)).toBeLessThanOrEqual(1);
+});
+
+for (const route of ["/", "/weddings"]) {
+  test(`${route} filmstrip advances with accessible arrow controls`, async ({ page }) => {
+    await page.goto(route);
+    const strip = page.locator(".filmstrip");
+    const previous = page.getByRole("button", { name: "Previous image" });
+    const next = page.getByRole("button", { name: "Next image" });
+
+    await expect(previous).toBeDisabled();
+    await expect(next).toBeEnabled();
+    const before = await strip.evaluate((element) => element.scrollLeft);
+    await next.click();
+    await expect.poll(() => strip.evaluate((element) => element.scrollLeft)).toBeGreaterThan(before);
+    await expect(previous).toBeEnabled();
+  });
+}
+
+test("service menus keep category rules and dotted leaders without row separators", async ({ page }) => {
+  await page.goto("/hair");
+  await expect(page.locator(".service-provider__title .section-header__line")).toHaveCount(0);
+  await expect(page.locator(".service-row").first()).toHaveCSS("border-bottom-width", "0px");
+  await expect(page.locator(".service-row__leader").first()).toHaveCSS("border-bottom-style", "dotted");
+  expect(await page.locator(".service-category__title").first().evaluate((element) => getComputedStyle(element, "::after").height)).not.toBe("0px");
+
+  await page.goto("/aesthetics");
+  await expect(page.locator(".treatment-group__header .section-header__line")).toHaveCount(4);
+  await expect(page.locator(".service-row").first()).toHaveCSS("border-bottom-width", "0px");
+  await expect(page.locator(".treatment-group .disclosure").first()).toHaveCSS("border-bottom-width", "0px");
+  await expect(page.locator(".service-row__leader").first()).toHaveCSS("border-bottom-style", "dotted");
+});
+
+test("media frames are rectangular and maps omit the decorative marker", async ({ page }) => {
+  for (const route of ["/", "/story", "/aesthetics", "/contact"]) {
+    await page.goto(route);
+    await expect(page.locator(".arch")).toHaveCount(0);
+    await expect(page.locator(".map-marker")).toHaveCount(0);
+  }
 });
 
 test("map keeps a sighted address and directions fallback", async ({ page }) => {

@@ -11,7 +11,7 @@ import { ADDRESS, EMAIL, INSTAGRAM_URL, PHONE_DISPLAY, SITE_URL } from "@/lib/co
 
 /*
 THESIS: Casa D'Lucca treats the salon as a private house and refuses the interchangeable luxury-salon card grid.
-OWN-WORLD: Warm mineral fields, void-black rooms, antique-brass hairlines, Brazilian arches, Chicago vertical rules, real photographs and disciplined display type.
+OWN-WORLD: Warm mineral fields, void-black rooms, antique-brass hairlines, clean architectural frames, Chicago vertical rules, real photographs and disciplined display type.
 STORY: Visitors meet the house, see real work, verify services and prices, understand the people and move directly to booking or contact.
 FIRST VIEWPORT: One portrait photograph fills the Home viewport; a left-held three-line title, brass rule, one sentence and booking action sit inside its shadowed edge.
 FORM: Brief-pinned Casa D'Lucca, grounded direction 1, seed c2341c99.

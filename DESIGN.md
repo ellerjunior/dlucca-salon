@@ -96,7 +96,7 @@ The experience is photographic and typographic, asymmetrical but composed. Servi
 - Bodoni Moda display type over literary Lora body copy and compact Inter Tight labels.
 - 12-column editorial composition on larger screens; six-column mobile composition with preserved asymmetry.
 - Real photography as the primary source of atmosphere and proof.
-- One controlled arch silhouette per viewport; hairline rules and vertical dividers provide the recurring geometry.
+- Clean rectangular media frames; hairline rules and vertical dividers provide the recurring geometry.
 
 ## Colors
 
@@ -160,15 +160,13 @@ At 1023px, navigation becomes a full-height mobile menu and multi-column editori
 
 ## Elevation & Depth
 
-This is a flat system. Depth comes from tonal fields, image crop, contrast, brass rules, and occasional overlaid navigation—not drop shadows. Alabaster provides the sole gentle raised-surface distinction over linen; void provides the strongest room change. The Home hero alone uses a dark directional scrim, strictly as a legibility layer over photography.
+This is a flat system. Depth comes from tonal fields, image crop, contrast, brass rules, and occasional overlaid navigation—not drop shadows. Alabaster provides the sole gentle raised-surface distinction over linen; void provides the strongest room change. The Home hero alone uses a dark scrim, strictly as a legibility layer over photography.
 
 **The No-Shadow Rule.** Do not introduce box shadows, glass blur, floating cards, or gradients. The sole gradient exception is the functional Home hero scrim.
 
 ## Shapes
 
-Edges are sharp and architectural: buttons, fields, dividers, navigation modules, and service rows use square corners. A two-pixel hairline radius exists only as a technical micro-adjustment, never as a visible soft-card language. The signature curve is a single, cropped Brazilian arch applied to selected media; it is an accent, not a repeating pattern.
-
-**The One-Arch Rule.** Use no more than one arch motif within a viewport. Let it establish a moment of softness against the house's rules and rectangles.
+Edges are sharp and architectural: buttons, fields, dividers, navigation modules, service rows, and media frames use square corners. A two-pixel hairline radius exists only as a technical micro-adjustment, never as a visible soft-card language. Photography is framed through proportion and crop rather than decorative silhouettes.
 
 ## Components
 
@@ -186,8 +184,8 @@ Quiet editorial actions with a sweeping fill state rather than a pill or elevate
 
 Dense, breathable service-menu data rather than cards.
 
-- **Structure:** Name, dotted leader, tabular price, and duration sit on one ruled desktop row; price and duration remain legible in a stacked two-column mobile layout.
-- **Surface:** Transparent at rest with an Alabaster hover field; Fine Sand provides dividers and dotted leaders.
+- **Structure:** Name, dotted leader, tabular price, and duration sit on one open desktop row; price and duration remain legible in a stacked two-column mobile layout.
+- **Surface:** Transparent at rest with an Alabaster hover field; Fine Sand is reserved for dotted leaders while brass rules identify categories.
 - **Type:** Service names are body-sized; prices and durations use compact Inter Tight labels with tabular figures.
 
 ### Inputs / Fields
@@ -202,28 +200,28 @@ Underlined editorial fields that preserve attention for the form's content.
 
 An editorial accordion with a simple brass plus/minus mark.
 
-- **Structure:** One Fine Sand bottom rule per item; a minimum 4rem trigger; text at left and the mark at right.
+- **Structure:** A minimum 4rem trigger with text at left and the mark at right. Fine Sand bottom rules remain the default but are omitted inside dense treatment menus.
 - **Open state:** The vertical stem rotates away to become a horizontal line while the content expands using the house easing.
 
 ### Navigation
 
 Desktop navigation frames the wordmark between two label groups; the fixed bar turns from transparent-on-image to a compact Linen field after the hero threshold.
 
-- **Desktop:** Small Inter Tight links use a brass underline for hover, focus, and current-route state; Book is an outlined compact action.
+- **Desktop:** Small Inter Tight links use a brass underline for hover, focus, and current-route state; Book is an outlined compact action with a white hover/focus sweep and Void text.
 - **Mobile:** The menu becomes a Void full-screen panel with large Bodoni Moda links. The mobile action bar is a fixed, bordered Call/Book pair: linen for Call and ink for Book.
 
 ### Media & Filmstrips
 
 Real salon photography is framed by crop and proportion, not decorative chrome.
 
-- **Media:** Use object-fit imagery in sand-backed frames; the selected arch applies only to a media frame.
-- **Filmstrip:** Void field, edge-to-edge horizontal scroll, large image panels, brass progress rule, and accessible lightbox expansion.
+- **Media:** Use object-fit imagery in clean, rectangular sand-backed frames.
+- **Filmstrip:** Void field, edge-to-edge horizontal scroll, large image panels, brass progress rule, previous/next controls, natural swipe/trackpad gestures, and accessible lightbox expansion. Vertical wheel input must continue scrolling the page.
 
 ### Map Fallback
 
 The map remains usable even when its external iframe cannot load.
 
-- **Style:** Grayscale map under a restrained Void overlay, a small brass-outlined diamond marker, and a permanent high-contrast direction strip.
+- **Style:** Grayscale map under a restrained Void overlay with a permanent high-contrast direction strip and no decorative center marker.
 - **Fallback:** Show the street address and a clear “Get directions” link in the strip; do not leave the location as an image-only or iframe-only experience.
 
 ## Do's and Don'ts
@@ -232,7 +230,7 @@ The map remains usable even when its external iframe cannot load.
 
 - **Do** lead with real salon imagery and use it as evidence, atmosphere, and spatial counterweight.
 - **Do** use brass for hairlines, active underlines, focus, markers, and singular emphasis.
-- **Do** keep service information compact, ruled, and easy to scan; preserve price and duration prominence.
+- **Do** keep service information compact and easy to scan; use category rules and dotted price leaders without row-by-row separators.
 - **Do** maintain the 12-column to six-column grid transition and the horizontal filmstrip behavior on mobile.
 - **Do** keep motion restrained, use the house easing, and reduce it to near-instant under `prefers-reduced-motion`.
 - **Do** keep the compact Call/Book system available on mobile and preserve visible keyboard focus.

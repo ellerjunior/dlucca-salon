@@ -28,7 +28,7 @@ export function HomeHero() {
         transition={{ duration: 1.8, ease: [0.16, 1, 0.3, 1] }}
       >
         <ResponsiveImage
-          image="home-hero"
+          image="hero-blonde-2026"
           alt="Long dimensional blonde hair styled in waves beside a Chicago brick wall"
           sizes="100vw"
           priority

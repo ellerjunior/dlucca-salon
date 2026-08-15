@@ -35,7 +35,7 @@ export default function StoryPage() {
         <div className="site-container site-grid">
           <div className="story-hero__copy"><h1 className="display-xl">My journey in the art of beauty</h1></div>
           <p className="standfirst story-hero__standfirst">From the heart of Brazil to the city of Chicago, Flaviano’s devotion to his craft shines through in every transformation. His story is one of talent, dedication, and a deep desire to help people see their true beauty.</p>
-          <div className="story-hero__portrait arch media-frame"><ResponsiveImage image="flaviano-portrait" alt="Portrait of Flaviano D. Lucca" sizes="(max-width: 767px) 80vw, 28vw" imageClassName="story-hero__photo" priority /></div>
+          <div className="story-hero__portrait media-frame"><ResponsiveImage image="flaviano-portrait" alt="Portrait of Flaviano D. Lucca" sizes="(max-width: 767px) 80vw, 28vw" imageClassName="story-hero__photo" priority /></div>
         </div>
       </section>
 

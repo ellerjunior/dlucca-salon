@@ -36,7 +36,7 @@ export default function HomePage() {
             </p>
           </Reveal>
           <Reveal className="home-invitation__image" delay={0.08}>
-            <Figure image="salon-interior" alt="The bright D'Lucca salon interior on California Avenue" sizes="(max-width: 767px) 80vw, 42vw" arch />
+            <Figure image="salon-interior" alt="The bright D'Lucca salon interior on California Avenue" sizes="(max-width: 767px) 80vw, 42vw" />
           </Reveal>
         </div>
       </section>

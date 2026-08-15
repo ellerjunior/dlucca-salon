@@ -19,9 +19,8 @@ function ProviderMenu({ id, title, services }: { id: string; title: string; serv
   const available = categories.filter((category) => services.some((service) => service.category === category));
   return (
     <section id={id} className="service-provider">
-      <div className="service-provider__title section-header">
+      <div className="service-provider__title">
         <h2 className="display-l">{title}</h2>
-        <span className="section-header__line" aria-hidden="true" />
       </div>
       {available.map((category) => (
         <section className="service-category" id={`${id}-${category}`} data-menu-section={category} key={category}>
