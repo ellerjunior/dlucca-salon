@@ -5,8 +5,9 @@ import { useEffect, useRef, useState } from "react";
 import { Lightbox } from "@/components/features/lightbox";
 import { ResponsiveImage } from "@/components/ui/responsive-image";
 import type { GalleryItem } from "@/types";
+import type { CommonDictionary } from "@/i18n/common";
 
-export function Filmstrip({ items, bridal = false }: { items: GalleryItem[]; bridal?: boolean }) {
+export function Filmstrip({ items, labels, bridal = false }: { items: GalleryItem[]; labels: CommonDictionary["actions"]; bridal?: boolean }) {
   const stripRef = useRef<HTMLDivElement>(null);
   const reduceMotion = useReducedMotion();
   const [progress, setProgress] = useState(0);
@@ -52,7 +53,7 @@ export function Filmstrip({ items, bridal = false }: { items: GalleryItem[]; bri
 
   return (
     <>
-      <div ref={stripRef} className={`filmstrip ${bridal ? "filmstrip--bridal" : ""}`} tabIndex={0} aria-label="Horizontally scrolling gallery">
+      <div ref={stripRef} className={`filmstrip ${bridal ? "filmstrip--bridal" : ""}`} tabIndex={0} aria-label={labels.scrollingGallery}>
         {items.map((item, index) => (
           <figure className="filmstrip__item" key={item.id}>
             <button type="button" className="filmstrip__button media-frame" onClick={() => setActive(index)}>
@@ -64,16 +65,16 @@ export function Filmstrip({ items, bridal = false }: { items: GalleryItem[]; bri
       </div>
       <div className="filmstrip__controls">
         <div className="filmstrip__progress" aria-hidden="true"><span style={{ transform: `scaleX(${progress})` }} /></div>
-        <div className="filmstrip__navigation" aria-label="Gallery navigation">
-          <button type="button" onClick={() => scrollByItem(-1)} disabled={!canScrollPrevious} aria-label="Previous image">
+        <div className="filmstrip__navigation" aria-label={labels.galleryNavigation}>
+          <button type="button" onClick={() => scrollByItem(-1)} disabled={!canScrollPrevious} aria-label={labels.previousImage}>
             <span className="rule-arrow rule-arrow--left" aria-hidden="true" />
           </button>
-          <button type="button" onClick={() => scrollByItem(1)} disabled={!canScrollNext} aria-label="Next image">
+          <button type="button" onClick={() => scrollByItem(1)} disabled={!canScrollNext} aria-label={labels.nextImage}>
             <span className="rule-arrow" aria-hidden="true" />
           </button>
         </div>
       </div>
-      {active !== null ? <Lightbox items={items} initialIndex={active} onClose={() => setActive(null)} /> : null}
+      {active !== null ? <Lightbox items={items} initialIndex={active} onClose={() => setActive(null)} labels={labels} /> : null}
     </>
   );
 }

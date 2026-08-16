@@ -1,4 +1,6 @@
 import snapshot from "@/data/square-snapshot.json";
+import { getCommon } from "@/i18n/common";
+import type { Locale } from "@/i18n/config";
 import type { Price, Service, ServiceCategory } from "@/types";
 
 type Provider = Service["provider"];
@@ -145,7 +147,8 @@ export const aestheticsServices: Service[] = [
   service("OBIEXHQPSQXZU7PRBHUHUY5P", "Upper Lip Waxing", "esthetician", "brows"),
 ];
 
-export function formatPrice(price: Price): string {
+export function formatPrice(price: Price, locale: Locale = "en"): string {
+  const labels = getCommon(locale).service;
   const currency = (cents: number) =>
     new Intl.NumberFormat("en-US", {
       style: "currency",
@@ -153,18 +156,18 @@ export function formatPrice(price: Price): string {
       minimumFractionDigits: cents % 100 === 0 ? 0 : 2,
     }).format(cents / 100);
 
-  if (price.kind === "variable") return "Variable";
-  if (price.kind === "perUnit") return `${currency(price.cents)} / ${price.unit}`;
-  if (price.kind === "tiers") return `From ${currency(price.tiers[0].cents)}`;
-  if (price.cents === 0) return "Free";
+  if (price.kind === "variable") return labels.variable;
+  if (price.kind === "perUnit") return `${currency(price.cents)} / ${labels.unit}`;
+  if (price.kind === "tiers") return `${labels.from} ${currency(price.tiers[0].cents)}`;
+  if (price.cents === 0) return labels.free;
   return currency(price.cents);
 }
 
-export function formatDuration(minutes: number): string {
+export function formatDuration(minutes: number, locale: Locale = "en"): string {
   const hours = Math.floor(minutes / 60);
   const remainder = minutes % 60;
   if (!hours) return `${minutes} min`;
-  return remainder ? `${hours}h ${remainder}m` : `${hours}h`;
+  return remainder ? `${hours}h ${remainder}${locale === "en" ? "m" : "min"}` : `${hours}h`;
 }
 
 export const squareCapturedAt = snapshot.capturedAt;

@@ -154,7 +154,7 @@ The palette feels like sun-warmed stone, paper, darkened wood, and aged brass—
 
 The desktop canvas is a 12-column grid inside a 90rem content maximum, with a fluid gutter and narrow column gaps. Sections use a broad, fluid vertical interval. Major editorial moves span uneven column ranges rather than settling into symmetric cards: copy often occupies columns two through seven while an image begins around column eight.
 
-At 1023px, navigation becomes a full-height mobile menu and multi-column editorial modules simplify without losing their house rhythm. At 767px, the base grid becomes six columns, text and actions widen, service rows become two-column information stacks, and filmstrips retain their horizontal browse behavior. The compact fixed Call/Book action system stays visible at tablet and mobile sizes.
+At 1023px, navigation becomes a full-height mobile menu and multi-column editorial modules simplify without losing their house rhythm. At 767px, the base grid becomes six columns, text and actions widen, service rows become two-column information stacks, and filmstrips retain their horizontal browse behavior. The compact fixed Call/Book action system stays visible at tablet and mobile sizes until the footer enters the viewport, then exits so footer content and credits remain unobstructed.
 
 **The Photograph Leads Rule.** Give a photograph room to establish each major section. Typography should align to, frame, or counterbalance it—not turn the image into a decorative card thumbnail.
 
@@ -208,7 +208,8 @@ An editorial accordion with a simple brass plus/minus mark.
 Desktop navigation frames the wordmark between two label groups; the fixed bar turns from transparent-on-image to a compact Linen field after the hero threshold.
 
 - **Desktop:** Small Inter Tight links use a brass underline for hover, focus, and current-route state; Book is an outlined compact action with a white hover/focus sweep and Void text.
-- **Mobile:** The menu becomes a Void full-screen panel with large Bodoni Moda links. The mobile action bar is a fixed, bordered Call/Book pair: linen for Call and ink for Book.
+- **Mobile:** The header keeps a compact locale disclosure between the wordmark and hamburger. The menu becomes a Void full-screen panel with large Bodoni Moda links and no duplicated locale control. The mobile action bar is a fixed, bordered Call/Book pair: linen for Call and ink for Book.
+- **Locale selector:** English is the root default. A compact disclosure links to the equivalent English, Brazilian Portuguese, or Spanish route, using the authored `/flags/us.svg`, `/flags/br.svg`, and `/flags/es.svg` assets beside persistent EN/PT/ES labels. Spanish remains the `es` public locale with `es-US` document language and copy conventions; the Spain flag is a deliberate authored asset choice, not a locale change. Localized routes translate their public slugs, metadata, forms, service names, gallery copy, and accessibility labels; no browser-language redirect is used.
 
 ### Media & Filmstrips
 
@@ -216,6 +217,14 @@ Real salon photography is framed by crop and proportion, not decorative chrome.
 
 - **Media:** Use object-fit imagery in clean, rectangular sand-backed frames.
 - **Filmstrip:** Void field, edge-to-edge horizontal scroll, large image panels, brass progress rule, previous/next controls, natural swipe/trackpad gestures, and accessible lightbox expansion. Vertical wheel input must continue scrolling the page.
+
+### Gallery Viewer
+
+The gallery is an Experience surface rather than a masonry inventory. A Linen editorial masthead hands off to a Void room: category filters with counts, one portrait-led main stage, caption and category metadata, previous/next controls, and a compact thumbnail index. Each previous/next button is a square 3.25rem control and owns its positioned rule-arrow, keeping both arrow origins local and reliable. Desktop uses an asymmetric stage/index split; mobile and tablet retain a horizontal filter rail and swipeable photographic stage. Selection transitions once, horizontally, and becomes instant under reduced motion.
+
+### Footer Credit
+
+The Eller Jr handwritten signature is a centered, restrained production credit beneath the newsletter. It uses the authored transparent image, links to the Eller Jr Linktree, and keeps localized alternative text. Mobile and tablet hold the signature at 11.5rem. At 1024px and wider it uses `clamp(9.2rem, 16vw, 12.4rem)`, paired with tighter footer end padding and a 0.75rem legal inset. The newsletter keeps only its upper divider so the signature is never boxed in.
 
 ### Map Fallback
 

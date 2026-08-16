@@ -5,8 +5,9 @@ import { useEffect, useState } from "react";
 import { ButtonLink } from "@/components/ui/button";
 import { ResponsiveImage } from "@/components/ui/responsive-image";
 import { BOOKING_URL } from "@/lib/constants";
+import type { PageDictionary } from "@/i18n/pages";
 
-export function HomeHero() {
+export function HomeHero({ copy, bookLabel }: { copy: PageDictionary["home"]["hero"]; bookLabel: string }) {
   const reduceMotion = useReducedMotion();
   const [animate, setAnimate] = useState(false);
 
@@ -18,7 +19,7 @@ export function HomeHero() {
     }
   }, [reduceMotion]);
 
-  const lines = ["Chicago’s", "Brazilian beauty", "destination"];
+  const lines = copy.lines;
   return (
     <section className="home-hero surface-void" aria-labelledby="home-title">
       <motion.div
@@ -29,7 +30,7 @@ export function HomeHero() {
       >
         <ResponsiveImage
           image="hero-blonde-2026"
-          alt="Long dimensional blonde hair styled in waves beside a Chicago brick wall"
+          alt={copy.alt}
           sizes="100vw"
           priority
           fill
@@ -54,11 +55,11 @@ export function HomeHero() {
             ))}
           </h1>
           <span className="brass-rule" />
-          <p>Hair, skin and bridal artistry on California Avenue.</p>
-          <ButtonLink href={BOOKING_URL} external variant="on-dark">Book an appointment</ButtonLink>
+          <p>{copy.copy}</p>
+          <ButtonLink href={BOOKING_URL} external variant="on-dark">{bookLabel}</ButtonLink>
         </div>
         <div className="home-hero__cue label" aria-hidden="true">
-          <span>I — The house</span><span className="home-hero__cue-line" />
+          <span>{copy.cue}</span><span className="home-hero__cue-line" />
         </div>
       </div>
     </section>

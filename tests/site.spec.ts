@@ -16,6 +16,8 @@ for (const route of routes) {
 test("mobile navigation opens, traps intent and closes", async ({ page, isMobile }) => {
   test.skip(!isMobile, "mobile project only");
   await page.goto("/");
+  await expect(page.locator(".mobile-nav__language")).toBeVisible();
+  await expect(page.locator("#mobile-menu .language-selector")).toHaveCount(0);
   await page.getByRole("button", { name: "Open menu" }).click();
   const navigation = page.getByRole("navigation", { name: "Mobile navigation" });
   await expect(navigation).toBeVisible();
@@ -27,11 +29,79 @@ test("mobile navigation opens, traps intent and closes", async ({ page, isMobile
 test("gallery filters and lightbox are keyboard operable", async ({ page }) => {
   await page.goto("/gallery");
   await page.getByRole("button", { name: "Bridal", exact: true }).click();
-  await expect(page.locator(".gallery-grid__item")).toHaveCount(1);
-  await page.locator(".gallery-grid__button").first().click();
+  await expect(page.locator(".gallery-viewer__thumb")).toHaveCount(1);
+  await expect(page.locator(".gallery-viewer__meta")).toContainText("01 / 01");
+  await page.locator(".gallery-viewer__main").click();
   await expect(page.getByRole("dialog")).toBeVisible();
   await page.keyboard.press("Escape");
   await expect(page.getByRole("dialog")).toHaveCount(0);
+});
+
+test("gallery viewer advances with arrows and keeps its editorial index in sync", async ({ page }) => {
+  await page.goto("/gallery");
+  const meta = page.locator(".gallery-viewer__meta");
+  const controls = page.locator(".gallery-viewer__controls");
+  await controls.scrollIntoViewIfNeeded();
+  const arrowPositions = await controls.locator("button").evaluateAll((buttons) => buttons.map((button) => {
+    const buttonRect = button.getBoundingClientRect();
+    const arrowRect = button.querySelector(".rule-arrow")?.getBoundingClientRect();
+    return arrowRect ? {
+      buttonLeft: buttonRect.left,
+      buttonRight: buttonRect.right,
+      arrowLeft: arrowRect.left,
+      arrowRight: arrowRect.right,
+      arrowCenter: arrowRect.left + arrowRect.width / 2,
+    } : null;
+  }));
+  expect(arrowPositions).toHaveLength(2);
+  expect(arrowPositions.every((item) => item && item.arrowLeft >= item.buttonLeft && item.arrowRight <= item.buttonRight)).toBe(true);
+  expect((arrowPositions[1]?.arrowCenter ?? 0) - (arrowPositions[0]?.arrowCenter ?? 0)).toBeGreaterThan(40);
+  await expect(meta).toContainText("01 /");
+  await page.getByRole("button", { name: "Next image" }).last().click();
+  await expect(meta).toContainText("02 /");
+  await page.keyboard.press("ArrowLeft");
+  await expect(meta).toContainText("01 /");
+});
+
+test("language selector keeps the equivalent page and translated slugs", async ({ page, isMobile }) => {
+  test.skip(isMobile, "desktop selector test");
+  await page.goto("/gallery");
+  const selector = page.locator(".desktop-nav .language-selector");
+  await selector.getByRole("button", { name: "Language: English" }).click();
+  await expect(selector.getByRole("link", { name: /Português PT/ })).toHaveAttribute("href", "/pt/galeria");
+  await expect(selector.getByRole("link", { name: /Español ES/ })).toHaveAttribute("href", "/es/galeria");
+
+  await page.goto("/pt/galeria");
+  await expect(page.locator("html")).toHaveAttribute("lang", "pt-BR");
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText("O trabalho");
+
+  await page.goto("/es/galeria");
+  await expect(page.locator("html")).toHaveAttribute("lang", "es-US");
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText("El trabajo");
+});
+
+test("mobile actions leave the footer and signature unobstructed", async ({ page, isMobile }) => {
+  test.skip(!isMobile, "mobile project only");
+  await page.goto("/");
+  const actions = page.locator(".mobile-action-bar");
+  await expect(actions).toHaveAttribute("data-hidden", "false");
+  await page.locator("#site-footer").scrollIntoViewIfNeeded();
+  await expect(actions).toHaveAttribute("data-hidden", "true");
+  const signature = page.getByRole("link", { name: "Developed by Eller Jr" });
+  await expect(signature).toBeVisible();
+  await expect(signature).toHaveAttribute("href", "https://linktr.ee/EllerBarboza");
+  await page.evaluate(() => window.scrollTo({ top: 0, behavior: "instant" }));
+  await expect(actions).toHaveAttribute("data-hidden", "false");
+});
+
+test("footer credit preserves mobile scale and becomes quieter on desktop", async ({ page, isMobile }) => {
+  await page.goto("/");
+  const footer = page.locator("#site-footer");
+  await footer.scrollIntoViewIfNeeded();
+  await expect(page.locator(".footer-newsletter")).toHaveCSS("border-bottom-width", "0px");
+  const width = await page.getByRole("link", { name: "Developed by Eller Jr" }).evaluate((element) => element.getBoundingClientRect().width);
+  if (isMobile) expect(width).toBeGreaterThanOrEqual(183);
+  else expect(width).toBeLessThanOrEqual(199);
 });
 
 test("aesthetics disclosures report expanded state", async ({ page }) => {

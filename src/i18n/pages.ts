@@ -1,0 +1,259 @@
+import type { Locale, PageId } from "@/i18n/config";
+
+interface MetaCopy { title: string; description: string }
+interface DoorCopy { title: string; copy: string; link: string; alt: string }
+interface StepCopy { index: string; title: string; copy: string }
+
+export interface PageDictionary {
+  metadata: Record<PageId, MetaCopy>;
+  home: {
+    hero: { lines: [string, string, string]; copy: string; cue: string; alt: string };
+    invitation: { title: string; copy: string; alt: string };
+    workTitle: string;
+    doorsTitle: string;
+    doorsA11y: string;
+    doors: [DoorCopy, DoorCopy, DoorCopy];
+    founder: { title: string; copy: string; credentials: string[]; button: string; alt: string };
+    testimonialsTitle: string;
+    testimonials: Array<{ quote: string; attribution: string }>;
+    visit: { title: string; availability: string };
+  };
+  story: {
+    schemaName: string; heroTitle: string; standfirst: string; portraitAlt: string; quote: string;
+    trainingTitle: string; trainingStandfirst: string; training: Array<[string, string, string, string]>;
+    standardTitle: string; principles: StepCopy[]; wideAlt: string;
+    ctaTitle: string; ctaCopy: string; ctaButton: string;
+  };
+  hair: {
+    schemaName: string; heroTitle: string; heroCopy: string; heroAlt: string;
+    sourceNote: string; signaturesTitle: string; signaturesStandfirst: string;
+    signatures: Array<{ name: string; price: string; duration: string; copy: string; alt: string }>;
+    bookService: string; consultTitle: string; consultCopy: string; consultButton: string;
+    galleryTitle: string; galleryCopy: string; galleryAlts: string[]; galleryButton: string;
+    financingCopy: string; financingButton: string;
+  };
+  aesthetics: {
+    schemaName: string; heroTitle: string; heroCopy: string; credential: string; heroAlt: string;
+    groups: Array<{ title: string; categories: string[] }>;
+    treatmentDetails: string; visitTitle: string; visitStandfirst: string; steps: StepCopy[];
+    safetyTitle: string; safetyCopy: string[]; providerLabel: string; providerCopy: string;
+    ctaTitle: string; ctaCopy: string; ctaBook: string; ctaFinancing: string;
+  };
+  weddings: {
+    schemaName: string; heroTitleBefore: string; heroTitleEmphasis: string; heroTitleAfter: string; heroCopy: string; heroAlt: string;
+    waysTitle: string; waysStandfirst: string; brideTitle: string; bride: string[]; partyTitle: string; party: string[];
+    publishedReference: string; bridePrice: string; bridePriceCopy: string; partyPrice: string; partyPriceCopy: string;
+    timelineTitle: string; timeline: StepCopy[]; workTitle: string;
+    inquiryTitle: string; inquiryStandfirst: string; directTitle: string; directCopy: string;
+  };
+  gallery: {
+    schemaName: string; title: string; standfirst: string; filtersLabel: string; all: string;
+    filters: Record<string, string>; openImage: string; thumbnailRail: string; imageCount: string;
+    ctaTitle: string;
+  };
+  financing: {
+    schemaName: string; heroTitle: string; heroCopy: string; cherryLink: string;
+    howTitle: string; steps: StepCopy[]; checkTitle: string;
+    coverTitle: string; coverStandfirst: string; coverage: Array<[string, string]>;
+    questionsTitle: string; faqs: Array<{ question: string; answer: string }>;
+    ctaTitle: string; back: string;
+  };
+  contact: {
+    schemaName: string; heroBefore: string; heroEmphasis: string; heroAfter: string; heroCopy: string;
+    bookOnline: string; call: string; emailHouse: string; studioTitle: string; studioAlt: string;
+    availabilityLabel: string; availabilityCopy: string; recentTitle: string; recentAlts: string[];
+    newsTitle: string; newsCopy: string;
+  };
+}
+
+const en: PageDictionary = {
+  metadata: {
+    home: { title: "Brazilian Hair, Aesthetics & Bridal", description: "D’Lucca brings Brazilian hair, aesthetics and bridal artistry to California Avenue in Chicago." },
+    story: { title: "Story", description: "Meet Brazilian hairstylist and makeup artist Flaviano D. Lucca and the training behind his Chicago salon." },
+    hair: { title: "Hair Services & Prices", description: "See current pricing for balayage, Brazilian keratin, cuts, color, styling and hair treatments in Chicago." },
+    aesthetics: { title: "Medical Aesthetics", description: "Current pricing for injectables, regenerative treatments, advanced facials, brows, lashes and device treatments in Chicago." },
+    weddings: { title: "Weddings & Events", description: "Bridal hair and makeup in the D’Lucca studio or on location in Chicago. See services and send an inquiry." },
+    gallery: { title: "Gallery", description: "See real D’Lucca color, balayage, styling, makeup, bridal and aesthetics work from Chicago." },
+    financing: { title: "Payment Plans", description: "Learn how to check Cherry payment options for eligible D’Lucca hair, aesthetics and bridal services." },
+    contact: { title: "Contact", description: "Book, call or find D’Lucca Hair & Beauty at 904 N California Ave in Chicago." },
+  },
+  home: {
+    hero: { lines: ["Chicago’s", "Brazilian beauty", "destination"], copy: "Hair, skin and bridal artistry on California Avenue.", cue: "I — The house", alt: "Long dimensional blonde hair styled in waves beside a Chicago brick wall" },
+    invitation: { title: "An invitation to the house", copy: "Experience the essence of Brazilian beauty in the heart of Chicago. Our expert team blends authentic techniques with top-tier local talent to deliver personalized hair, beauty, and wellness services. Discover a vibrant, transformative experience where Brazilian flair meets Chicago sophistication.", alt: "The bright D'Lucca salon interior on California Avenue" },
+    workTitle: "The work speaks first.", doorsTitle: "Three doors, one house", doorsA11y: "Explore hair, aesthetics and weddings",
+    doors: [
+      { title: "Hair", copy: "Color, cuts, Brazilian keratin, extensions.", link: "Enter hair", alt: "Dimensional blonde hair styled in long waves" },
+      { title: "Aesthetics", copy: "Injectables, microneedling, advanced facials.", link: "Enter aesthetics", alt: "A clinician preparing an aesthetics treatment" },
+      { title: "Weddings", copy: "Bridal hair and makeup, in studio or on location.", link: "Enter weddings", alt: "Bride with polished makeup and crystal hair accessory" },
+    ],
+    founder: { title: "Flaviano", copy: "Flaviano D. Lucca is a distinguished Brazilian hairstylist and makeup artist, with a degree in Visagism and Hair Therapy from Anhembi Morumbi University in São Paulo, Brazil. With over 80 certifications across specialties, his work is grounded in technical mastery and dedication to the art of beauty. In Chicago, he earned a degree in Cosmetology from Tricoci Beauty College.", credentials: ["Anhembi Morumbi — Visagism & Hair Therapy", "Vidal Sassoon Academy, Miami", "Pivot Point, Argentina", "80+ certifications"], button: "Read his story", alt: "Flaviano D. Lucca in the salon" },
+    testimonialsTitle: "In their words",
+    testimonials: [
+      { attribution: "Kesia Asami", quote: "If you’re looking for great hair and a great experience, you found it. The space is stunning, the vibe is welcoming, and the service is excellent. Flaviano is absolutely the best in town. When I go there I just sit and relax. He knows exactly what to do. Thank you for all the passion you put into your work." },
+      { attribution: "Maria Kalacinski", quote: "Simply amazing! Flaviano worked magic on my hair. The color is stunning and the cut is flawless. I’m beyond happy with the results and will definitely be back. If you want gorgeous hair, go see Flaviano!" },
+    ],
+    visit: { title: "Come to the house.", availability: "Please call for current availability." },
+  },
+  story: {
+    schemaName: "Story", heroTitle: "My journey in the art of beauty", standfirst: "From the heart of Brazil to the city of Chicago, Flaviano’s devotion to his craft shines through in every transformation. His story is one of talent, dedication, and a deep desire to help people see their true beauty.", portraitAlt: "Portrait of Flaviano D. Lucca", quote: "I give the best of myself to bring out the best in you.",
+    trainingTitle: "The training", trainingStandfirst: "A Brazilian foundation, sharpened across four cities.", training: [["I", "Anhembi Morumbi University", "Visagism & Hair Therapy", "São Paulo"], ["II", "Pivot Point", "Advanced hair training", "Argentina"], ["III", "Vidal Sassoon Academy", "Advanced hair training", "Miami"], ["IV", "Tricoci Beauty College", "Cosmetology", "Chicago"]],
+    standardTitle: "The standard", principles: [
+      { index: "I", title: "Visagism", copy: "The face is read before the cut is designed. Shape, proportion and personal style guide the decision." },
+      { index: "II", title: "Hair therapy", copy: "Hair is treated as material with its own condition and history. The plan begins with what it needs, not only how it should look." },
+      { index: "III", title: "Brazilian technique", copy: "Flaviano’s São Paulo training remains present in his color, treatment and finishing work. Chicago is now the home for that practice." },
+    ], wideAlt: "Flaviano D. Lucca standing in the salon", ctaTitle: "Book a consultation with Flaviano.", ctaCopy: "Thirty minutes. No charge. A clear place to begin.", ctaButton: "Book the free consultation",
+  },
+  hair: {
+    schemaName: "Hair", heroTitle: "Hair", heroCopy: "Color, cuts, treatment and styling by Flaviano and Dani.", heroAlt: "Long dimensional blonde balayage created at D'Lucca", sourceNote: "Prices and durations captured from the public Square catalog on August 14, 2026. Final totals may vary where noted.", signaturesTitle: "Signature services", signaturesStandfirst: "Four appointments that benefit from a little more context.",
+    signatures: [
+      { name: "Balayage — Long", price: "$500", duration: "4h 30m", copy: "The appointment begins with a consultation on placement and tone. Color is hand-painted through the lengths, then refined to the agreed finish. Time is reserved for the full process, including styling.", alt: "Long balayage work at D'Lucca" },
+      { name: "Brazilian Keratin — Long", price: "$300", duration: "3h", copy: "The hair is assessed before product is applied. Processing and heat work are paced for the full length. The service closes with the finishing needed to complete the treatment.", alt: "Long Brazilian keratin work at D'Lucca" },
+      { name: "Hair Therapy", price: "$80", duration: "1h", copy: "This hour is set aside for the condition of the hair itself. The treatment is selected after the hair is examined. Styling follows so the result can be seen and managed clearly.", alt: "Hair therapy work at D'Lucca" },
+      { name: "Hair Extensions", price: "Variable", duration: "3h 30m", copy: "Extension work begins with a consultation on length, density and color. The final price depends on the agreed plan. A dedicated appointment is then reserved for placement and finish.", alt: "Hair extensions work at D'Lucca" },
+    ],
+    bookService: "Book this service", consultTitle: "Not sure where to start?", consultCopy: "The consultation with Flaviano is thirty minutes, and it’s free.", consultButton: "Book the consultation", galleryTitle: "Before the next appointment", galleryCopy: "A small edit from the current work.", galleryAlts: ["Dimensional blonde with a soft face frame", "Long bright blonde with soft layers", "Voluminous blonde styling"], galleryButton: "See the full gallery", financingCopy: "Larger transformations can be split into monthly payments through Cherry.", financingButton: "See payment plans",
+  },
+  aesthetics: {
+    schemaName: "Aesthetics", heroTitle: "Aesthetics", heroCopy: "Injectables, regenerative treatments and advanced skincare, delivered under clinical supervision.", credential: "All treatments are performed by our Board Certified Nurse Practitioner or a licensed Esthetician.", heroAlt: "D'Lucca private aesthetics treatment room", groups: [{ title: "Injectables & regenerative", categories: ["consultation", "injectables"] }, { title: "Device treatments", categories: ["devices"] }, { title: "Advanced facials", categories: ["facials"] }, { title: "Brows, lashes & waxing", categories: ["brows"] }], treatmentDetails: "Treatment details", visitTitle: "How a visit works", visitStandfirst: "During your consultation an individualized treatment plan will be made.",
+    steps: [{ index: "I", title: "Consultation", copy: "$50, thirty minutes, credited toward treatment." }, { index: "II", title: "Plan", copy: "The provider and client agree on an individualized plan." }, { index: "III", title: "Treatment", copy: "The booked service is performed by the appropriate provider." }, { index: "IV", title: "Follow-up", copy: "Next steps are discussed according to the treatment plan." }],
+    safetyTitle: "Safety & suitability", safetyCopy: ["Injectable and regenerative treatments begin with a consultation. Share your medical history, current medications, allergies, pregnancy or nursing status, and prior treatment history with the provider before any service.", "The provider will determine whether a treatment is suitable for you. No result is promised on this site."], providerLabel: "Provider standard", providerCopy: "Clinical treatments are performed by a Board Certified Nurse Practitioner. Esthetic services are performed by a licensed Esthetician.", ctaTitle: "Begin with a treatment plan.", ctaCopy: "Plans from $150 to $1,600 can be financed monthly through Cherry.", ctaBook: "Book a consultation", ctaFinancing: "See financing",
+  },
+  weddings: {
+    schemaName: "Weddings", heroTitleBefore: "Unforgettable", heroTitleEmphasis: "beauty", heroTitleAfter: "for your unforgettable day", heroCopy: "Bridal hair and makeup in the studio or on location, anywhere in Chicago.", heroAlt: "Bride with polished makeup and a crystal hair accessory", waysTitle: "Two ways to gather", waysStandfirst: "The complete bridal package is quoted for the people, place and schedule involved.", brideTitle: "The Bride", bride: ["Beauty consultation, based in visagism", "Trial hair and makeup", "Bridal hairstyle: updo, waves or custom", "Waterproof, long-wear HD makeup", "Skin preparation", "Eyelash application", "Hair accessory and veil styling", "Optional on-site service"], partyTitle: "The Party", party: ["Personalized hair", "Natural makeup", "Skin preparation", "Lash application", "Touch-up kit recommendations"], publishedReference: "Published reference", bridePrice: "Updo & Makeup — $400", bridePriceCopy: "2h 30m. Full bridal packages are quoted individually.", partyPrice: "Makeup Artist — $250", partyPriceCopy: "1h 30m. Bridesmaids and debutantes are quoted for the full party.", timelineTitle: "From inquiry to the day", timeline: [{ index: "I", title: "Inquiry", copy: "Tell us the date, party and location." }, { index: "II", title: "Consultation", copy: "We shape the service around the event." }, { index: "III", title: "Trial", copy: "Hair and makeup are rehearsed before the event." }, { index: "IV", title: "The Day", copy: "The plan is held, paced and finished." }], workTitle: "Bridal work", inquiryTitle: "Tell us about the date", inquiryStandfirst: "Dates book out months in advance. Reach out early.", directTitle: "Direct contact", directCopy: "If you prefer to speak first, call or email the house.",
+  },
+  gallery: { schemaName: "Gallery", title: "The work", standfirst: "Color, styling, bridal and clinical spaces — photographed at the house.", filtersLabel: "Filter gallery", all: "All", filters: { "blonde-balayage": "Blonde & Balayage", color: "Color", "styling-makeup": "Styling & Makeup", bridal: "Bridal", aesthetics: "Aesthetics" }, openImage: "Open image", thumbnailRail: "Gallery image index", imageCount: "image", ctaTitle: "Every one of these started with a consultation." },
+  financing: {
+    schemaName: "Financing", heroTitle: "Payment plans", heroCopy: "Treatments can be paid monthly through Cherry. Checking your options does not affect your credit score.", cherryLink: "View options on Cherry", howTitle: "How it works", steps: [{ index: "I", title: "Apply", copy: "Complete Cherry’s application in about a minute." }, { index: "II", title: "See your options", copy: "Review the options Cherry makes available to you." }, { index: "III", title: "Book and pay over time", copy: "Use the selected plan for an eligible service." }], checkTitle: "Check your options", coverTitle: "What it may cover", coverStandfirst: "Eligibility and final terms are determined by Cherry.", coverage: [["Hair extensions", "Variable"], ["Multi-session aesthetics", "$500–$1,600"], ["Bridal services", "Quoted individually"], ["Full color transformations", "$400–$500"]], questionsTitle: "Questions", faqs: [{ question: "Does checking my options affect my credit score?", answer: "Cherry states that checking available options does not affect your credit score. Review current disclosures directly with Cherry before accepting a plan." }, { question: "Who decides eligibility and terms?", answer: "Cherry determines eligibility, available terms and approval. D’Lucca does not make lending decisions." }, { question: "Can I use financing for every service?", answer: "Coverage depends on the purchase and the options Cherry provides. Confirm the treatment plan with the salon and financing details with Cherry." }], ctaTitle: "Return to the service, then choose the pace.", back: "Back to hair",
+  },
+  contact: { schemaName: "Contact", heroBefore: "Your", heroEmphasis: "hair", heroAfter: "journey starts here", heroCopy: "Book. Ask. Connect.", bookOnline: "Book online", call: "Call", emailHouse: "Email the house", studioTitle: "The studio", studioAlt: "Inside the D'Lucca salon on California Avenue", availabilityLabel: "Current availability", availabilityCopy: "Please call before visiting. Published business hours are awaiting client confirmation.", recentTitle: "Recent work, from the house.", recentAlts: ["Dimensional shoulder-length color", "Polished makeup", "Long bright blonde hair"], newsTitle: "News from the house", newsCopy: "Openings, new treatments, and the occasional note from Flaviano." },
+};
+
+const pt: PageDictionary = {
+  metadata: {
+    home: { title: "Cabelo Brasileiro, Estética e Noivas", description: "A D’Lucca leva a arte brasileira em cabelo, estética e noivas para a California Avenue, em Chicago." },
+    story: { title: "História", description: "Conheça o cabeleireiro e maquiador brasileiro Flaviano D. Lucca e a formação por trás de seu salão em Chicago." },
+    hair: { title: "Serviços e Preços de Cabelo", description: "Veja preços atuais de balayage, progressiva brasileira, cortes, coloração, penteados e tratamentos capilares em Chicago." },
+    aesthetics: { title: "Estética Avançada", description: "Preços atuais de injetáveis, tratamentos regenerativos, faciais avançados, sobrancelhas, cílios e aparelhos em Chicago." },
+    weddings: { title: "Casamentos e Eventos", description: "Cabelo e maquiagem para noivas no estúdio D’Lucca ou no local do evento em Chicago. Veja os serviços e envie uma solicitação." },
+    gallery: { title: "Galeria", description: "Veja trabalhos reais da D’Lucca em coloração, balayage, penteados, maquiagem, noivas e estética em Chicago." },
+    financing: { title: "Financiamento", description: "Saiba como consultar opções de pagamento Cherry para serviços elegíveis de cabelo, estética e noivas da D’Lucca." },
+    contact: { title: "Contato", description: "Agende, ligue ou encontre a D’Lucca Hair & Beauty na 904 N California Ave, em Chicago." },
+  },
+  home: {
+    hero: { lines: ["O destino", "da beleza brasileira", "em Chicago"], copy: "Arte em cabelo, pele e noivas na California Avenue.", cue: "I — A casa", alt: "Cabelo loiro longo e dimensional em ondas junto a uma parede de tijolos de Chicago" },
+    invitation: { title: "Um convite para a casa", copy: "Viva a essência da beleza brasileira no coração de Chicago. Nossa equipe combina técnicas autênticas e talento local para criar serviços personalizados de cabelo, beleza e bem-estar. Uma experiência vibrante e transformadora, onde a brasilidade encontra a sofisticação de Chicago.", alt: "Interior iluminado do salão D'Lucca na California Avenue" },
+    workTitle: "O trabalho fala primeiro.", doorsTitle: "Três portas, uma casa", doorsA11y: "Conheça cabelo, estética e casamentos",
+    doors: [
+      { title: "Cabelo", copy: "Coloração, cortes, progressiva brasileira e extensões.", link: "Entrar em cabelo", alt: "Cabelo loiro dimensional em ondas longas" },
+      { title: "Estética", copy: "Injetáveis, microagulhamento e faciais avançados.", link: "Entrar em estética", alt: "Profissional preparando um tratamento estético" },
+      { title: "Casamentos", copy: "Cabelo e maquiagem para noivas, no estúdio ou no local.", link: "Entrar em casamentos", alt: "Noiva com maquiagem elegante e acessório de cristal no cabelo" },
+    ],
+    founder: { title: "Flaviano", copy: "Flaviano D. Lucca é um renomado cabeleireiro e maquiador brasileiro, formado em Visagismo e Terapia Capilar pela Universidade Anhembi Morumbi, em São Paulo. Com mais de 80 certificações em diferentes especialidades, seu trabalho une domínio técnico e dedicação à arte da beleza. Em Chicago, formou-se em Cosmetologia pela Tricoci Beauty College.", credentials: ["Anhembi Morumbi — Visagismo e Terapia Capilar", "Vidal Sassoon Academy, Miami", "Pivot Point, Argentina", "Mais de 80 certificações"], button: "Conheça sua história", alt: "Flaviano D. Lucca no salão" },
+    testimonialsTitle: "Nas palavras de quem viveu",
+    testimonials: [
+      { attribution: "Kesia Asami", quote: "Se você procura um cabelo incrível e uma ótima experiência, encontrou. O espaço é lindo, o ambiente acolhedor e o atendimento excelente. Flaviano é simplesmente o melhor da cidade. Quando vou até lá, apenas sento e relaxo. Ele sabe exatamente o que fazer. Obrigada por toda a paixão que coloca em seu trabalho." },
+      { attribution: "Maria Kalacinski", quote: "Simplesmente incrível! Flaviano fez mágica no meu cabelo. A cor ficou maravilhosa e o corte impecável. Estou muito feliz com o resultado e com certeza voltarei. Se você quer um cabelo lindo, procure o Flaviano!" },
+    ],
+    visit: { title: "Venha para a casa.", availability: "Ligue para consultar a disponibilidade atual." },
+  },
+  story: {
+    schemaName: "História", heroTitle: "Minha jornada na arte da beleza", standfirst: "Do coração do Brasil à cidade de Chicago, a dedicação de Flaviano ao seu ofício aparece em cada transformação. Sua história é feita de talento, disciplina e um desejo profundo de ajudar cada pessoa a enxergar sua verdadeira beleza.", portraitAlt: "Retrato de Flaviano D. Lucca", quote: "Dou o melhor de mim para revelar o melhor de você.",
+    trainingTitle: "A formação", trainingStandfirst: "Uma base brasileira, aperfeiçoada em quatro cidades.", training: [["I", "Universidade Anhembi Morumbi", "Visagismo e Terapia Capilar", "São Paulo"], ["II", "Pivot Point", "Formação capilar avançada", "Argentina"], ["III", "Vidal Sassoon Academy", "Formação capilar avançada", "Miami"], ["IV", "Tricoci Beauty College", "Cosmetologia", "Chicago"]],
+    standardTitle: "O padrão", principles: [
+      { index: "I", title: "Visagismo", copy: "O rosto é analisado antes de o corte ser desenhado. Formato, proporção e estilo pessoal orientam cada decisão." },
+      { index: "II", title: "Terapia capilar", copy: "O cabelo é tratado como uma matéria com condição e história próprias. O plano começa pelo que ele precisa, não apenas pela aparência desejada." },
+      { index: "III", title: "Técnica brasileira", copy: "A formação de Flaviano em São Paulo permanece presente em seus trabalhos de cor, tratamento e finalização. Chicago é hoje a casa dessa prática." },
+    ], wideAlt: "Flaviano D. Lucca em pé no salão", ctaTitle: "Agende uma consulta com Flaviano.", ctaCopy: "Trinta minutos. Sem custo. Um começo claro.", ctaButton: "Agendar consulta gratuita",
+  },
+  hair: {
+    schemaName: "Cabelo", heroTitle: "Cabelo", heroCopy: "Coloração, cortes, tratamentos e penteados com Flaviano e Dani.", heroAlt: "Balayage loiro longo e dimensional criado na D'Lucca", sourceNote: "Preços e durações consultados no catálogo público da Square em 14 de agosto de 2026. Os valores finais podem variar quando indicado.", signaturesTitle: "Serviços assinatura", signaturesStandfirst: "Quatro atendimentos que merecem um pouco mais de contexto.",
+    signatures: [
+      { name: "Balayage — Longo", price: "$500", duration: "4h 30min", copy: "O atendimento começa com uma consulta sobre posicionamento e tonalidade. A cor é pintada à mão ao longo dos fios e refinada até o acabamento combinado. O tempo inclui todo o processo e a finalização.", alt: "Trabalho de balayage longo na D'Lucca" },
+      { name: "Progressiva Brasileira — Longo", price: "$300", duration: "3h", copy: "O cabelo é avaliado antes da aplicação do produto. O processamento e o trabalho térmico são conduzidos de acordo com o comprimento. O serviço termina com a finalização adequada ao tratamento.", alt: "Trabalho de progressiva brasileira em cabelo longo na D'Lucca" },
+      { name: "Terapia Capilar", price: "$80", duration: "1h", copy: "Esta hora é dedicada à condição do cabelo. O tratamento é escolhido após a avaliação dos fios. A finalização permite visualizar o resultado e entender como mantê-lo.", alt: "Trabalho de terapia capilar na D'Lucca" },
+      { name: "Extensões de Cabelo", price: "Sob consulta", duration: "3h 30min", copy: "O trabalho com extensões começa com uma consulta sobre comprimento, densidade e cor. O valor final depende do plano combinado. Depois, um horário exclusivo é reservado para aplicação e acabamento.", alt: "Trabalho de extensões de cabelo na D'Lucca" },
+    ],
+    bookService: "Agendar este serviço", consultTitle: "Não sabe por onde começar?", consultCopy: "A consulta com Flaviano dura trinta minutos e é gratuita.", consultButton: "Agendar a consulta", galleryTitle: "Antes do próximo horário", galleryCopy: "Uma pequena seleção dos trabalhos atuais.", galleryAlts: ["Loiro dimensional com contorno suave do rosto", "Cabelo loiro longo e claro em camadas suaves", "Finalização loira com bastante volume"], galleryButton: "Ver a galeria completa", financingCopy: "Transformações maiores podem ser divididas em pagamentos mensais pela Cherry.", financingButton: "Ver financiamento",
+  },
+  aesthetics: {
+    schemaName: "Estética", heroTitle: "Estética", heroCopy: "Injetáveis, tratamentos regenerativos e cuidados avançados com a pele sob supervisão clínica.", credential: "Todos os tratamentos são realizados por nossa Nurse Practitioner certificada ou por uma esteticista licenciada.", heroAlt: "Sala privativa de tratamentos estéticos da D'Lucca", groups: [{ title: "Injetáveis e regenerativos", categories: ["consultation", "injectables"] }, { title: "Tratamentos com aparelhos", categories: ["devices"] }, { title: "Faciais avançados", categories: ["facials"] }, { title: "Sobrancelhas, cílios e depilação", categories: ["brows"] }], treatmentDetails: "Detalhes do tratamento", visitTitle: "Como funciona a visita", visitStandfirst: "Durante a consulta, será criado um plano de tratamento individualizado.",
+    steps: [{ index: "I", title: "Consulta", copy: "$50, trinta minutos, com o valor convertido para o tratamento." }, { index: "II", title: "Plano", copy: "Profissional e cliente definem juntos um plano individualizado." }, { index: "III", title: "Tratamento", copy: "O serviço agendado é realizado pelo profissional apropriado." }, { index: "IV", title: "Acompanhamento", copy: "Os próximos passos são discutidos de acordo com o plano de tratamento." }],
+    safetyTitle: "Segurança e indicação", safetyCopy: ["Tratamentos injetáveis e regenerativos começam com uma consulta. Informe ao profissional seu histórico médico, medicamentos atuais, alergias, gravidez ou amamentação e tratamentos anteriores antes de qualquer serviço.", "O profissional determinará se o tratamento é indicado para você. Este site não promete resultados."], providerLabel: "Padrão profissional", providerCopy: "Tratamentos clínicos são realizados por uma Nurse Practitioner certificada. Serviços estéticos são realizados por uma esteticista licenciada.", ctaTitle: "Comece com um plano de tratamento.", ctaCopy: "Planos de $150 a $1.600 podem ser pagos mensalmente pela Cherry.", ctaBook: "Agendar uma consulta", ctaFinancing: "Ver financiamento",
+  },
+  weddings: {
+    schemaName: "Casamentos", heroTitleBefore: "Beleza", heroTitleEmphasis: "inesquecível", heroTitleAfter: "para um dia inesquecível", heroCopy: "Cabelo e maquiagem para noivas no estúdio ou no local do evento, em qualquer lugar de Chicago.", heroAlt: "Noiva com maquiagem elegante e acessório de cristal no cabelo", waysTitle: "Duas formas de celebrar", waysStandfirst: "O pacote completo é calculado de acordo com as pessoas, o local e o cronograma do evento.", brideTitle: "A Noiva", bride: ["Consulta de beleza baseada em visagismo", "Teste de cabelo e maquiagem", "Penteado da noiva: coque, ondas ou personalizado", "Maquiagem HD resistente à água e de longa duração", "Preparação da pele", "Aplicação de cílios", "Colocação de acessório e véu", "Atendimento opcional no local"], partyTitle: "O Grupo", party: ["Penteado personalizado", "Maquiagem natural", "Preparação da pele", "Aplicação de cílios", "Recomendações para kit de retoque"], publishedReference: "Referência publicada", bridePrice: "Penteado e Maquiagem — $400", bridePriceCopy: "2h 30min. Pacotes completos para noivas são orçados individualmente.", partyPrice: "Maquiador — $250", partyPriceCopy: "1h 30min. Madrinhas e debutantes são orçadas para o grupo completo.", timelineTitle: "Da consulta ao grande dia", timeline: [{ index: "I", title: "Solicitação", copy: "Conte a data, o número de pessoas e o local." }, { index: "II", title: "Consulta", copy: "Adaptamos o serviço ao evento." }, { index: "III", title: "Teste", copy: "Cabelo e maquiagem são ensaiados antes do evento." }, { index: "IV", title: "O Dia", copy: "O plano é seguido com ritmo, atenção e acabamento." }], workTitle: "Trabalhos de noivas", inquiryTitle: "Conte sobre a data", inquiryStandfirst: "As datas são reservadas com meses de antecedência. Entre em contato cedo.", directTitle: "Contato direto", directCopy: "Se preferir conversar primeiro, ligue ou envie um e-mail para a casa.",
+  },
+  gallery: { schemaName: "Galeria", title: "O trabalho", standfirst: "Coloração, penteados, noivas e ambientes clínicos — fotografados na casa.", filtersLabel: "Filtrar galeria", all: "Todos", filters: { "blonde-balayage": "Loiros e Balayage", color: "Coloração", "styling-makeup": "Penteados e Maquiagem", bridal: "Noivas", aesthetics: "Estética" }, openImage: "Abrir imagem", thumbnailRail: "Índice de imagens da galeria", imageCount: "imagem", ctaTitle: "Cada um destes trabalhos começou com uma consulta." },
+  financing: {
+    schemaName: "Financiamento", heroTitle: "Financiamento", heroCopy: "Tratamentos podem ser pagos mensalmente pela Cherry. Consultar suas opções não afeta sua pontuação de crédito.", cherryLink: "Ver opções na Cherry", howTitle: "Como funciona", steps: [{ index: "I", title: "Solicite", copy: "Preencha a solicitação da Cherry em cerca de um minuto." }, { index: "II", title: "Veja suas opções", copy: "Analise as opções disponibilizadas pela Cherry." }, { index: "III", title: "Agende e pague com o tempo", copy: "Use o plano selecionado em um serviço elegível." }], checkTitle: "Consulte suas opções", coverTitle: "O que pode ser incluído", coverStandfirst: "A elegibilidade e os termos finais são definidos pela Cherry.", coverage: [["Extensões de cabelo", "Sob consulta"], ["Tratamentos estéticos em sessões", "$500–$1.600"], ["Serviços para noivas", "Orçamento individual"], ["Transformações completas de cor", "$400–$500"]], questionsTitle: "Perguntas", faqs: [{ question: "Consultar minhas opções afeta meu crédito?", answer: "A Cherry informa que consultar as opções disponíveis não afeta sua pontuação de crédito. Leia as divulgações atuais diretamente com a Cherry antes de aceitar um plano." }, { question: "Quem decide a aprovação e os termos?", answer: "A Cherry determina elegibilidade, termos disponíveis e aprovação. A D’Lucca não toma decisões de crédito." }, { question: "Posso financiar qualquer serviço?", answer: "A cobertura depende da compra e das opções oferecidas pela Cherry. Confirme o plano de tratamento com o salão e os detalhes financeiros com a Cherry." }], ctaTitle: "Volte ao serviço e escolha o seu ritmo.", back: "Voltar para cabelo",
+  },
+  contact: { schemaName: "Contato", heroBefore: "Sua jornada", heroEmphasis: "capilar", heroAfter: "começa aqui", heroCopy: "Agende. Pergunte. Conecte-se.", bookOnline: "Agendar online", call: "Ligar", emailHouse: "Enviar e-mail", studioTitle: "O estúdio", studioAlt: "Interior do salão D'Lucca na California Avenue", availabilityLabel: "Disponibilidade atual", availabilityCopy: "Ligue antes de visitar. Os horários comerciais publicados aguardam confirmação do cliente.", recentTitle: "Trabalhos recentes, direto da casa.", recentAlts: ["Coloração dimensional na altura dos ombros", "Maquiagem elegante", "Cabelo loiro longo e claro"], newsTitle: "Novidades da casa", newsCopy: "Horários disponíveis, novos tratamentos e recados ocasionais de Flaviano." },
+};
+
+const es: PageDictionary = {
+  metadata: {
+    home: { title: "Cabello Brasileño, Estética y Novias", description: "D’Lucca lleva el arte brasileño en cabello, estética y novias a California Avenue, en Chicago." },
+    story: { title: "Historia", description: "Conoce al estilista y maquillador brasileño Flaviano D. Lucca y la formación detrás de su salón en Chicago." },
+    hair: { title: "Servicios y Precios de Cabello", description: "Consulta precios actuales de balayage, keratina brasileña, cortes, color, peinado y tratamientos capilares en Chicago." },
+    aesthetics: { title: "Estética Avanzada", description: "Precios actuales de inyectables, tratamientos regenerativos, faciales avanzados, cejas, pestañas y aparatología en Chicago." },
+    weddings: { title: "Bodas y Eventos", description: "Cabello y maquillaje para novias en el estudio D’Lucca o a domicilio en Chicago. Consulta los servicios y envía una solicitud." },
+    gallery: { title: "Galería", description: "Descubre trabajos reales de D’Lucca en color, balayage, peinado, maquillaje, novias y estética en Chicago." },
+    financing: { title: "Financiamiento", description: "Conoce las opciones de pago Cherry para servicios elegibles de cabello, estética y novias en D’Lucca." },
+    contact: { title: "Contacto", description: "Reserva, llama o encuentra D’Lucca Hair & Beauty en 904 N California Ave, Chicago." },
+  },
+  home: {
+    hero: { lines: ["El destino", "de la belleza brasileña", "en Chicago"], copy: "Arte en cabello, piel y novias en California Avenue.", cue: "I — La casa", alt: "Cabello rubio largo y dimensional con ondas junto a una pared de ladrillo de Chicago" },
+    invitation: { title: "Una invitación a la casa", copy: "Vive la esencia de la belleza brasileña en el corazón de Chicago. Nuestro equipo combina técnicas auténticas y talento local para ofrecer servicios personalizados de cabello, belleza y bienestar. Una experiencia vibrante y transformadora donde el estilo brasileño se encuentra con la sofisticación de Chicago.", alt: "Interior luminoso del salón D'Lucca en California Avenue" },
+    workTitle: "El trabajo habla primero.", doorsTitle: "Tres puertas, una casa", doorsA11y: "Explora cabello, estética y bodas",
+    doors: [
+      { title: "Cabello", copy: "Color, cortes, keratina brasileña y extensiones.", link: "Entrar a cabello", alt: "Cabello rubio dimensional peinado en ondas largas" },
+      { title: "Estética", copy: "Inyectables, microneedling y faciales avanzados.", link: "Entrar a estética", alt: "Profesional preparando un tratamiento estético" },
+      { title: "Bodas", copy: "Cabello y maquillaje para novias, en el estudio o a domicilio.", link: "Entrar a bodas", alt: "Novia con maquillaje elegante y accesorio de cristal en el cabello" },
+    ],
+    founder: { title: "Flaviano", copy: "Flaviano D. Lucca es un reconocido estilista y maquillador brasileño, graduado en Visagismo y Terapia Capilar por la Universidad Anhembi Morumbi de São Paulo. Con más de 80 certificaciones en distintas especialidades, su trabajo combina dominio técnico y dedicación al arte de la belleza. En Chicago obtuvo su título en Cosmetología en Tricoci Beauty College.", credentials: ["Anhembi Morumbi — Visagismo y Terapia Capilar", "Vidal Sassoon Academy, Miami", "Pivot Point, Argentina", "Más de 80 certificaciones"], button: "Conoce su historia", alt: "Flaviano D. Lucca en el salón" },
+    testimonialsTitle: "En sus palabras",
+    testimonials: [
+      { attribution: "Kesia Asami", quote: "Si buscas un cabello increíble y una gran experiencia, lo encontraste. El espacio es hermoso, el ambiente acogedor y el servicio excelente. Flaviano es, sin duda, el mejor de la ciudad. Cuando voy, solo me siento y me relajo. Él sabe exactamente qué hacer. Gracias por toda la pasión que pones en tu trabajo." },
+      { attribution: "Maria Kalacinski", quote: "¡Simplemente increíble! Flaviano hizo magia con mi cabello. El color quedó espectacular y el corte impecable. Estoy feliz con el resultado y definitivamente volveré. Si quieres un cabello hermoso, visita a Flaviano." },
+    ],
+    visit: { title: "Ven a la casa.", availability: "Llama para consultar la disponibilidad actual." },
+  },
+  story: {
+    schemaName: "Historia", heroTitle: "Mi camino en el arte de la belleza", standfirst: "Desde el corazón de Brasil hasta la ciudad de Chicago, la devoción de Flaviano por su oficio se refleja en cada transformación. Su historia habla de talento, dedicación y un profundo deseo de ayudar a cada persona a reconocer su verdadera belleza.", portraitAlt: "Retrato de Flaviano D. Lucca", quote: "Doy lo mejor de mí para revelar lo mejor de ti.",
+    trainingTitle: "La formación", trainingStandfirst: "Una base brasileña, perfeccionada en cuatro ciudades.", training: [["I", "Universidad Anhembi Morumbi", "Visagismo y Terapia Capilar", "São Paulo"], ["II", "Pivot Point", "Formación capilar avanzada", "Argentina"], ["III", "Vidal Sassoon Academy", "Formación capilar avanzada", "Miami"], ["IV", "Tricoci Beauty College", "Cosmetología", "Chicago"]],
+    standardTitle: "El estándar", principles: [
+      { index: "I", title: "Visagismo", copy: "El rostro se analiza antes de diseñar el corte. La forma, la proporción y el estilo personal guían cada decisión." },
+      { index: "II", title: "Terapia capilar", copy: "El cabello se trata como un material con condición e historia propias. El plan comienza con lo que necesita, no solo con cómo debe verse." },
+      { index: "III", title: "Técnica brasileña", copy: "La formación de Flaviano en São Paulo sigue presente en su trabajo de color, tratamiento y acabado. Chicago es hoy el hogar de esa práctica." },
+    ], wideAlt: "Flaviano D. Lucca de pie en el salón", ctaTitle: "Reserva una consulta con Flaviano.", ctaCopy: "Treinta minutos. Sin costo. Un punto de partida claro.", ctaButton: "Reservar consulta gratuita",
+  },
+  hair: {
+    schemaName: "Cabello", heroTitle: "Cabello", heroCopy: "Color, cortes, tratamientos y peinados con Flaviano y Dani.", heroAlt: "Balayage rubio largo y dimensional creado en D'Lucca", sourceNote: "Precios y duraciones consultados en el catálogo público de Square el 14 de agosto de 2026. Los totales finales pueden variar cuando se indique.", signaturesTitle: "Servicios distintivos", signaturesStandfirst: "Cuatro citas que merecen un poco más de contexto.",
+    signatures: [
+      { name: "Balayage — Largo", price: "$500", duration: "4h 30min", copy: "La cita comienza con una consulta sobre colocación y tono. El color se pinta a mano a lo largo del cabello y se perfecciona hasta lograr el acabado acordado. El tiempo incluye todo el proceso y el peinado final.", alt: "Trabajo de balayage largo en D'Lucca" },
+      { name: "Keratina Brasileña — Largo", price: "$300", duration: "3h", copy: "El cabello se evalúa antes de aplicar el producto. El procesamiento y el trabajo con calor se adaptan al largo. El servicio termina con el acabado necesario para completar el tratamiento.", alt: "Trabajo de keratina brasileña en cabello largo en D'Lucca" },
+      { name: "Terapia Capilar", price: "$80", duration: "1h", copy: "Esta hora está dedicada a la condición del cabello. El tratamiento se elige después de examinarlo. El peinado final permite ver el resultado y comprender cómo mantenerlo.", alt: "Trabajo de terapia capilar en D'Lucca" },
+      { name: "Extensiones de Cabello", price: "Variable", duration: "3h 30min", copy: "El trabajo con extensiones comienza con una consulta sobre largo, densidad y color. El precio final depende del plan acordado. Después se reserva una cita exclusiva para colocación y acabado.", alt: "Trabajo de extensiones de cabello en D'Lucca" },
+    ],
+    bookService: "Reservar este servicio", consultTitle: "¿No sabes por dónde empezar?", consultCopy: "La consulta con Flaviano dura treinta minutos y es gratuita.", consultButton: "Reservar la consulta", galleryTitle: "Antes de la próxima cita", galleryCopy: "Una pequeña selección del trabajo actual.", galleryAlts: ["Rubio dimensional con un marco suave alrededor del rostro", "Cabello rubio largo y luminoso con capas suaves", "Peinado rubio con mucho volumen"], galleryButton: "Ver la galería completa", financingCopy: "Las transformaciones mayores pueden dividirse en pagos mensuales con Cherry.", financingButton: "Ver financiamiento",
+  },
+  aesthetics: {
+    schemaName: "Estética", heroTitle: "Estética", heroCopy: "Inyectables, tratamientos regenerativos y cuidado avanzado de la piel bajo supervisión clínica.", credential: "Todos los tratamientos son realizados por nuestra Nurse Practitioner certificada o por una esteticista con licencia.", heroAlt: "Sala privada de tratamientos estéticos de D'Lucca", groups: [{ title: "Inyectables y regenerativos", categories: ["consultation", "injectables"] }, { title: "Tratamientos con aparatología", categories: ["devices"] }, { title: "Faciales avanzados", categories: ["facials"] }, { title: "Cejas, pestañas y depilación", categories: ["brows"] }], treatmentDetails: "Detalles del tratamiento", visitTitle: "Cómo funciona una visita", visitStandfirst: "Durante la consulta se creará un plan de tratamiento individualizado.",
+    steps: [{ index: "I", title: "Consulta", copy: "$50, treinta minutos, acreditados al tratamiento." }, { index: "II", title: "Plan", copy: "El profesional y el cliente acuerdan un plan individualizado." }, { index: "III", title: "Tratamiento", copy: "El servicio reservado es realizado por el profesional correspondiente." }, { index: "IV", title: "Seguimiento", copy: "Los próximos pasos se conversan según el plan de tratamiento." }],
+    safetyTitle: "Seguridad e idoneidad", safetyCopy: ["Los tratamientos inyectables y regenerativos comienzan con una consulta. Comparte con el profesional tu historial médico, medicamentos actuales, alergias, embarazo o lactancia y tratamientos previos antes de cualquier servicio.", "El profesional determinará si el tratamiento es adecuado para ti. Este sitio no promete resultados."], providerLabel: "Estándar profesional", providerCopy: "Los tratamientos clínicos son realizados por una Nurse Practitioner certificada. Los servicios estéticos son realizados por una esteticista con licencia.", ctaTitle: "Comienza con un plan de tratamiento.", ctaCopy: "Los planes de $150 a $1,600 pueden pagarse mensualmente con Cherry.", ctaBook: "Reservar una consulta", ctaFinancing: "Ver financiamiento",
+  },
+  weddings: {
+    schemaName: "Bodas", heroTitleBefore: "Belleza", heroTitleEmphasis: "inolvidable", heroTitleAfter: "para un día inolvidable", heroCopy: "Cabello y maquillaje para novias en el estudio o a domicilio, en cualquier lugar de Chicago.", heroAlt: "Novia con maquillaje elegante y accesorio de cristal en el cabello", waysTitle: "Dos maneras de celebrar", waysStandfirst: "El paquete completo se cotiza según las personas, el lugar y el horario del evento.", brideTitle: "La Novia", bride: ["Consulta de belleza basada en visagismo", "Prueba de cabello y maquillaje", "Peinado de novia: recogido, ondas o personalizado", "Maquillaje HD resistente al agua y de larga duración", "Preparación de la piel", "Aplicación de pestañas", "Colocación de accesorio y velo", "Servicio opcional a domicilio"], partyTitle: "El Grupo", party: ["Peinado personalizado", "Maquillaje natural", "Preparación de la piel", "Aplicación de pestañas", "Recomendaciones para kit de retoque"], publishedReference: "Referencia publicada", bridePrice: "Recogido y Maquillaje — $400", bridePriceCopy: "2h 30min. Los paquetes completos para novias se cotizan individualmente.", partyPrice: "Maquillador — $250", partyPriceCopy: "1h 30min. Damas de honor y quinceañeras se cotizan para el grupo completo.", timelineTitle: "De la consulta al gran día", timeline: [{ index: "I", title: "Solicitud", copy: "Cuéntanos la fecha, el grupo y el lugar." }, { index: "II", title: "Consulta", copy: "Adaptamos el servicio al evento." }, { index: "III", title: "Prueba", copy: "El cabello y el maquillaje se ensayan antes del evento." }, { index: "IV", title: "El Día", copy: "El plan se sigue con ritmo, atención y acabado." }], workTitle: "Trabajo para novias", inquiryTitle: "Cuéntanos sobre la fecha", inquiryStandfirst: "Las fechas se reservan con meses de anticipación. Escríbenos con tiempo.", directTitle: "Contacto directo", directCopy: "Si prefieres conversar primero, llama o escribe a la casa.",
+  },
+  gallery: { schemaName: "Galería", title: "El trabajo", standfirst: "Color, peinado, novias y espacios clínicos — fotografiados en la casa.", filtersLabel: "Filtrar galería", all: "Todo", filters: { "blonde-balayage": "Rubios y Balayage", color: "Color", "styling-makeup": "Peinado y Maquillaje", bridal: "Novias", aesthetics: "Estética" }, openImage: "Abrir imagen", thumbnailRail: "Índice de imágenes de la galería", imageCount: "imagen", ctaTitle: "Cada uno de estos trabajos comenzó con una consulta." },
+  financing: {
+    schemaName: "Financiamiento", heroTitle: "Financiamiento", heroCopy: "Los tratamientos pueden pagarse mensualmente con Cherry. Consultar tus opciones no afecta tu puntaje de crédito.", cherryLink: "Ver opciones en Cherry", howTitle: "Cómo funciona", steps: [{ index: "I", title: "Solicita", copy: "Completa la solicitud de Cherry en aproximadamente un minuto." }, { index: "II", title: "Consulta tus opciones", copy: "Revisa las opciones que Cherry pone a tu disposición." }, { index: "III", title: "Reserva y paga con el tiempo", copy: "Usa el plan elegido para un servicio elegible." }], checkTitle: "Consulta tus opciones", coverTitle: "Qué puede incluir", coverStandfirst: "Cherry determina la elegibilidad y los términos finales.", coverage: [["Extensiones de cabello", "Variable"], ["Tratamientos estéticos en sesiones", "$500–$1,600"], ["Servicios para novias", "Cotización individual"], ["Transformaciones completas de color", "$400–$500"]], questionsTitle: "Preguntas", faqs: [{ question: "¿Consultar mis opciones afecta mi crédito?", answer: "Cherry indica que consultar las opciones disponibles no afecta tu puntaje de crédito. Revisa las divulgaciones actuales directamente con Cherry antes de aceptar un plan." }, { question: "¿Quién decide la aprobación y los términos?", answer: "Cherry determina la elegibilidad, los términos disponibles y la aprobación. D’Lucca no toma decisiones crediticias." }, { question: "¿Puedo financiar cualquier servicio?", answer: "La cobertura depende de la compra y de las opciones que ofrece Cherry. Confirma el plan de tratamiento con el salón y los detalles financieros con Cherry." }], ctaTitle: "Vuelve al servicio y elige tu ritmo.", back: "Volver a cabello",
+  },
+  contact: { schemaName: "Contacto", heroBefore: "Tu camino", heroEmphasis: "capilar", heroAfter: "comienza aquí", heroCopy: "Reserva. Pregunta. Conecta.", bookOnline: "Reservar en línea", call: "Llamar", emailHouse: "Escribir a la casa", studioTitle: "El estudio", studioAlt: "Interior del salón D'Lucca en California Avenue", availabilityLabel: "Disponibilidad actual", availabilityCopy: "Llama antes de visitar. Los horarios publicados están pendientes de confirmación del cliente.", recentTitle: "Trabajo reciente, desde la casa.", recentAlts: ["Color dimensional a la altura de los hombros", "Maquillaje elegante", "Cabello rubio largo y luminoso"], newsTitle: "Noticias de la casa", newsCopy: "Citas disponibles, nuevos tratamientos y alguna nota ocasional de Flaviano." },
+};
+
+export const pageDictionaries: Record<Locale, PageDictionary> = { en, pt, es };
+
+export function getPages(locale: Locale): PageDictionary {
+  return pageDictionaries[locale];
+}

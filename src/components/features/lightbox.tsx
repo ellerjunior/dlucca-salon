@@ -3,8 +3,9 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { ResponsiveImage } from "@/components/ui/responsive-image";
 import type { GalleryItem } from "@/types";
+import type { CommonDictionary } from "@/i18n/common";
 
-export function Lightbox({ items, initialIndex, onClose }: { items: GalleryItem[]; initialIndex: number; onClose: () => void }) {
+export function Lightbox({ items, initialIndex, onClose, labels }: { items: GalleryItem[]; initialIndex: number; onClose: () => void; labels: CommonDictionary["actions"] }) {
   const [index, setIndex] = useState(initialIndex);
   const dialogRef = useRef<HTMLDialogElement>(null);
   const touchStart = useRef<number | null>(null);
@@ -48,10 +49,10 @@ export function Lightbox({ items, initialIndex, onClose }: { items: GalleryItem[
         }
         touchStart.current = null;
       }}
-      aria-label="Gallery image viewer"
+      aria-label={labels.galleryNavigation}
     >
       <button className="lightbox__close" type="button" onClick={() => dialogRef.current?.close()}>
-        <span className="visually-hidden">Close gallery</span>
+        <span className="visually-hidden">{labels.closeGallery}</span>
       </button>
       <div className="lightbox__image" key={item.id}>
         <ResponsiveImage image={item.image} alt={item.alt} sizes="92vw" imageClassName="lightbox__photo" />
@@ -59,10 +60,10 @@ export function Lightbox({ items, initialIndex, onClose }: { items: GalleryItem[
       {items.length > 1 ? (
         <>
           <button className="lightbox__arrow lightbox__arrow--left" type="button" onClick={previous}>
-            <span className="rule-arrow rule-arrow--left" aria-hidden="true" /><span className="visually-hidden">Previous image</span>
+            <span className="rule-arrow rule-arrow--left" aria-hidden="true" /><span className="visually-hidden">{labels.previousImage}</span>
           </button>
           <button className="lightbox__arrow lightbox__arrow--right" type="button" onClick={next}>
-            <span className="rule-arrow" aria-hidden="true" /><span className="visually-hidden">Next image</span>
+            <span className="rule-arrow" aria-hidden="true" /><span className="visually-hidden">{labels.nextImage}</span>
           </button>
         </>
       ) : null}
