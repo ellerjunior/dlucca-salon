@@ -1,4 +1,27 @@
-export const SITE_URL = "https://www.dluccasalon.com";
+const DEFAULT_SITE_URL = "https://www.dluccasalon.com";
+
+function normalizeSiteOrigin(value?: string) {
+  if (!value) return null;
+  try {
+    const url = new URL(value.startsWith("http://") || value.startsWith("https://") ? value : `https://${value}`);
+    return url.origin;
+  } catch {
+    return null;
+  }
+}
+
+export function resolveSiteUrl(env: Record<string, string | undefined> = process.env) {
+  const configured = normalizeSiteOrigin(env.NEXT_PUBLIC_SITE_URL);
+  if (configured) return configured;
+
+  const vercelHost = env.VERCEL_ENV === "preview"
+    ? env.VERCEL_URL
+    : env.VERCEL_PROJECT_PRODUCTION_URL ?? env.VERCEL_URL;
+
+  return normalizeSiteOrigin(vercelHost) ?? DEFAULT_SITE_URL;
+}
+
+export const SITE_URL = resolveSiteUrl();
 export const BOOKING_URL =
   "https://book.squareup.com/appointments/1qxvwmck0vibcb/location/LDSYEV6DSTW7W/services";
 export const CHERRY_URL =
