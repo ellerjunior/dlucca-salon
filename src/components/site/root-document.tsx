@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
+import Script from "next/script";
 import type { ReactNode } from "react";
 import "@/app/globals.css";
 import "@/app/site-pages.css";
@@ -80,6 +81,23 @@ export function RootDocument({ locale, children }: { locale: Locale; children: R
   return (
     <html lang={localeDetails[locale].html} className={`${display.variable} ${body.variable} ${label.variable}`}>
       <body>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-68BEDVR5LR"
+          strategy="afterInteractive"
+        />
+        <Script
+          id="google-analytics"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+
+              gtag('config', 'G-68BEDVR5LR');
+            `,
+          }}
+        />
         <a href="#main-content" className="skip-link">{common.skipToContent}</a>
         <RouteCurtain />
         <Navigation locale={locale} />
