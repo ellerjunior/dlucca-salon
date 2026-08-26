@@ -82,7 +82,7 @@ export function RootDocument({ locale, children }: { locale: Locale; children: R
     <html lang={localeDetails[locale].html} className={`${display.variable} ${body.variable} ${label.variable}`}>
       <body>
         <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-68BEDVR5LR"
+          src="https://www.googletagmanager.com/gtag/js?id=G-WCL2PLSJF7"
           strategy="afterInteractive"
         />
         <Script
@@ -94,7 +94,7 @@ export function RootDocument({ locale, children }: { locale: Locale; children: R
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
 
-              gtag('config', 'G-68BEDVR5LR');
+              gtag('config', 'G-WCL2PLSJF7');
             `,
           }}
         />
