@@ -1,9 +1,9 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
+import { BrandWordmark } from "@/components/site/brand-wordmark";
 import { LanguageSelector } from "@/components/site/language-selector";
 import { getCommon } from "@/i18n/common";
 import { pageIds, routeFor, routes, type Locale, type PageId } from "@/i18n/config";
@@ -68,7 +68,7 @@ export function Navigation({ locale }: { locale: Locale }) {
           <nav className="site-nav__group" aria-label={`${common.actions.primaryNavigation}, 1`}>
             {navPages.slice(0, 4).map((page) => <Link key={page} href={routeFor(locale, page)} className="site-nav__link" aria-current={active(page) ? "page" : undefined}>{common.nav[page]}</Link>)}
           </nav>
-          <Link href={routeFor(locale, "home")} className="site-nav__logo" aria-label={common.actions.home}><Image src="/logo.svg" alt="" width={1040} height={300} /></Link>
+          <Link href={routeFor(locale, "home")} className="site-nav__logo" aria-label={common.actions.home}><BrandWordmark priority sizes="11.5rem" /></Link>
           <nav className="site-nav__group" aria-label={`${common.actions.primaryNavigation}, 2`}>
             {navPages.slice(4).map((page) => <Link key={page} href={routeFor(locale, page)} className="site-nav__link" aria-current={active(page) ? "page" : undefined}>{common.nav[page]}</Link>)}
             <LanguageSelector locale={locale} page={currentPage} label={common.actions.chooseLanguage} />
@@ -77,7 +77,7 @@ export function Navigation({ locale }: { locale: Locale }) {
         </div>
 
         <div className="site-container mobile-nav">
-          <Link href={routeFor(locale, "home")} className="site-nav__logo" aria-label={common.actions.home}><Image src="/logo.svg" alt="" width={1040} height={300} /></Link>
+          <Link href={routeFor(locale, "home")} className="site-nav__logo" aria-label={common.actions.home}><BrandWordmark priority sizes="8.5rem" /></Link>
           <LanguageSelector locale={locale} page={currentPage} label={common.actions.chooseLanguage} className="mobile-nav__language" />
           <button ref={triggerRef} type="button" className="mobile-nav__toggle" aria-expanded={open} aria-controls="mobile-menu" onClick={() => setOpen(true)}><span className="visually-hidden">{common.actions.openMenu}</span><span /><span /></button>
         </div>
@@ -85,7 +85,7 @@ export function Navigation({ locale }: { locale: Locale }) {
 
       <div id="mobile-menu" className="mobile-menu" data-open={open} aria-hidden={!open}>
         <div className="mobile-menu__top">
-          <Image src="/logo.svg" alt="D'Lucca" width={1040} height={300} />
+          <BrandWordmark tone="white" alt="Flaviano D'Lucca Hair & Beauty" sizes="8.5rem" />
           <button ref={closeRef} type="button" className="mobile-menu__close" onClick={close}><span className="visually-hidden">{common.actions.closeMenu}</span></button>
         </div>
         <nav aria-label={common.actions.mobileNavigation}>

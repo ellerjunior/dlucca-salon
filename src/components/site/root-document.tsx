@@ -52,7 +52,14 @@ export function baseMetadata(locale: Locale): Metadata {
     title: "D’Lucca Hair & Beauty | Chicago",
     description: copy.description,
     applicationName: "D’Lucca Hair & Beauty",
-    icons: { icon: "/logo-mark.svg", apple: "/logo-mark.svg" },
+    icons: {
+      icon: [
+        { url: "/brand/favicon-ink-32.png", type: "image/png", sizes: "32x32", media: "(prefers-color-scheme: light)" },
+        { url: "/brand/favicon-light-32.png", type: "image/png", sizes: "32x32", media: "(prefers-color-scheme: dark)" },
+      ],
+      shortcut: "/brand/favicon-ink-32.png",
+      apple: [{ url: "/brand/apple-touch-icon.png", type: "image/png", sizes: "180x180" }],
+    },
     manifest: "/site.webmanifest",
   };
 }

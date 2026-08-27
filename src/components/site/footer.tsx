@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { BrandWordmark } from "@/components/site/brand-wordmark";
 import { NewsletterForm } from "@/components/site/newsletter-form";
 import { getCommon } from "@/i18n/common";
 import type { Locale } from "@/i18n/config";
@@ -10,7 +11,7 @@ export function Footer({ locale }: { locale: Locale }) {
     <footer id="site-footer" className="site-footer">
       <span className="footer-observer" aria-hidden="true" />
       <div className="site-container">
-        <div className="footer-brand"><Image src="/logo.svg" alt="Flaviano D'Lucca Hair & Beauty" width={1040} height={300} /><span className="footer-brand__rule" /></div>
+        <div className="footer-brand"><BrandWordmark tone="white" alt="Flaviano D'Lucca Hair & Beauty" sizes="(max-width: 767px) calc(100vw - 3rem), 28rem" /><span className="footer-brand__rule" /></div>
         <div className="footer-columns">
           <section className="footer-column"><h2 className="label">{copy.footer.visit}</h2><address>{ADDRESS}</address><a className="inline-link label" href={MAPS_URL} {...EXTERNAL_PROPS}>{copy.actions.getDirections}</a></section>
           <section className="footer-column"><h2 className="label">{copy.footer.hours}</h2><p>{copy.footer.availability}</p><a className="inline-link label" href={PHONE_HREF}>{copy.footer.callHouse}</a></section>
