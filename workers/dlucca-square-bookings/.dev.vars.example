@@ -1,0 +1,7 @@
+# Local development only. Copy to .dev.vars and replace every placeholder.
+# Never commit .dev.vars or paste these values into tickets, chat, or documentation.
+SQUARE_WEBHOOK_SIGNATURE_KEY=replace-with-square-signature-key
+SQUARE_NOTIFICATION_URL=http://localhost:8787/webhooks/square/bookings
+SQUARE_MERCHANT_ID=replace-with-production-merchant-id
+GA4_API_SECRET=replace-with-ga4-measurement-protocol-secret
+

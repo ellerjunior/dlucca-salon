@@ -1,0 +1,24 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "dlucca-square-bookings",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-08-27",
+  "workers_dev": true,
+  "preview_urls": false,
+  "observability": {
+    "enabled": true
+  },
+  "vars": {
+    "SQUARE_LOCATION_ID": "LDSYEV6DSTW7W",
+    "SQUARE_NOTIFICATION_URL": "https://dlucca-square-bookings.eller-jr-13.workers.dev/webhooks/square/bookings",
+    "GA4_MEASUREMENT_ID": "G-WCL2PLSJF7"
+  },
+  "d1_databases": [
+    {
+      "binding": "WEBHOOK_EVENTS",
+      "database_name": "dlucca-square-booking-events",
+      "database_id": "1d0e9575-bebf-43f0-b8a3-b1f52a0f7111",
+      "migrations_dir": "migrations"
+    }
+  ]
+}

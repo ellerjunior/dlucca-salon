@@ -54,3 +54,8 @@ npm run test:e2e
 ```
 
 `npm run verify:services` compares the committed catalog against the current public Square booking page. It does not change files. `npm run snapshot:services` intentionally refreshes the snapshot.
+
+## Project documentation
+
+- [Square booking analytics plan](docs/SQUARE_BOOKING_ANALYTICS_PLAN.md) — current status, pending permissions, Cloudflare webhook architecture, privacy constraints, and implementation checklist.
+- [Square booking Worker runbook](workers/dlucca-square-bookings/README.md) — isolated Worker setup, production URL, Square Developer steps, secrets, and verification.
