@@ -33,7 +33,7 @@ export const MAP_EMBED_URL =
   "https://www.google.com/maps?q=904+N+California+Ave,+Chicago,+IL+60622&output=embed";
 export const PHONE_DISPLAY = "+1 (224) 413-8559";
 export const PHONE_HREF = "tel:+12244138559";
-export const EMAIL = "Flavianodluccasalon@gmail.com";
+export const EMAIL = "contact@dluccasalon.com";
 export const ADDRESS = "904 N California Ave, Chicago, IL 60622";
 
 export const NAV_ITEMS = [
