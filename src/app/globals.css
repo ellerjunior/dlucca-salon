@@ -371,8 +371,10 @@ img {
   transition: opacity 700ms var(--ease-house), transform var(--duration-image) var(--ease-house);
 }
 
-.media-frame[data-hover="true"]:hover img {
-  transform: scale(1.02);
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .media-frame[data-hover="true"]:hover img {
+    transform: scale(1.02);
+  }
 }
 
 .figure-caption {
@@ -944,6 +946,37 @@ img {
   margin: 0;
   color: var(--color-sand);
   font-style: normal;
+}
+
+.footer-social {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.footer-social__link {
+  display: grid;
+  place-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border: 0.0625rem solid var(--color-umber);
+  color: var(--color-linen);
+  transition: border-color var(--duration-micro) var(--ease-house), color var(--duration-micro) var(--ease-house);
+}
+
+.footer-social__link:hover,
+.footer-social__link:focus-visible {
+  border-color: var(--color-brass);
+  color: var(--color-brass);
+}
+
+.footer-social__link svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .footer-newsletter {

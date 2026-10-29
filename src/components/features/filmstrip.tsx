@@ -56,7 +56,7 @@ export function Filmstrip({ items, labels, bridal = false }: { items: GalleryIte
       <div ref={stripRef} className={`filmstrip ${bridal ? "filmstrip--bridal" : ""}`} tabIndex={0} aria-label={labels.scrollingGallery}>
         {items.map((item, index) => (
           <figure className="filmstrip__item" key={item.id}>
-            <button type="button" className="filmstrip__button media-frame" onClick={() => setActive(index)}>
+            <button type="button" className="filmstrip__button media-frame" data-hover="true" onClick={() => setActive(index)}>
               <ResponsiveImage image={item.image} alt={item.alt} sizes="(max-width: 767px) 78vw, 42vw" imageClassName="filmstrip__image" />
             </button>
             <figcaption className="label">{item.caption}</figcaption>

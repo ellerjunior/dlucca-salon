@@ -1,42 +1,94 @@
 {
-  "aesthetics-room": {
-    "src": "/images/originals/aesthetics-room.png",
-    "width": 1092,
-    "height": 1441,
-    "blurDataURL": "data:image/webp;base64,UklGRtgAAABXRUJQVlA4IMwAAACQBQCdASoYACAAPxmAtVSsqCSjKAqpkCMJZQC07vAOXO0b5gRYJpxF9Ts5lSvWvv14nGcNAADwIeMTsA+30Y5HJcOKedJ8qJV25FsVDuvAsZqBtMOFmECZWkQgwm7DlQKN0y+PnWS/gSZdyaAC1Oq2a2NZQ7MUCTlbuZXQ5NduK+VzX2BmRtL1Ueu8fvlq8onWkCOwNmUjmnnH4AT66SyuFPOnZnk9kJTCWyRp3uY21PBN+K+3wo2SVzOI+IxsJdEHAz1S77ZzGD9S4AA=",
+  "aesthetics-injectable": {
+    "src": "/images/originals/aesthetics-injectable.jpg",
+    "width": 1288,
+    "height": 1718,
+    "blurDataURL": "data:image/webp;base64,UklGRhABAABXRUJQVlA4IAQBAAAwBgCdASoYACAAPxFyrVCsJyQisAwBgCIJbACdMoMzG+n61g+qAP9h6KRLHwAbcrmNJ2uwOuzKYm24AP6McHm7kUjWyyLr/ICbxkC0R1pVJR+se7WZTB0W0CLWK4ZPD3ZlAicLR3v6VLyF9Mghz3BX0kX8t9SrQ8TkQvphyV+rSQ24cwEy/0LYprYnXAv0+WF75OYX1zT3gcPWAd1VpVIWAuV33Y5b0KDHyRV2p2LwUfCNKSZBcK+Z+TF5HQhUXWrBO5EHwKHB05nPRiIMq+4AIfJY7o/Lh21/F2y+7IdjSSyCgKD+lwDoSxip91P5Ri5plgCQmmrjuMUTckuWC/dKdAAAAA==",
     "formats": {
       "avif": [
         {
-          "src": "/images/generated/aesthetics-room-480.avif",
+          "src": "/images/generated/aesthetics-injectable-480.avif",
           "width": 480,
-          "height": 633
+          "height": 640
         },
         {
-          "src": "/images/generated/aesthetics-room-768.avif",
+          "src": "/images/generated/aesthetics-injectable-768.avif",
           "width": 768,
-          "height": 1013
+          "height": 1024
         },
         {
-          "src": "/images/generated/aesthetics-room-1092.avif",
-          "width": 1092,
-          "height": 1441
+          "src": "/images/generated/aesthetics-injectable-1200.avif",
+          "width": 1200,
+          "height": 1601
+        },
+        {
+          "src": "/images/generated/aesthetics-injectable-1288.avif",
+          "width": 1288,
+          "height": 1718
         }
       ],
       "webp": [
         {
-          "src": "/images/generated/aesthetics-room-480.webp",
+          "src": "/images/generated/aesthetics-injectable-480.webp",
           "width": 480,
-          "height": 633
+          "height": 640
         },
         {
-          "src": "/images/generated/aesthetics-room-768.webp",
+          "src": "/images/generated/aesthetics-injectable-768.webp",
           "width": 768,
-          "height": 1013
+          "height": 1024
         },
         {
-          "src": "/images/generated/aesthetics-room-1092.webp",
-          "width": 1092,
-          "height": 1441
+          "src": "/images/generated/aesthetics-injectable-1200.webp",
+          "width": 1200,
+          "height": 1601
+        },
+        {
+          "src": "/images/generated/aesthetics-injectable-1288.webp",
+          "width": 1288,
+          "height": 1718
+        }
+      ]
+    }
+  },
+  "aesthetics-suite": {
+    "src": "/images/originals/aesthetics-suite.png",
+    "width": 1086,
+    "height": 1448,
+    "blurDataURL": "data:image/webp;base64,UklGRsAAAABXRUJQVlA4ILQAAACwBQCdASoYACAAPxl+uVQsqCYjKAqpkCMJZQDKtDB64KHJKhD/95TPmNd/6zjldvlBYAc3oiAA/luCiZUL3n0DNzvrDaWTaviaoY/Kwbo9KDvWi8FCbsLl9zVKAJn2CkwKvAO/wk4DKZXYXhWamHUFhaEWOgod8+qlDWXXvPuoFFpHWQlV/dQc4tdFRle3D2d7lUJNtbY5Z86AK6DGqQjeCqgosnz7XJ/eNwUaSIOQT24IAAA=",
+    "formats": {
+      "avif": [
+        {
+          "src": "/images/generated/aesthetics-suite-480.avif",
+          "width": 480,
+          "height": 640
+        },
+        {
+          "src": "/images/generated/aesthetics-suite-768.avif",
+          "width": 768,
+          "height": 1024
+        },
+        {
+          "src": "/images/generated/aesthetics-suite-1086.avif",
+          "width": 1086,
+          "height": 1448
+        }
+      ],
+      "webp": [
+        {
+          "src": "/images/generated/aesthetics-suite-480.webp",
+          "width": 480,
+          "height": 640
+        },
+        {
+          "src": "/images/generated/aesthetics-suite-768.webp",
+          "width": 768,
+          "height": 1024
+        },
+        {
+          "src": "/images/generated/aesthetics-suite-1086.webp",
+          "width": 1086,
+          "height": 1448
         }
       ]
     }
@@ -237,6 +289,1082 @@
       ]
     }
   },
+  "hair-blonde-blowout": {
+    "src": "/images/originals/hair-blonde-blowout.jpg",
+    "width": 2400,
+    "height": 3201,
+    "blurDataURL": "data:image/webp;base64,UklGRhIBAABXRUJQVlA4IAYBAAAwBgCdASoYACAAPxl+tlSsqCSjKAqpkCMJbACdMuN+BSACbPyCSyIu2SXj/P6HckKVPInVEzTMGrwAAP7nK85IVv99ww/Nv/bdvEgiMXkr1rvBUnS1wAjZB/ROS8cuY4B4Equlamf5jZwrgB/4q5dSH6taCl9zx1l07nUwYQZ4jJvL2RS7e2GdQ+iz2XDcLieApv2on1ur1zKoyes+wZebnHTNnXseEpE0ckXfietyTHPv3X6ZNtqbaPlWJewxlxOcHS1HmUb/SRVGcOhuSsIAJtZccT97ty+r/fFes2WUKT6w+jSclHy5/8YCJisf6zXHNo9s/pnvA/rPTIPus7ecgrDeYAAA",
+    "formats": {
+      "avif": [
+        {
+          "src": "/images/generated/hair-blonde-blowout-480.avif",
+          "width": 480,
+          "height": 640
+        },
+        {
+          "src": "/images/generated/hair-blonde-blowout-768.avif",
+          "width": 768,
+          "height": 1024
+        },
+        {
+          "src": "/images/generated/hair-blonde-blowout-1200.avif",
+          "width": 1200,
+          "height": 1601
+        },
+        {
+          "src": "/images/generated/hair-blonde-blowout-1800.avif",
+          "width": 1800,
+          "height": 2401
+        },
+        {
+          "src": "/images/generated/hair-blonde-blowout-2400.avif",
+          "width": 2400,
+          "height": 3201
+        }
+      ],
+      "webp": [
+        {
+          "src": "/images/generated/hair-blonde-blowout-480.webp",
+          "width": 480,
+          "height": 640
+        },
+        {
+          "src": "/images/generated/hair-blonde-blowout-768.webp",
+          "width": 768,
+          "height": 1024
+        },
+        {
+          "src": "/images/generated/hair-blonde-blowout-1200.webp",
+          "width": 1200,
+          "height": 1601
+        },
+        {
+          "src": "/images/generated/hair-blonde-blowout-1800.webp",
+          "width": 1800,
+          "height": 2401
+        },
+        {
+          "src": "/images/generated/hair-blonde-blowout-2400.webp",
+          "width": 2400,
+          "height": 3201
+        }
+      ]
+    }
+  },
+  "hair-blonde-bob": {
+    "src": "/images/originals/hair-blonde-bob.jpg",
+    "width": 1086,
+    "height": 1448,
+    "blurDataURL": "data:image/webp;base64,UklGRjIBAABXRUJQVlA4ICYBAAAQBgCdASoYACAAPxl0sFEspqSisAgBkCMJbACdMoCpA41ZXV0USbsRFaD9dMbyAQdxNcsz8siSKQAA9l14cbDdOQeMm7y1som64RiuFXc8PTKza2VCx29JvPu9Vd3o4SVDeHUtjq8P5yA1uLb0kAl4XXPmsVAsIT2zfWQW+gt7D+H8vzXV1hQ6vC2ErAm/txdug8xey1Oh10qZ278hZYg+wi+dcFfL2W3JboIqVBnGpQiIDzvAIcB5laAcqarrezOuJNj/UWeOXCMfH1ohdFzWQTqTNI36XQH4yEfRHkeMSwXD2z5cKS+tgVJNXA54Va6LowtwJ8bweznsS/tE2I0VZo8o2AyKYMErY/5qi29bqO6Pg9aasFj4+nUJy/+OtOLj/cQAAAA=",
+    "formats": {
+      "avif": [
+        {
+          "src": "/images/generated/hair-blonde-bob-480.avif",
+          "width": 480,
+          "height": 640
+        },
+        {
+          "src": "/images/generated/hair-blonde-bob-768.avif",
+          "width": 768,
+          "height": 1024
+        },
+        {
+          "src": "/images/generated/hair-blonde-bob-1086.avif",
+          "width": 1086,
+          "height": 1448
+        }
+      ],
+      "webp": [
+        {
+          "src": "/images/generated/hair-blonde-bob-480.webp",
+          "width": 480,
+          "height": 640
+        },
+        {
+          "src": "/images/generated/hair-blonde-bob-768.webp",
+          "width": 768,
+          "height": 1024
+        },
+        {
+          "src": "/images/generated/hair-blonde-bob-1086.webp",
+          "width": 1086,
+          "height": 1448
+        }
+      ]
+    }
+  },
+  "hair-blonde-laugh": {
+    "src": "/images/originals/hair-blonde-laugh.jpg",
+    "width": 2400,
+    "height": 3199,
+    "blurDataURL": "data:image/webp;base64,UklGRv4AAABXRUJQVlA4IPIAAACwBQCdASoYACAAPxl0sVCspqSisAgBkCMJagC7MzBijmgQloUrF2ogWoj/m83btUin5WiFF2gA+mf3uaYDkTsK/OfNzfdjO7+Rr7u3IwZs7SduZh3+ir2x/GFFMLbdkjzlCmnMz9S33irxXltJ6NTwJBILT+X9OIDiKY++bSqfg27jP9Yw2nRqBLZCtMgLnnMmtZrr/oR+LlBZ2GBmqYVV1QLwTus0itNCxG46KBRy+mlVZc9OgofM1f4z9bs33TGaveKsjm3YesQnY4kJmd6CqiCZiHAOVnl2azrm9fUljZ+Xn6unjaY8ccKyvFxEgQAAAA==",
+    "formats": {
+      "avif": [
+        {
+          "src": "/images/generated/hair-blonde-laugh-480.avif",
+          "width": 480,
+          "height": 640
+        },
+        {
+          "src": "/images/generated/hair-blonde-laugh-768.avif",
+          "width": 768,
+          "height": 1024
+        },
+        {
+          "src": "/images/generated/hair-blonde-laugh-1200.avif",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "/images/generated/hair-blonde-laugh-1800.avif",
+          "width": 1800,
+          "height": 2399
+        },
+        {
+          "src": "/images/generated/hair-blonde-laugh-2400.avif",
+          "width": 2400,
+          "height": 3199
+        }
+      ],
+      "webp": [
+        {
+          "src": "/images/generated/hair-blonde-laugh-480.webp",
+          "width": 480,
+          "height": 640
+        },
+        {
+          "src": "/images/generated/hair-blonde-laugh-768.webp",
+          "width": 768,
+          "height": 1024
+        },
+        {
+          "src": "/images/generated/hair-blonde-laugh-1200.webp",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "/images/generated/hair-blonde-laugh-1800.webp",
+          "width": 1800,
+          "height": 2399
+        },
+        {
+          "src": "/images/generated/hair-blonde-laugh-2400.webp",
+          "width": 2400,
+          "height": 3199
+        }
+      ]
+    }
+  },
+  "hair-blonde-lob": {
+    "src": "/images/originals/hair-blonde-lob.jpg",
+    "width": 2400,
+    "height": 3599,
+    "blurDataURL": "data:image/webp;base64,UklGRuYAAABXRUJQVlA4INoAAADQBgCdASoYACQAPxl2t1KspqWiqrgMAZAjCWQAt+tQwYAL1pnQh4hvBvIifC48UUFWW6liRQlgt48ur/ZYd1AA/uv3uO1CKOxe6TuNMNLS+vAgBMRkk2W/ilzwjaItduVg7tPhiwv/wRySlZhiAQ31Epi+1PhUPt6p4pPhmN07Z/kSf59daXOgnSvAxX0OUneB32Oo+v95dYGSbg/DJKlWrvHWrzl/+pVqnu/BW6xWBE9tQ6wwtpkXk4oH9WCfZUTFVHr2IQ1V5curnSHpQAs69J5QrQwhbEAAAA==",
+    "formats": {
+      "avif": [
+        {
+          "src": "/images/generated/hair-blonde-lob-480.avif",
+          "width": 480,
+          "height": 720
+        },
+        {
+          "src": "/images/generated/hair-blonde-lob-768.avif",
+          "width": 768,
+          "height": 1152
+        },
+        {
+          "src": "/images/generated/hair-blonde-lob-1200.avif",
+          "width": 1200,
+          "height": 1800
+        },
+        {
+          "src": "/images/generated/hair-blonde-lob-1800.avif",
+          "width": 1800,
+          "height": 2699
+        },
+        {
+          "src": "/images/generated/hair-blonde-lob-2400.avif",
+          "width": 2400,
+          "height": 3599
+        }
+      ],
+      "webp": [
+        {
+          "src": "/images/generated/hair-blonde-lob-480.webp",
+          "width": 480,
+          "height": 720
+        },
+        {
+          "src": "/images/generated/hair-blonde-lob-768.webp",
+          "width": 768,
+          "height": 1152
+        },
+        {
+          "src": "/images/generated/hair-blonde-lob-1200.webp",
+          "width": 1200,
+          "height": 1800
+        },
+        {
+          "src": "/images/generated/hair-blonde-lob-1800.webp",
+          "width": 1800,
+          "height": 2699
+        },
+        {
+          "src": "/images/generated/hair-blonde-lob-2400.webp",
+          "width": 2400,
+          "height": 3599
+        }
+      ]
+    }
+  },
+  "hair-blonde-waves": {
+    "src": "/images/originals/hair-blonde-waves.jpg",
+    "width": 2400,
+    "height": 3199,
+    "blurDataURL": "data:image/webp;base64,UklGRtIAAABXRUJQVlA4IMYAAADwBQCdASoYACAAPxFwr1CsJiQit/VYAYAiCWoAnTOO71mvo8keIe9LSI4d/Q14nKgTn5Za05KsAAD+XX0xXN05r7Dtg5Yx3flA5697rG0QrOkShv8SOC/2e/SrnLuwWN9xQ4G2DnX/7SBjMBCYw6NHP8PQjCE/I3fOA6p9167Ae0GWOpHDp1PTXGK047vA/d4H9XN4ubfxWfKFUo1LqmA+I2UzNp+pGglATN/CfP/dSpL1NtUE8BaHg/ppWAVKb5GnXvSoAAA=",
+    "formats": {
+      "avif": [
+        {
+          "src": "/images/generated/hair-blonde-waves-480.avif",
+          "width": 480,
+          "height": 640
+        },
+        {
+          "src": "/images/generated/hair-blonde-waves-768.avif",
+          "width": 768,
+          "height": 1024
+        },
+        {
+          "src": "/images/generated/hair-blonde-waves-1200.avif",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "/images/generated/hair-blonde-waves-1800.avif",
+          "width": 1800,
+          "height": 2399
+        },
+        {
+          "src": "/images/generated/hair-blonde-waves-2400.avif",
+          "width": 2400,
+          "height": 3199
+        }
+      ],
+      "webp": [
+        {
+          "src": "/images/generated/hair-blonde-waves-480.webp",
+          "width": 480,
+          "height": 640
+        },
+        {
+          "src": "/images/generated/hair-blonde-waves-768.webp",
+          "width": 768,
+          "height": 1024
+        },
+        {
+          "src": "/images/generated/hair-blonde-waves-1200.webp",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "/images/generated/hair-blonde-waves-1800.webp",
+          "width": 1800,
+          "height": 2399
+        },
+        {
+          "src": "/images/generated/hair-blonde-waves-2400.webp",
+          "width": 2400,
+          "height": 3199
+        }
+      ]
+    }
+  },
+  "hair-brunette-back": {
+    "src": "/images/originals/hair-brunette-back.jpg",
+    "width": 1320,
+    "height": 1713,
+    "blurDataURL": "data:image/webp;base64,UklGRtoAAABXRUJQVlA4IM4AAABwBQCdASoYAB8APxl2sFCspySisAgBkCMJaACdMzAOMRq/XS24r2wa6Gu4+/vtFDwGxEGAAP7D8jZ9eoxKbn73+j4HIGtBXktzqWf+K5YJlSxWQijnODPNUuW0kqLKNXpExNDGEETW42AdXZ/nqVivypvR1fQ55IOqd5KTAuaJiUHW0wmoIAS7fEmsl0xPfG+qunK0SO3TQ4c0M6vMbtHGVVGKUr+7oIF1plwKS7SH4WUhYhsQoaTxjtDckt6IFGoQoyjaNTHPO4GHU/gAAA==",
+    "formats": {
+      "avif": [
+        {
+          "src": "/images/generated/hair-brunette-back-480.avif",
+          "width": 480,
+          "height": 623
+        },
+        {
+          "src": "/images/generated/hair-brunette-back-768.avif",
+          "width": 768,
+          "height": 997
+        },
+        {
+          "src": "/images/generated/hair-brunette-back-1200.avif",
+          "width": 1200,
+          "height": 1557
+        },
+        {
+          "src": "/images/generated/hair-brunette-back-1320.avif",
+          "width": 1320,
+          "height": 1713
+        }
+      ],
+      "webp": [
+        {
+          "src": "/images/generated/hair-brunette-back-480.webp",
+          "width": 480,
+          "height": 623
+        },
+        {
+          "src": "/images/generated/hair-brunette-back-768.webp",
+          "width": 768,
+          "height": 997
+        },
+        {
+          "src": "/images/generated/hair-brunette-back-1200.webp",
+          "width": 1200,
+          "height": 1557
+        },
+        {
+          "src": "/images/generated/hair-brunette-back-1320.webp",
+          "width": 1320,
+          "height": 1713
+        }
+      ]
+    }
+  },
+  "hair-brunette-smile": {
+    "src": "/images/originals/hair-brunette-smile.jpg",
+    "width": 2400,
+    "height": 3200,
+    "blurDataURL": "data:image/webp;base64,UklGRggBAABXRUJQVlA4IPwAAAAQBgCdASoYACAAPxl8uVQsp6YjKAqpkCMJZACdMuIv60qkswfhH1qHvL8qd9MnspuqyuZxvd+HqAAA96Z41XIpGdA+Wy4B3UWsHqVvDIleWyz6F12tsTmGrmLbpY92MsGeRnmjbWWkuoFHbuiAJKWMuNvBwYQZZ5DmJE8D7NmjkZ4XDhMl3DLU95anSkX4ayCX8YN9UjUsWD05Q+9aNuRIBPD4l8MfvKbz0jUjFbLTKLS79hZPFGUw9cTGBCoRCRk9YzwiWMjA/y3XPGOICpcK9yb918aVSzr4b8VvPDOCJAsgMJebiCD/p+5pr7Wc+QSP6Rg7IN16py+KgAA=",
+    "formats": {
+      "avif": [
+        {
+          "src": "/images/generated/hair-brunette-smile-480.avif",
+          "width": 480,
+          "height": 640
+        },
+        {
+          "src": "/images/generated/hair-brunette-smile-768.avif",
+          "width": 768,
+          "height": 1024
+        },
+        {
+          "src": "/images/generated/hair-brunette-smile-1200.avif",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "/images/generated/hair-brunette-smile-1800.avif",
+          "width": 1800,
+          "height": 2400
+        },
+        {
+          "src": "/images/generated/hair-brunette-smile-2400.avif",
+          "width": 2400,
+          "height": 3200
+        }
+      ],
+      "webp": [
+        {
+          "src": "/images/generated/hair-brunette-smile-480.webp",
+          "width": 480,
+          "height": 640
+        },
+        {
+          "src": "/images/generated/hair-brunette-smile-768.webp",
+          "width": 768,
+          "height": 1024
+        },
+        {
+          "src": "/images/generated/hair-brunette-smile-1200.webp",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "/images/generated/hair-brunette-smile-1800.webp",
+          "width": 1800,
+          "height": 2400
+        },
+        {
+          "src": "/images/generated/hair-brunette-smile-2400.webp",
+          "width": 2400,
+          "height": 3200
+        }
+      ]
+    }
+  },
+  "hair-brunette-volume": {
+    "src": "/images/originals/hair-brunette-volume.jpg",
+    "width": 2400,
+    "height": 3201,
+    "blurDataURL": "data:image/webp;base64,UklGRvAAAABXRUJQVlA4IOQAAAAQBgCdASoYACAAPxl0tlOspiUisBgIAZAjCWgAnQAR/rdM2S49kkS+1K5x+RYkYhdEDvhD51MdPfQA/bK9aOWlPyXMJ4NO7ZuVf5WwqqulHuWwIDW6FLmNIRFoT27e1Ea3GXacAlHs5zmbHhXiRf4p/D1MEv95QDhTAgto7BbJSLIrjKNjDIkGYmI59Ed0M+Iiz4kCAGhEVjAkdwHPTVufQ3LRtDQ0lRUDrf/8PMuhTORIZShvfo+cXaagQrH+I4XOEIgmk27sIJqxBZAjZtX/DueEVwNRIpKMGwvlGFppvVqgAAA=",
+    "formats": {
+      "avif": [
+        {
+          "src": "/images/generated/hair-brunette-volume-480.avif",
+          "width": 480,
+          "height": 640
+        },
+        {
+          "src": "/images/generated/hair-brunette-volume-768.avif",
+          "width": 768,
+          "height": 1024
+        },
+        {
+          "src": "/images/generated/hair-brunette-volume-1200.avif",
+          "width": 1200,
+          "height": 1601
+        },
+        {
+          "src": "/images/generated/hair-brunette-volume-1800.avif",
+          "width": 1800,
+          "height": 2401
+        },
+        {
+          "src": "/images/generated/hair-brunette-volume-2400.avif",
+          "width": 2400,
+          "height": 3201
+        }
+      ],
+      "webp": [
+        {
+          "src": "/images/generated/hair-brunette-volume-480.webp",
+          "width": 480,
+          "height": 640
+        },
+        {
+          "src": "/images/generated/hair-brunette-volume-768.webp",
+          "width": 768,
+          "height": 1024
+        },
+        {
+          "src": "/images/generated/hair-brunette-volume-1200.webp",
+          "width": 1200,
+          "height": 1601
+        },
+        {
+          "src": "/images/generated/hair-brunette-volume-1800.webp",
+          "width": 1800,
+          "height": 2401
+        },
+        {
+          "src": "/images/generated/hair-brunette-volume-2400.webp",
+          "width": 2400,
+          "height": 3201
+        }
+      ]
+    }
+  },
+  "hair-caramel-balayage": {
+    "src": "/images/originals/hair-caramel-balayage.jpg",
+    "width": 2400,
+    "height": 3198,
+    "blurDataURL": "data:image/webp;base64,UklGRhQBAABXRUJQVlA4IAgBAAAwBgCdASoYACAAPxlysFCspqSisAgBkCMJbACdMxgvWBfaIGJxp/OkDp7P63H06d2m0GrOhh8l8VYQAP7DptoVd1TC/cAUnAeFKfHlR+fFZjD+0imaxSYjRJjK0oOFGRDxSpKGgtOFi4CskiOItnc/lntbsF5p7KOtL9VKJCC0XzO8GdmPCOz5nG3kxc+4Cg9TreP62FMaiEl2P9C0ITCGO7y/BxVxARVG8l6FyYkggUN4ysPRkosr9afANnaZqTACZXx3ldGkF9ZxSMqi6rOufgjWZq2cQqw09uugwiKLqmDf3EY0CPnjkNRi1Sy6gyUaUOuHlbQKX9iqZSWvTVIrkjkU5huSgAA=",
+    "formats": {
+      "avif": [
+        {
+          "src": "/images/generated/hair-caramel-balayage-480.avif",
+          "width": 480,
+          "height": 640
+        },
+        {
+          "src": "/images/generated/hair-caramel-balayage-768.avif",
+          "width": 768,
+          "height": 1023
+        },
+        {
+          "src": "/images/generated/hair-caramel-balayage-1200.avif",
+          "width": 1200,
+          "height": 1599
+        },
+        {
+          "src": "/images/generated/hair-caramel-balayage-1800.avif",
+          "width": 1800,
+          "height": 2399
+        },
+        {
+          "src": "/images/generated/hair-caramel-balayage-2400.avif",
+          "width": 2400,
+          "height": 3198
+        }
+      ],
+      "webp": [
+        {
+          "src": "/images/generated/hair-caramel-balayage-480.webp",
+          "width": 480,
+          "height": 640
+        },
+        {
+          "src": "/images/generated/hair-caramel-balayage-768.webp",
+          "width": 768,
+          "height": 1023
+        },
+        {
+          "src": "/images/generated/hair-caramel-balayage-1200.webp",
+          "width": 1200,
+          "height": 1599
+        },
+        {
+          "src": "/images/generated/hair-caramel-balayage-1800.webp",
+          "width": 1800,
+          "height": 2399
+        },
+        {
+          "src": "/images/generated/hair-caramel-balayage-2400.webp",
+          "width": 2400,
+          "height": 3198
+        }
+      ]
+    }
+  },
+  "hair-caramel-hands": {
+    "src": "/images/originals/hair-caramel-hands.jpg",
+    "width": 2400,
+    "height": 3199,
+    "blurDataURL": "data:image/webp;base64,UklGRtgAAABXRUJQVlA4IMwAAABwBQCdASoYACAAPxF0rFCsJyQisAwBgCIJagCsM0xB3chtiGg10vMnBL7/O2jRaCOD3dsAAP59aqlw46WT1yE+RxEopVZb7nNeV5dUVeZ7UurynRJ6clwgrKqHyWHQSbePKoo5Vm3QFXbeoG4CJ0MQyE00uNB76gxgDrP5LuKK+YnoO34qPhE1bu+8Uu4OY64V+g0MY/DQzNd60q0mpL2WXvnXVCwVsBrBK83WcG7TcHDYbwk/nJNpV91+SIcB18skzI1pkc0lePkSrAA=",
+    "formats": {
+      "avif": [
+        {
+          "src": "/images/generated/hair-caramel-hands-480.avif",
+          "width": 480,
+          "height": 640
+        },
+        {
+          "src": "/images/generated/hair-caramel-hands-768.avif",
+          "width": 768,
+          "height": 1024
+        },
+        {
+          "src": "/images/generated/hair-caramel-hands-1200.avif",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "/images/generated/hair-caramel-hands-1800.avif",
+          "width": 1800,
+          "height": 2399
+        },
+        {
+          "src": "/images/generated/hair-caramel-hands-2400.avif",
+          "width": 2400,
+          "height": 3199
+        }
+      ],
+      "webp": [
+        {
+          "src": "/images/generated/hair-caramel-hands-480.webp",
+          "width": 480,
+          "height": 640
+        },
+        {
+          "src": "/images/generated/hair-caramel-hands-768.webp",
+          "width": 768,
+          "height": 1024
+        },
+        {
+          "src": "/images/generated/hair-caramel-hands-1200.webp",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "/images/generated/hair-caramel-hands-1800.webp",
+          "width": 1800,
+          "height": 2399
+        },
+        {
+          "src": "/images/generated/hair-caramel-hands-2400.webp",
+          "width": 2400,
+          "height": 3199
+        }
+      ]
+    }
+  },
+  "hair-caramel-laugh": {
+    "src": "/images/originals/hair-caramel-laugh.jpg",
+    "width": 2400,
+    "height": 3199,
+    "blurDataURL": "data:image/webp;base64,UklGRtQAAABXRUJQVlA4IMgAAADwBQCdASoYACAAPxl8t1Qsp6UjKAqpkCMJaACdMswBl6q8eMj/fz9k3jorv0PR++f7Zo4HFldcEAD3faBhL9zEE2EPLKdvZZHa81bGjaxUFyvZukwa73150uTo5wDTdHgQx3hiSYZ039s1ULF8OH0iziDV3JD8UbqIprGTbZ07lXu3WDTSY3Rv0MAHQ4sx7uDG9TXisE+q3fZPR/eudTkjPI+0lC8bGzGksqDLX/s6xm8OE8RkPUMoKIG1CKt0ZMKkDUBFNAAAAA==",
+    "formats": {
+      "avif": [
+        {
+          "src": "/images/generated/hair-caramel-laugh-480.avif",
+          "width": 480,
+          "height": 640
+        },
+        {
+          "src": "/images/generated/hair-caramel-laugh-768.avif",
+          "width": 768,
+          "height": 1024
+        },
+        {
+          "src": "/images/generated/hair-caramel-laugh-1200.avif",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "/images/generated/hair-caramel-laugh-1800.avif",
+          "width": 1800,
+          "height": 2399
+        },
+        {
+          "src": "/images/generated/hair-caramel-laugh-2400.avif",
+          "width": 2400,
+          "height": 3199
+        }
+      ],
+      "webp": [
+        {
+          "src": "/images/generated/hair-caramel-laugh-480.webp",
+          "width": 480,
+          "height": 640
+        },
+        {
+          "src": "/images/generated/hair-caramel-laugh-768.webp",
+          "width": 768,
+          "height": 1024
+        },
+        {
+          "src": "/images/generated/hair-caramel-laugh-1200.webp",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "/images/generated/hair-caramel-laugh-1800.webp",
+          "width": 1800,
+          "height": 2399
+        },
+        {
+          "src": "/images/generated/hair-caramel-laugh-2400.webp",
+          "width": 2400,
+          "height": 3199
+        }
+      ]
+    }
+  },
+  "hair-champagne-laugh": {
+    "src": "/images/originals/hair-champagne-laugh.jpg",
+    "width": 2400,
+    "height": 3200,
+    "blurDataURL": "data:image/webp;base64,UklGRtgAAABXRUJQVlA4IMwAAACQBQCdASoYACAAPxmEuVasqCWjqAgBkCMJaACo9d0MctCLMPZpA2lXNEQ2873J7FNu0b9FAAD+xB7QVTKLTkEIuekNlMNkL4m+1yTnzOJtqC8ET/Kcrc8776T6f10HLbaREx9tlg9FZWKwB/4Ddq38eJZQUzBMGGA7F2xpfVacZx0MqDIJm+yJZbqvINeLM7e+WGv5R/RTdbkV7MGZaaL4Wm/D7xi09VBKk9PrXqcFGUQ41nzSThJH5qQOEZov3EdgTb6LH2q5l7RAJgA=",
+    "formats": {
+      "avif": [
+        {
+          "src": "/images/generated/hair-champagne-laugh-480.avif",
+          "width": 480,
+          "height": 640
+        },
+        {
+          "src": "/images/generated/hair-champagne-laugh-768.avif",
+          "width": 768,
+          "height": 1024
+        },
+        {
+          "src": "/images/generated/hair-champagne-laugh-1200.avif",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "/images/generated/hair-champagne-laugh-1800.avif",
+          "width": 1800,
+          "height": 2400
+        },
+        {
+          "src": "/images/generated/hair-champagne-laugh-2400.avif",
+          "width": 2400,
+          "height": 3200
+        }
+      ],
+      "webp": [
+        {
+          "src": "/images/generated/hair-champagne-laugh-480.webp",
+          "width": 480,
+          "height": 640
+        },
+        {
+          "src": "/images/generated/hair-champagne-laugh-768.webp",
+          "width": 768,
+          "height": 1024
+        },
+        {
+          "src": "/images/generated/hair-champagne-laugh-1200.webp",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "/images/generated/hair-champagne-laugh-1800.webp",
+          "width": 1800,
+          "height": 2400
+        },
+        {
+          "src": "/images/generated/hair-champagne-laugh-2400.webp",
+          "width": 2400,
+          "height": 3200
+        }
+      ]
+    }
+  },
+  "hair-chocolate-profile": {
+    "src": "/images/originals/hair-chocolate-profile.jpg",
+    "width": 2400,
+    "height": 3201,
+    "blurDataURL": "data:image/webp;base64,UklGRvYAAABXRUJQVlA4IOoAAADwBQCdASoYACAAPxl8tFMsp6UisBgIAZAjCWQAnQAwHiIoPL2vPFOrtZiGVrD3TFthUqueza+sgAD2RbOkCLWWJ8SEzg8YknXLc7RAgPNIorAzLu3bOQwzsbTj9uwH2QeUhxCKEYayDtSKFia1b2DPPhXYS5GSvHeYpzgVoDlum6eibbhy2zzB84PLTleXiyLXi5IW1n1eB8SlJDL5JolGc5r7xUr95myY73YDO/k6qA678JeuHGr9ZdBzLpQvNsxthxbcCcgt3whVk4TRi5R2D30rrNpk31Q/uqhrjbvJWncN4Qe0aoKLzAA=",
+    "formats": {
+      "avif": [
+        {
+          "src": "/images/generated/hair-chocolate-profile-480.avif",
+          "width": 480,
+          "height": 640
+        },
+        {
+          "src": "/images/generated/hair-chocolate-profile-768.avif",
+          "width": 768,
+          "height": 1024
+        },
+        {
+          "src": "/images/generated/hair-chocolate-profile-1200.avif",
+          "width": 1200,
+          "height": 1601
+        },
+        {
+          "src": "/images/generated/hair-chocolate-profile-1800.avif",
+          "width": 1800,
+          "height": 2401
+        },
+        {
+          "src": "/images/generated/hair-chocolate-profile-2400.avif",
+          "width": 2400,
+          "height": 3201
+        }
+      ],
+      "webp": [
+        {
+          "src": "/images/generated/hair-chocolate-profile-480.webp",
+          "width": 480,
+          "height": 640
+        },
+        {
+          "src": "/images/generated/hair-chocolate-profile-768.webp",
+          "width": 768,
+          "height": 1024
+        },
+        {
+          "src": "/images/generated/hair-chocolate-profile-1200.webp",
+          "width": 1200,
+          "height": 1601
+        },
+        {
+          "src": "/images/generated/hair-chocolate-profile-1800.webp",
+          "width": 1800,
+          "height": 2401
+        },
+        {
+          "src": "/images/generated/hair-chocolate-profile-2400.webp",
+          "width": 2400,
+          "height": 3201
+        }
+      ]
+    }
+  },
+  "hair-copper-gloss": {
+    "src": "/images/originals/hair-copper-gloss.jpg",
+    "width": 2400,
+    "height": 3201,
+    "blurDataURL": "data:image/webp;base64,UklGRvYAAABXRUJQVlA4IOoAAABwBQCdASoYACAAPxl+tlSsqCSjKAqpkCMJaACdMt8BCf2WpWN3f68EtC5d7vPKMBX3GTYAAP4i5UfMEiX3Jfq/hFEL9n4wKoiOKjFEUZugWpU00waXjVcXVUASPVZFLT/o60T7JjhjBh7LY8lsGe721PdzkmF5CPdy7ylJeicuYsU2SFF+Flhk0QF7qwuF9acBAKVWvpaq29IbsMIpXnz/jIC8WuFqQoJadtGxxRjJYcTuYHvA3f1Huq4fvkX8roqvyrjyoFr3wCslgVxONKawMqlelA1VJlNG2rUyyPUBXP7mS4A3hAEXgAA=",
+    "formats": {
+      "avif": [
+        {
+          "src": "/images/generated/hair-copper-gloss-480.avif",
+          "width": 480,
+          "height": 640
+        },
+        {
+          "src": "/images/generated/hair-copper-gloss-768.avif",
+          "width": 768,
+          "height": 1024
+        },
+        {
+          "src": "/images/generated/hair-copper-gloss-1200.avif",
+          "width": 1200,
+          "height": 1601
+        },
+        {
+          "src": "/images/generated/hair-copper-gloss-1800.avif",
+          "width": 1800,
+          "height": 2401
+        },
+        {
+          "src": "/images/generated/hair-copper-gloss-2400.avif",
+          "width": 2400,
+          "height": 3201
+        }
+      ],
+      "webp": [
+        {
+          "src": "/images/generated/hair-copper-gloss-480.webp",
+          "width": 480,
+          "height": 640
+        },
+        {
+          "src": "/images/generated/hair-copper-gloss-768.webp",
+          "width": 768,
+          "height": 1024
+        },
+        {
+          "src": "/images/generated/hair-copper-gloss-1200.webp",
+          "width": 1200,
+          "height": 1601
+        },
+        {
+          "src": "/images/generated/hair-copper-gloss-1800.webp",
+          "width": 1800,
+          "height": 2401
+        },
+        {
+          "src": "/images/generated/hair-copper-gloss-2400.webp",
+          "width": 2400,
+          "height": 3201
+        }
+      ]
+    }
+  },
+  "hair-copper-layers": {
+    "src": "/images/originals/hair-copper-layers.jpg",
+    "width": 2400,
+    "height": 3201,
+    "blurDataURL": "data:image/webp;base64,UklGRu4AAABXRUJQVlA4IOIAAACwBQCdASoYACAAPxl2sFCspySisAgBkCMJagC7MzRCmCfOOJOW+fDg7W462EnfgWlPFh8d8PAA/mVMjm4Cl5eE4CKppYaBw2c49QV92KmuLLkp/qwOd+XoXcsJuUk7vMYccapTnmhf6Z+EXGQiwE9hUNKrsYLU1wpASo5Rhf8jZzIlLP0vfV/FKIiZFaUFWxx6a8dZWa0T+etNjRN6R6SguvsD9VGJtfHqZv7UEFBjmb9gl+TvJIHY2IwX0SIH9g2demrH0QB2IJehwa5TjYwxVscrbhevgXiaK9+h2fZhAAAA",
+    "formats": {
+      "avif": [
+        {
+          "src": "/images/generated/hair-copper-layers-480.avif",
+          "width": 480,
+          "height": 640
+        },
+        {
+          "src": "/images/generated/hair-copper-layers-768.avif",
+          "width": 768,
+          "height": 1024
+        },
+        {
+          "src": "/images/generated/hair-copper-layers-1200.avif",
+          "width": 1200,
+          "height": 1601
+        },
+        {
+          "src": "/images/generated/hair-copper-layers-1800.avif",
+          "width": 1800,
+          "height": 2401
+        },
+        {
+          "src": "/images/generated/hair-copper-layers-2400.avif",
+          "width": 2400,
+          "height": 3201
+        }
+      ],
+      "webp": [
+        {
+          "src": "/images/generated/hair-copper-layers-480.webp",
+          "width": 480,
+          "height": 640
+        },
+        {
+          "src": "/images/generated/hair-copper-layers-768.webp",
+          "width": 768,
+          "height": 1024
+        },
+        {
+          "src": "/images/generated/hair-copper-layers-1200.webp",
+          "width": 1200,
+          "height": 1601
+        },
+        {
+          "src": "/images/generated/hair-copper-layers-1800.webp",
+          "width": 1800,
+          "height": 2401
+        },
+        {
+          "src": "/images/generated/hair-copper-layers-2400.webp",
+          "width": 2400,
+          "height": 3201
+        }
+      ]
+    }
+  },
+  "hair-copper-waves": {
+    "src": "/images/originals/hair-copper-waves.jpg",
+    "width": 2400,
+    "height": 3199,
+    "blurDataURL": "data:image/webp;base64,UklGRvYAAABXRUJQVlA4IOoAAAAwBgCdASoYACAAPxl2slEspySisAgBkCMJbACxDSAgxxS+5ZDaeMm6C+2JirOcg190ycotwqwc1Z0AAPyrnlyRmhDqagrjFqmbLTjB3auYJWyVRmkXZeGNgaqYb7ZCjzEHOdDLQRiAEf66dl0QH1XYUxU3in7IjBOxpt/MGGfZaA7XhXbQVXBSazgPVX1ocMGhlaUjTBE/Tv+EgAIeZg28TIirKhoHQhtpqxymGoQFCoDjqSeFz/ah6aPmWtSMQM3DLU+8pwjIWvDm/X4ditd6/CjUAD2lMIDsSkjvyJpwBkynjyB6rPkzgAA=",
+    "formats": {
+      "avif": [
+        {
+          "src": "/images/generated/hair-copper-waves-480.avif",
+          "width": 480,
+          "height": 640
+        },
+        {
+          "src": "/images/generated/hair-copper-waves-768.avif",
+          "width": 768,
+          "height": 1024
+        },
+        {
+          "src": "/images/generated/hair-copper-waves-1200.avif",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "/images/generated/hair-copper-waves-1800.avif",
+          "width": 1800,
+          "height": 2399
+        },
+        {
+          "src": "/images/generated/hair-copper-waves-2400.avif",
+          "width": 2400,
+          "height": 3199
+        }
+      ],
+      "webp": [
+        {
+          "src": "/images/generated/hair-copper-waves-480.webp",
+          "width": 480,
+          "height": 640
+        },
+        {
+          "src": "/images/generated/hair-copper-waves-768.webp",
+          "width": 768,
+          "height": 1024
+        },
+        {
+          "src": "/images/generated/hair-copper-waves-1200.webp",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "/images/generated/hair-copper-waves-1800.webp",
+          "width": 1800,
+          "height": 2399
+        },
+        {
+          "src": "/images/generated/hair-copper-waves-2400.webp",
+          "width": 2400,
+          "height": 3199
+        }
+      ]
+    }
+  },
+  "hair-dark-gloss": {
+    "src": "/images/originals/hair-dark-gloss.jpg",
+    "width": 2400,
+    "height": 3199,
+    "blurDataURL": "data:image/webp;base64,UklGRuwAAABXRUJQVlA4IOAAAACwBQCdASoYACAAPxl+ulOsqCYiqAqpkCMJZAC7BAgApx7iizVu+22bdJRAiruSCLzWDOKyHZgA/VyrQ6f/etEvxojuM4+JMCWqnRYK35sahBg+42zvSXVp5kgOYsveEDYY58eGAcXkbay+MLpUnyXbFACGBeeETq4y2ZLjdQbvEy84LftUmKXzR7uhZ9U6TBjPE3uep9Djm3inbb+csSWh8AdSX++XWFS5V/gkTeNUQwNgHRH6eUN6YqK5aA6jkYnrdEsUcdNbmsNVxiAewo8xnl8ZGA22f6BhUCRqAKIAAA==",
+    "formats": {
+      "avif": [
+        {
+          "src": "/images/generated/hair-dark-gloss-480.avif",
+          "width": 480,
+          "height": 640
+        },
+        {
+          "src": "/images/generated/hair-dark-gloss-768.avif",
+          "width": 768,
+          "height": 1024
+        },
+        {
+          "src": "/images/generated/hair-dark-gloss-1200.avif",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "/images/generated/hair-dark-gloss-1800.avif",
+          "width": 1800,
+          "height": 2399
+        },
+        {
+          "src": "/images/generated/hair-dark-gloss-2400.avif",
+          "width": 2400,
+          "height": 3199
+        }
+      ],
+      "webp": [
+        {
+          "src": "/images/generated/hair-dark-gloss-480.webp",
+          "width": 480,
+          "height": 640
+        },
+        {
+          "src": "/images/generated/hair-dark-gloss-768.webp",
+          "width": 768,
+          "height": 1024
+        },
+        {
+          "src": "/images/generated/hair-dark-gloss-1200.webp",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "/images/generated/hair-dark-gloss-1800.webp",
+          "width": 1800,
+          "height": 2399
+        },
+        {
+          "src": "/images/generated/hair-dark-gloss-2400.webp",
+          "width": 2400,
+          "height": 3199
+        }
+      ]
+    }
+  },
+  "hair-flaviano-client": {
+    "src": "/images/originals/hair-flaviano-client.jpg",
+    "width": 1320,
+    "height": 1904,
+    "blurDataURL": "data:image/webp;base64,UklGRvIAAABXRUJQVlA4IOYAAABwBgCdASoYACMAPxmGuVWsqSWjKrgIAZAjCWUAvkgglekbhAzPLWiCbJSykZ8ToQaqUZbKOeimKcudyoAA4nssk6RvKhcdbIINOxLixMMtoZR1Zl2PbqO59K6hjfMXOHPNZ3kSyRfVWHh4NjAIbKlp7U8an3rQpQO3HMnboZYeWssi/1EYo0SdbDn72fI4uE9Mf+32uif3YCZh1kAboPKMkrzBy3nzWtwYdTf7NijUwWNJgsS7Y78X0F3mxG8TX4lVBMypV1UZg+se9wZ1kYXkhLBqyAub8YJ6XXWv2A7eryCRdKbsAA==",
+    "formats": {
+      "avif": [
+        {
+          "src": "/images/generated/hair-flaviano-client-480.avif",
+          "width": 480,
+          "height": 692
+        },
+        {
+          "src": "/images/generated/hair-flaviano-client-768.avif",
+          "width": 768,
+          "height": 1108
+        },
+        {
+          "src": "/images/generated/hair-flaviano-client-1200.avif",
+          "width": 1200,
+          "height": 1731
+        },
+        {
+          "src": "/images/generated/hair-flaviano-client-1320.avif",
+          "width": 1320,
+          "height": 1904
+        }
+      ],
+      "webp": [
+        {
+          "src": "/images/generated/hair-flaviano-client-480.webp",
+          "width": 480,
+          "height": 692
+        },
+        {
+          "src": "/images/generated/hair-flaviano-client-768.webp",
+          "width": 768,
+          "height": 1108
+        },
+        {
+          "src": "/images/generated/hair-flaviano-client-1200.webp",
+          "width": 1200,
+          "height": 1731
+        },
+        {
+          "src": "/images/generated/hair-flaviano-client-1320.webp",
+          "width": 1320,
+          "height": 1904
+        }
+      ]
+    }
+  },
   "hair-hero": {
     "src": "/images/originals/hair-hero.jpg",
     "width": 2500,
@@ -351,38 +1479,6 @@
       ]
     }
   },
-  "home-hero": {
-    "src": "/images/originals/home-hero.jpg",
-    "width": 755,
-    "height": 1261,
-    "blurDataURL": "data:image/webp;base64,UklGRjQBAABXRUJQVlA4ICgBAABQBwCdASoYACgAPxl8tVSspySjKqgBkCMJQBdmcLHKgl2MBwaMKJkvGCJZ17/YJmP4S6Fn8BrJRF3QSyzxrhNA8o+AAPaq5AM0VGjX8eJlqcLke0TeBMTe4f/VePRPK+tJn1cqcZ00HMwrA9AhCrh3zW+eGgsz9ehRAHT/14fYBcb0AWvuVlIalnzgsXafEyeAr1bIr/s0oQUWBGYYdvsM1fmALghc4dxRW6u/DgZ2mvK90iSlsfQJzwKVSkHJii11wjoTz266yFLDO8BPq+oxVrjzNBvsx7JqQLYhZkqvz0ri8xyjCl4LjGg2iLVUuKMRcw8SiMrnZMGfiCrhn06DtetoLBTfzIqhTqCNZ+gWL4thpyOi/SF7Ffq+SvY7V075d/z0C8QAAA==",
-    "formats": {
-      "avif": [
-        {
-          "src": "/images/generated/home-hero-480.avif",
-          "width": 480,
-          "height": 802
-        },
-        {
-          "src": "/images/generated/home-hero-755.avif",
-          "width": 755,
-          "height": 1261
-        }
-      ],
-      "webp": [
-        {
-          "src": "/images/generated/home-hero-480.webp",
-          "width": 480,
-          "height": 802
-        },
-        {
-          "src": "/images/generated/home-hero-755.webp",
-          "width": 755,
-          "height": 1261
-        }
-      ]
-    }
-  },
   "salon-interior": {
     "src": "/images/originals/salon-interior.jpg",
     "width": 2500,
@@ -451,6 +1547,638 @@
           "src": "/images/generated/salon-interior-2500.webp",
           "width": 2500,
           "height": 1875
+        }
+      ]
+    }
+  },
+  "salon-reception": {
+    "src": "/images/originals/salon-reception.jpg",
+    "width": 1320,
+    "height": 1751,
+    "blurDataURL": "data:image/webp;base64,UklGRvIAAABXRUJQVlA4IOYAAACwBQCdASoYACAAPxl0sVCspqSisAgBkCMJQBYhpnB2k0Lto1GV6ujNXzSQr31rQfaKF8WC3ygA9ZF1dfaWvIS048mWl6OE+1aoEifdOZvQ/WywgMmIzgE3iLzPwpTcVlX1U7rwFovrhXPq4b55/ng6kxrYui4/zfQtFDxB/zN9zF+70j1PK66873xonqS/uic7UClCN7y8/+4GVxJAbeSfNNtcvouE9/3uQHpVGt8t4B8UotiQ8Gpvc0Zx0wRwDwhFW2+qwSgtpXQREiFDqlYGhd1idqvKSk/LZvo+a+rx6VR8yLRAAA==",
+    "formats": {
+      "avif": [
+        {
+          "src": "/images/generated/salon-reception-480.avif",
+          "width": 480,
+          "height": 637
+        },
+        {
+          "src": "/images/generated/salon-reception-768.avif",
+          "width": 768,
+          "height": 1019
+        },
+        {
+          "src": "/images/generated/salon-reception-1200.avif",
+          "width": 1200,
+          "height": 1592
+        },
+        {
+          "src": "/images/generated/salon-reception-1320.avif",
+          "width": 1320,
+          "height": 1751
+        }
+      ],
+      "webp": [
+        {
+          "src": "/images/generated/salon-reception-480.webp",
+          "width": 480,
+          "height": 637
+        },
+        {
+          "src": "/images/generated/salon-reception-768.webp",
+          "width": 768,
+          "height": 1019
+        },
+        {
+          "src": "/images/generated/salon-reception-1200.webp",
+          "width": 1200,
+          "height": 1592
+        },
+        {
+          "src": "/images/generated/salon-reception-1320.webp",
+          "width": 1320,
+          "height": 1751
+        }
+      ]
+    }
+  },
+  "salon-team": {
+    "src": "/images/originals/salon-team.jpg",
+    "width": 1288,
+    "height": 1721,
+    "blurDataURL": "data:image/webp;base64,UklGRiIBAABXRUJQVlA4IBYBAAAwBgCdASoYACAAPxl4sVEspySisAgBkCMJZACdBAgR8zvMPrgP1E0D4AY6mmqsrfO0KGfxfLel6EiAAP5iNrHn43OSN+iP8TBk6j1/TXMq/ojGA51V7qNyizRSW8oPsnZ7GM+Aw3lmxScvHJ+sesnel6EgZ+GN7KsDTluUDr3MqeZs7/Ns7pAkw1X5okztqibAvDaOqBiX6TwLfeoBybH728oRSJSZBT1BQAWtR1ydZVQv8eOh7tRdtnlrLdO2IP/ltf8FVpJUU2HIqB3bNC6O5cK1IAxo5a+6TXM7hZbS7oupufNhetYktTeRcMWltrz6mYucG2ddkTWyZshi/NyGercb1xZfnYw4jgCHqhEZTdAGaQAAAA==",
+    "formats": {
+      "avif": [
+        {
+          "src": "/images/generated/salon-team-480.avif",
+          "width": 480,
+          "height": 641
+        },
+        {
+          "src": "/images/generated/salon-team-768.avif",
+          "width": 768,
+          "height": 1026
+        },
+        {
+          "src": "/images/generated/salon-team-1200.avif",
+          "width": 1200,
+          "height": 1603
+        },
+        {
+          "src": "/images/generated/salon-team-1288.avif",
+          "width": 1288,
+          "height": 1721
+        }
+      ],
+      "webp": [
+        {
+          "src": "/images/generated/salon-team-480.webp",
+          "width": 480,
+          "height": 641
+        },
+        {
+          "src": "/images/generated/salon-team-768.webp",
+          "width": 768,
+          "height": 1026
+        },
+        {
+          "src": "/images/generated/salon-team-1200.webp",
+          "width": 1200,
+          "height": 1603
+        },
+        {
+          "src": "/images/generated/salon-team-1288.webp",
+          "width": 1288,
+          "height": 1721
+        }
+      ]
+    }
+  },
+  "style-curls-front": {
+    "src": "/images/originals/style-curls-front.jpg",
+    "width": 2400,
+    "height": 3199,
+    "blurDataURL": "data:image/webp;base64,UklGRgQBAABXRUJQVlA4IPgAAAAQBwCdASoYACAAPxl8tVKsp6UisBgIAZAjCWwAnTLjf4DfNAMKqAN0GTQSNk+zYSUeSpeIEbnfVUvzwE7pdbqZOAD+g+NToHALwFFxeBvP61yNbW2VdIP77zdhsq/ipSOzj5le3txqGTC+uFwzdOLoiYUYx7BKUctoPvLuHgG9t0G5Rlq3Gnla0VIIE3mMtjemAffPC4CLtndKpDR0aLNmcKe9PcME3eFF+zoLZ9CFae9LeE6qh0bBjXVePNV92YzCKjvdMET0bGbX1OogooaBySTFwTE2P8Zg0JJCg1OtfIVaYUiUNYSbbDTyUNQt6hUT64z2VdAAAA==",
+    "formats": {
+      "avif": [
+        {
+          "src": "/images/generated/style-curls-front-480.avif",
+          "width": 480,
+          "height": 640
+        },
+        {
+          "src": "/images/generated/style-curls-front-768.avif",
+          "width": 768,
+          "height": 1024
+        },
+        {
+          "src": "/images/generated/style-curls-front-1200.avif",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "/images/generated/style-curls-front-1800.avif",
+          "width": 1800,
+          "height": 2399
+        },
+        {
+          "src": "/images/generated/style-curls-front-2400.avif",
+          "width": 2400,
+          "height": 3199
+        }
+      ],
+      "webp": [
+        {
+          "src": "/images/generated/style-curls-front-480.webp",
+          "width": 480,
+          "height": 640
+        },
+        {
+          "src": "/images/generated/style-curls-front-768.webp",
+          "width": 768,
+          "height": 1024
+        },
+        {
+          "src": "/images/generated/style-curls-front-1200.webp",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "/images/generated/style-curls-front-1800.webp",
+          "width": 1800,
+          "height": 2399
+        },
+        {
+          "src": "/images/generated/style-curls-front-2400.webp",
+          "width": 2400,
+          "height": 3199
+        }
+      ]
+    }
+  },
+  "style-curls-lounge": {
+    "src": "/images/originals/style-curls-lounge.jpg",
+    "width": 2400,
+    "height": 3199,
+    "blurDataURL": "data:image/webp;base64,UklGRuYAAABXRUJQVlA4INoAAABwBgCdASoYACAAPxl8tFKsp6UisBgIAZAjCWwAsR7ewUhBIZrrBj0MCR7TMLA6svqxh4e4Z6YLE8AzI9AA+klIYXT9xvHVfo65qUl44Db5SkaSjjUxhPVsBi68jC5C0VEprgbj3UQyMcYVA+rtO7rNeW+LVcIjMGO+nFjDKefCFT7yg06b7ul0MSBGD2/x5TN97PJW0SaSrQ0wYDOtZbnIwTmtIE1hUz3xkatSTUgKe1aTzo+j0C3seZT9Jdrk9Yte4fehGCYXEbQyVSgajJVp5sWdJKGBtsAAAA==",
+    "formats": {
+      "avif": [
+        {
+          "src": "/images/generated/style-curls-lounge-480.avif",
+          "width": 480,
+          "height": 640
+        },
+        {
+          "src": "/images/generated/style-curls-lounge-768.avif",
+          "width": 768,
+          "height": 1024
+        },
+        {
+          "src": "/images/generated/style-curls-lounge-1200.avif",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "/images/generated/style-curls-lounge-1800.avif",
+          "width": 1800,
+          "height": 2399
+        },
+        {
+          "src": "/images/generated/style-curls-lounge-2400.avif",
+          "width": 2400,
+          "height": 3199
+        }
+      ],
+      "webp": [
+        {
+          "src": "/images/generated/style-curls-lounge-480.webp",
+          "width": 480,
+          "height": 640
+        },
+        {
+          "src": "/images/generated/style-curls-lounge-768.webp",
+          "width": 768,
+          "height": 1024
+        },
+        {
+          "src": "/images/generated/style-curls-lounge-1200.webp",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "/images/generated/style-curls-lounge-1800.webp",
+          "width": 1800,
+          "height": 2399
+        },
+        {
+          "src": "/images/generated/style-curls-lounge-2400.webp",
+          "width": 2400,
+          "height": 3199
+        }
+      ]
+    }
+  },
+  "style-glam-blush": {
+    "src": "/images/originals/style-glam-blush.jpg",
+    "width": 2400,
+    "height": 3200,
+    "blurDataURL": "data:image/webp;base64,UklGRvYAAABXRUJQVlA4IOoAAACwBQCdASoYACAAPxl+uFQsp6WjKAqpkCMJQBZwtegaBKd0mQn1XXI6XwW/QFj5yl+lKqKmrAAA25NdyV4BnQ19UPVzLmQd9LbRn4eSagrn/q+bm2x7V97kKW/QhbU0AFi9haSd4/vEZxmehUv3SV0ot8SHHDQamsI4piMM8Vpsb1UwjzgueQpHPdpyDV9O4VrtESdOaZi8hCPxSpCGUo4uFyHkHhk0ioI9Y2urfFXevLAW3PIB2oz0fRWKxjz7NKNMygXooLd2ChC/1hQgNQsWr0A+lHMKMs7cwhf12dqqr05n9o6lAZGAAAA=",
+    "formats": {
+      "avif": [
+        {
+          "src": "/images/generated/style-glam-blush-480.avif",
+          "width": 480,
+          "height": 640
+        },
+        {
+          "src": "/images/generated/style-glam-blush-768.avif",
+          "width": 768,
+          "height": 1024
+        },
+        {
+          "src": "/images/generated/style-glam-blush-1200.avif",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "/images/generated/style-glam-blush-1800.avif",
+          "width": 1800,
+          "height": 2400
+        },
+        {
+          "src": "/images/generated/style-glam-blush-2400.avif",
+          "width": 2400,
+          "height": 3200
+        }
+      ],
+      "webp": [
+        {
+          "src": "/images/generated/style-glam-blush-480.webp",
+          "width": 480,
+          "height": 640
+        },
+        {
+          "src": "/images/generated/style-glam-blush-768.webp",
+          "width": 768,
+          "height": 1024
+        },
+        {
+          "src": "/images/generated/style-glam-blush-1200.webp",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "/images/generated/style-glam-blush-1800.webp",
+          "width": 1800,
+          "height": 2400
+        },
+        {
+          "src": "/images/generated/style-glam-blush-2400.webp",
+          "width": 2400,
+          "height": 3200
+        }
+      ]
+    }
+  },
+  "style-glam-leopard": {
+    "src": "/images/originals/style-glam-leopard.jpg",
+    "width": 2400,
+    "height": 3200,
+    "blurDataURL": "data:image/webp;base64,UklGRhoBAABXRUJQVlA4IA4BAABwBgCdASoYACAAPxF0rFCsJyQisAwBgCIJaADHJzLzJBBjAVU0nDlnD1y3XmXAHfGZ8iBx4/UNooZaOQAAziPt2TqglcVEXVXGdV4Vdoq4WBd7zuNKnBDBN38oAtLujXfdOmT9TrJVQRytfvGQmzVK+Yf19rj2gxpkDrxMcLwWWanahx3WKBVNslpT90bJMGU9fnfejXNlNH16nvXc+6io6zdLtXpGkmFatXMRYrMpHbB13DiqAfeTTrdXdCF+NZzedoB6UCXdGYCvTDWMYAnHv0Ak00GP0C00V0IVcO790PhxKuhRfKVmtYubRxsZ9YKsMuLp6qjkGSkTDWH/2xq3gfuhAIlPCoevI5hxAAA=",
+    "formats": {
+      "avif": [
+        {
+          "src": "/images/generated/style-glam-leopard-480.avif",
+          "width": 480,
+          "height": 640
+        },
+        {
+          "src": "/images/generated/style-glam-leopard-768.avif",
+          "width": 768,
+          "height": 1024
+        },
+        {
+          "src": "/images/generated/style-glam-leopard-1200.avif",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "/images/generated/style-glam-leopard-1800.avif",
+          "width": 1800,
+          "height": 2400
+        },
+        {
+          "src": "/images/generated/style-glam-leopard-2400.avif",
+          "width": 2400,
+          "height": 3200
+        }
+      ],
+      "webp": [
+        {
+          "src": "/images/generated/style-glam-leopard-480.webp",
+          "width": 480,
+          "height": 640
+        },
+        {
+          "src": "/images/generated/style-glam-leopard-768.webp",
+          "width": 768,
+          "height": 1024
+        },
+        {
+          "src": "/images/generated/style-glam-leopard-1200.webp",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "/images/generated/style-glam-leopard-1800.webp",
+          "width": 1800,
+          "height": 2400
+        },
+        {
+          "src": "/images/generated/style-glam-leopard-2400.webp",
+          "width": 2400,
+          "height": 3200
+        }
+      ]
+    }
+  },
+  "style-lounge-pomeranian": {
+    "src": "/images/originals/style-lounge-pomeranian.jpg",
+    "width": 2400,
+    "height": 3200,
+    "blurDataURL": "data:image/webp;base64,UklGRhgBAABXRUJQVlA4IAwBAABwBgCdASoYACAAPxl4slEsp6SisAgBkCMJYgCdIVz4ouLWTtosM2QE6L84H/r7l4B6XWmz5tWAROh8tgAA/c1l3IXITekwk1bHCrMfG2JyLg92p9QessUBd8JFYC0+KVfqCu0C5RUQpROS4kMZntx13oVWeENEVjSWECEG/mWr7jRvS+lwt4xl01U58wBeQNmwz9ltHuIIOmehkycLYfYqWiZ5CA2JUbSfC30KWBsQTtewfeBv3sRlKfS908Cv7Nu88VU3RDszycXxm7VtQM05XqRLWDMuL0C6nNpZxiuGRqOggMu2qQli8Q9fb8mxnp/lGlfYpr1uH3MDkYY1IDEguVCwMxyRlx3lc1AA",
+    "formats": {
+      "avif": [
+        {
+          "src": "/images/generated/style-lounge-pomeranian-480.avif",
+          "width": 480,
+          "height": 640
+        },
+        {
+          "src": "/images/generated/style-lounge-pomeranian-768.avif",
+          "width": 768,
+          "height": 1024
+        },
+        {
+          "src": "/images/generated/style-lounge-pomeranian-1200.avif",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "/images/generated/style-lounge-pomeranian-1800.avif",
+          "width": 1800,
+          "height": 2400
+        },
+        {
+          "src": "/images/generated/style-lounge-pomeranian-2400.avif",
+          "width": 2400,
+          "height": 3200
+        }
+      ],
+      "webp": [
+        {
+          "src": "/images/generated/style-lounge-pomeranian-480.webp",
+          "width": 480,
+          "height": 640
+        },
+        {
+          "src": "/images/generated/style-lounge-pomeranian-768.webp",
+          "width": 768,
+          "height": 1024
+        },
+        {
+          "src": "/images/generated/style-lounge-pomeranian-1200.webp",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "/images/generated/style-lounge-pomeranian-1800.webp",
+          "width": 1800,
+          "height": 2400
+        },
+        {
+          "src": "/images/generated/style-lounge-pomeranian-2400.webp",
+          "width": 2400,
+          "height": 3200
+        }
+      ]
+    }
+  },
+  "style-sleek-pink": {
+    "src": "/images/originals/style-sleek-pink.jpg",
+    "width": 2400,
+    "height": 3200,
+    "blurDataURL": "data:image/webp;base64,UklGRggBAABXRUJQVlA4IPwAAACQBQCdASoYACAAPxl0sVEspqSisAgBkCMJbAC91AgOWqPGygnvnrRFjtgpX/Eg5vYb8H2mAAD+3bAJxw4EuKpM8O0v3kXsVmIgLec6FJOHiY9BAY0GVl2o8eOF3+9E/iziz2mY7p3SMEaZyf6G+ItXTobv0lS3Dwb+Lwm5sSzThGQL9nsrrzZKCLesZY5My4TqiCDXPje5LTEdyDkxBxLEK9FtdutldqUDQiuVyVgWXzMhF59bAjNaSfMZqbFFOoSWoiFwLCRcz733HcilaW7CEjPTLrqGKCrNV5IG72Tx3bVT8XGxq+1Qzj5Ys/HwM1jDAtebgOxYWPDAAAA=",
+    "formats": {
+      "avif": [
+        {
+          "src": "/images/generated/style-sleek-pink-480.avif",
+          "width": 480,
+          "height": 640
+        },
+        {
+          "src": "/images/generated/style-sleek-pink-768.avif",
+          "width": 768,
+          "height": 1024
+        },
+        {
+          "src": "/images/generated/style-sleek-pink-1200.avif",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "/images/generated/style-sleek-pink-1800.avif",
+          "width": 1800,
+          "height": 2400
+        },
+        {
+          "src": "/images/generated/style-sleek-pink-2400.avif",
+          "width": 2400,
+          "height": 3200
+        }
+      ],
+      "webp": [
+        {
+          "src": "/images/generated/style-sleek-pink-480.webp",
+          "width": 480,
+          "height": 640
+        },
+        {
+          "src": "/images/generated/style-sleek-pink-768.webp",
+          "width": 768,
+          "height": 1024
+        },
+        {
+          "src": "/images/generated/style-sleek-pink-1200.webp",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "/images/generated/style-sleek-pink-1800.webp",
+          "width": 1800,
+          "height": 2400
+        },
+        {
+          "src": "/images/generated/style-sleek-pink-2400.webp",
+          "width": 2400,
+          "height": 3200
+        }
+      ]
+    }
+  },
+  "wedding-black-white": {
+    "src": "/images/originals/wedding-black-white.jpg",
+    "width": 1320,
+    "height": 1967,
+    "blurDataURL": "data:image/webp;base64,UklGRtgAAABXRUJQVlA4IMwAAADwBQCdASoYACQAPxmAtVSsqCSjKqgBkCMJaQAANomC4SRk/NpG7yyfLD0YtS9rZUZqlGhYs4xuUAD1U1ICBbHV23wZLbba4/ocLonEU5TG+e5/wtYRVW6YYUrKWzX2vW1vNtDdTW3Bpv2hOw0jHUZao2kiVAOiEQTEgqsl5mn4M97Oz2OlSOGewCUIwDgAoF74B4YdIat1mUFmr5l29N7yC3kPR5AuJoBPtzDydUV6LxtidS4QfrQzH1dFZT8omaqDQRIy712XhsAAAAA=",
+    "formats": {
+      "avif": [
+        {
+          "src": "/images/generated/wedding-black-white-480.avif",
+          "width": 480,
+          "height": 715
+        },
+        {
+          "src": "/images/generated/wedding-black-white-768.avif",
+          "width": 768,
+          "height": 1144
+        },
+        {
+          "src": "/images/generated/wedding-black-white-1200.avif",
+          "width": 1200,
+          "height": 1788
+        },
+        {
+          "src": "/images/generated/wedding-black-white-1320.avif",
+          "width": 1320,
+          "height": 1967
+        }
+      ],
+      "webp": [
+        {
+          "src": "/images/generated/wedding-black-white-480.webp",
+          "width": 480,
+          "height": 715
+        },
+        {
+          "src": "/images/generated/wedding-black-white-768.webp",
+          "width": 768,
+          "height": 1144
+        },
+        {
+          "src": "/images/generated/wedding-black-white-1200.webp",
+          "width": 1200,
+          "height": 1788
+        },
+        {
+          "src": "/images/generated/wedding-black-white-1320.webp",
+          "width": 1320,
+          "height": 1967
+        }
+      ]
+    }
+  },
+  "wedding-bridal-party": {
+    "src": "/images/originals/wedding-bridal-party.jpg",
+    "width": 1320,
+    "height": 874,
+    "blurDataURL": "data:image/webp;base64,UklGRpgAAABXRUJQVlA4IIwAAADQAwCdASoYABAAPxl0slEspqSisAgBkCMJZQC2yAeqIIXo6Z5JUUAAzFQcQ3/eeutASGO1HxSAio9YjOk9/CpaqjvdyKTBZ2+eMeICVehI00sGivlupPkpwSuCl15z8MFVGg0ZC/iYacqAqOyYsVR17nMUD8s9S90gzwjKq8D9tQB6C5TapnuaxMEAAA==",
+    "formats": {
+      "avif": [
+        {
+          "src": "/images/generated/wedding-bridal-party-480.avif",
+          "width": 480,
+          "height": 318
+        },
+        {
+          "src": "/images/generated/wedding-bridal-party-768.avif",
+          "width": 768,
+          "height": 509
+        },
+        {
+          "src": "/images/generated/wedding-bridal-party-1200.avif",
+          "width": 1200,
+          "height": 795
+        },
+        {
+          "src": "/images/generated/wedding-bridal-party-1320.avif",
+          "width": 1320,
+          "height": 874
+        }
+      ],
+      "webp": [
+        {
+          "src": "/images/generated/wedding-bridal-party-480.webp",
+          "width": 480,
+          "height": 318
+        },
+        {
+          "src": "/images/generated/wedding-bridal-party-768.webp",
+          "width": 768,
+          "height": 509
+        },
+        {
+          "src": "/images/generated/wedding-bridal-party-1200.webp",
+          "width": 1200,
+          "height": 795
+        },
+        {
+          "src": "/images/generated/wedding-bridal-party-1320.webp",
+          "width": 1320,
+          "height": 874
+        }
+      ]
+    }
+  },
+  "wedding-final-touches": {
+    "src": "/images/originals/wedding-final-touches.jpg",
+    "width": 1320,
+    "height": 1731,
+    "blurDataURL": "data:image/webp;base64,UklGRtgAAABXRUJQVlA4IMwAAABQBQCdASoYAB8APxl2tlOspqUisBgIAZAjCUAXYAHsCtnSwHxwED/8behFTKKezQH2VoQA/YqxSnUDtkq0GZ5/uWSJRtgb5NoJ17/IfeyeWkO/QeUMM+7tqECYhA26aFHp7eqHc9sP1xm51W17Em3U8jYco3QfPZfMSpM4G5Yi/aW8DaN6BZ4DfI1xR8954UzDZESEUIv9YPQsQsw16mfn/fnYX5GUjIJ3DynfSxVQv8/056xrPOEIsGDHbqqSe/N4Qq7bzUXbe+hwAAA=",
+    "formats": {
+      "avif": [
+        {
+          "src": "/images/generated/wedding-final-touches-480.avif",
+          "width": 480,
+          "height": 629
+        },
+        {
+          "src": "/images/generated/wedding-final-touches-768.avif",
+          "width": 768,
+          "height": 1007
+        },
+        {
+          "src": "/images/generated/wedding-final-touches-1200.avif",
+          "width": 1200,
+          "height": 1574
+        },
+        {
+          "src": "/images/generated/wedding-final-touches-1320.avif",
+          "width": 1320,
+          "height": 1731
+        }
+      ],
+      "webp": [
+        {
+          "src": "/images/generated/wedding-final-touches-480.webp",
+          "width": 480,
+          "height": 629
+        },
+        {
+          "src": "/images/generated/wedding-final-touches-768.webp",
+          "width": 768,
+          "height": 1007
+        },
+        {
+          "src": "/images/generated/wedding-final-touches-1200.webp",
+          "width": 1200,
+          "height": 1574
+        },
+        {
+          "src": "/images/generated/wedding-final-touches-1320.webp",
+          "width": 1320,
+          "height": 1731
         }
       ]
     }
@@ -527,506 +2255,54 @@
       ]
     }
   },
-  "work-0799": {
-    "src": "/images/originals/work-0799.jpg",
-    "width": 2500,
-    "height": 3333,
-    "blurDataURL": "data:image/webp;base64,UklGRtgAAABXRUJQVlA4IMwAAACQBQCdASoYACAAPxl4slCsp6SisAgBkCMJQBfnZYAxEfnGTz0igsY51UxmD0wWhMsJTpRMAAD+w/2ukkdKWvoFsb1Q7fzcCTycMcoED2oHPkUj9sGsOLkJLI+4x7WKyW4sn6iy1Po+rIgkxUk+2TAMbrMLCRP4IPPuyLwAS/7OvS4vOIrekrNVAAUmy/tGGHOdQuFBFVvwQUjfRJ20txFuedyQ3j0Uu5QR+JFHcSjJ53QuzgLaRJiNu2xDOCdd5qR1ed9C+4+l/ioAAAA=",
+  "wedding-veil": {
+    "src": "/images/originals/wedding-veil.jpg",
+    "width": 1320,
+    "height": 1962,
+    "blurDataURL": "data:image/webp;base64,UklGRs4AAABXRUJQVlA4IMIAAAAQBgCdASoYACQAPxl+uVYspyWjqrgIAZAjCWUAwNwhnxaEC8tlNg8bWrs+DDxbyhoIa5avu1UtrAAA4RVrpSIb57C3W9LskFyZLvhwc+Kvgb9UD3mmQTEw27hKj1TdP+teuiDPsnb27Nj6bhJvvNodYCtlVTjcBk1q2a9fY3ISa+/On0N9KM4y2rPVUwXb2fVqPpstj2J435AQDtJkU5XX8Mj7jbe8Lp6hN5n8h7aoTS16ugdTT7dT5HMScHoHyEAAAA==",
     "formats": {
       "avif": [
         {
-          "src": "/images/generated/work-0799-480.avif",
+          "src": "/images/generated/wedding-veil-480.avif",
           "width": 480,
-          "height": 640
+          "height": 713
         },
         {
-          "src": "/images/generated/work-0799-768.avif",
+          "src": "/images/generated/wedding-veil-768.avif",
           "width": 768,
-          "height": 1024
+          "height": 1142
         },
         {
-          "src": "/images/generated/work-0799-1200.avif",
+          "src": "/images/generated/wedding-veil-1200.avif",
           "width": 1200,
-          "height": 1600
+          "height": 1784
         },
         {
-          "src": "/images/generated/work-0799-1800.avif",
-          "width": 1800,
-          "height": 2400
-        },
-        {
-          "src": "/images/generated/work-0799-2400.avif",
-          "width": 2400,
-          "height": 3200
-        },
-        {
-          "src": "/images/generated/work-0799-2500.avif",
-          "width": 2500,
-          "height": 3333
+          "src": "/images/generated/wedding-veil-1320.avif",
+          "width": 1320,
+          "height": 1962
         }
       ],
       "webp": [
         {
-          "src": "/images/generated/work-0799-480.webp",
+          "src": "/images/generated/wedding-veil-480.webp",
           "width": 480,
-          "height": 640
+          "height": 713
         },
         {
-          "src": "/images/generated/work-0799-768.webp",
+          "src": "/images/generated/wedding-veil-768.webp",
           "width": 768,
-          "height": 1024
+          "height": 1142
         },
         {
-          "src": "/images/generated/work-0799-1200.webp",
+          "src": "/images/generated/wedding-veil-1200.webp",
           "width": 1200,
-          "height": 1600
+          "height": 1784
         },
         {
-          "src": "/images/generated/work-0799-1800.webp",
-          "width": 1800,
-          "height": 2400
-        },
-        {
-          "src": "/images/generated/work-0799-2400.webp",
-          "width": 2400,
-          "height": 3200
-        },
-        {
-          "src": "/images/generated/work-0799-2500.webp",
-          "width": 2500,
-          "height": 3333
-        }
-      ]
-    }
-  },
-  "work-0847": {
-    "src": "/images/originals/work-0847.jpg",
-    "width": 2500,
-    "height": 3333,
-    "blurDataURL": "data:image/webp;base64,UklGRvwAAABXRUJQVlA4IPAAAABwBgCdASoYACAAPxl8tVKsp6UisBgIAZAjCWQAnQHdy4dyabYYqsjglPVgAj3M+t05saektZ+Vt+4FGAAA/c8AaHLVph4RCCP9qzYxdIx9Ks/6fNf5yHSsNeMbR65GxESKtUT1LruIW3Iw0awTTZAgp7VjbiRBl9xXlUBZ9zcCB9kzphc19T4pUOLkQb4/3dJmPDlAYGuNK7xGd2xiGhSUfuZp5qZra/7dwzQ9vWsB5HuqrG0YGlQk+7dqDlapiEg1itYbi/rHbizR1LDXQv+pb0IC+nba7Hkr943gWu9jrSCXXKyxzAB5iqB8AtB6AAA=",
-    "formats": {
-      "avif": [
-        {
-          "src": "/images/generated/work-0847-480.avif",
-          "width": 480,
-          "height": 640
-        },
-        {
-          "src": "/images/generated/work-0847-768.avif",
-          "width": 768,
-          "height": 1024
-        },
-        {
-          "src": "/images/generated/work-0847-1200.avif",
-          "width": 1200,
-          "height": 1600
-        },
-        {
-          "src": "/images/generated/work-0847-1800.avif",
-          "width": 1800,
-          "height": 2400
-        },
-        {
-          "src": "/images/generated/work-0847-2400.avif",
-          "width": 2400,
-          "height": 3200
-        },
-        {
-          "src": "/images/generated/work-0847-2500.avif",
-          "width": 2500,
-          "height": 3333
-        }
-      ],
-      "webp": [
-        {
-          "src": "/images/generated/work-0847-480.webp",
-          "width": 480,
-          "height": 640
-        },
-        {
-          "src": "/images/generated/work-0847-768.webp",
-          "width": 768,
-          "height": 1024
-        },
-        {
-          "src": "/images/generated/work-0847-1200.webp",
-          "width": 1200,
-          "height": 1600
-        },
-        {
-          "src": "/images/generated/work-0847-1800.webp",
-          "width": 1800,
-          "height": 2400
-        },
-        {
-          "src": "/images/generated/work-0847-2400.webp",
-          "width": 2400,
-          "height": 3200
-        },
-        {
-          "src": "/images/generated/work-0847-2500.webp",
-          "width": 2500,
-          "height": 3333
-        }
-      ]
-    }
-  },
-  "work-1039": {
-    "src": "/images/originals/work-1039.jpg",
-    "width": 2500,
-    "height": 3333,
-    "blurDataURL": "data:image/webp;base64,UklGRg4BAABXRUJQVlA4IAIBAAAwBgCdASoYACAAPxmAs1UsqCQjKAqpkCMJbACpFNN4V+DsU3O3+HNRHuh10oyobSL+Ec57JmAzRvAAAP21CEAGifoHo69SMBue0HC3BWE88MF/7NxWl6Xih4VCofGx7RpTwIF+UGj0I+pi/QqFyrMHIv7xB5cvYqtCrzKc0CwkyA4YuWNeyT9noAKqvyZEKVlFn80e5SvTw5blPt6pyor1jtYVdsM2+4w8ZOphDkjyMELXYLv6ksVHLgM6Z7PMivR0Bcqx10cvgAKz/4qT3x5Te/n6x1rAzBQsQJVYL24f/09MI/aaPezIOxo03hASX3sftJIGReqh1ndoQeobcOkAAAA=",
-    "formats": {
-      "avif": [
-        {
-          "src": "/images/generated/work-1039-480.avif",
-          "width": 480,
-          "height": 640
-        },
-        {
-          "src": "/images/generated/work-1039-768.avif",
-          "width": 768,
-          "height": 1024
-        },
-        {
-          "src": "/images/generated/work-1039-1200.avif",
-          "width": 1200,
-          "height": 1600
-        },
-        {
-          "src": "/images/generated/work-1039-1800.avif",
-          "width": 1800,
-          "height": 2400
-        },
-        {
-          "src": "/images/generated/work-1039-2400.avif",
-          "width": 2400,
-          "height": 3200
-        },
-        {
-          "src": "/images/generated/work-1039-2500.avif",
-          "width": 2500,
-          "height": 3333
-        }
-      ],
-      "webp": [
-        {
-          "src": "/images/generated/work-1039-480.webp",
-          "width": 480,
-          "height": 640
-        },
-        {
-          "src": "/images/generated/work-1039-768.webp",
-          "width": 768,
-          "height": 1024
-        },
-        {
-          "src": "/images/generated/work-1039-1200.webp",
-          "width": 1200,
-          "height": 1600
-        },
-        {
-          "src": "/images/generated/work-1039-1800.webp",
-          "width": 1800,
-          "height": 2400
-        },
-        {
-          "src": "/images/generated/work-1039-2400.webp",
-          "width": 2400,
-          "height": 3200
-        },
-        {
-          "src": "/images/generated/work-1039-2500.webp",
-          "width": 2500,
-          "height": 3333
-        }
-      ]
-    }
-  },
-  "work-1325": {
-    "src": "/images/originals/work-1325.jpg",
-    "width": 2500,
-    "height": 3333,
-    "blurDataURL": "data:image/webp;base64,UklGRu4AAABXRUJQVlA4IOIAAABwBQCdASoYACAAPxl2sFEspySisAgBkCMJYgCB4Qk0yzUKpcHKnxFicjaC1Q7f9CIRmOiAAP5UPgFKdOzvEZvFW/aYYrMhr/fITcCLeBeqoy/tHEezwmkDQKVuMIEk63Ou2DwXC3ulrQh5UGAejLep/btNwkvPcdZgWnCWK47O1CSU7qqpZfo6fvKLh46Gj0AxgkiVngFZPtoTw/phqHTemkqvzhLSArZ+CdFp1IQ68opN34T4KOvJ1vPv+iFyYEAODKRZJuLBKNGI7fXzztHBJQsfPbdkINfsqDR3KqVAgAAA",
-    "formats": {
-      "avif": [
-        {
-          "src": "/images/generated/work-1325-480.avif",
-          "width": 480,
-          "height": 640
-        },
-        {
-          "src": "/images/generated/work-1325-768.avif",
-          "width": 768,
-          "height": 1024
-        },
-        {
-          "src": "/images/generated/work-1325-1200.avif",
-          "width": 1200,
-          "height": 1600
-        },
-        {
-          "src": "/images/generated/work-1325-1800.avif",
-          "width": 1800,
-          "height": 2400
-        },
-        {
-          "src": "/images/generated/work-1325-2400.avif",
-          "width": 2400,
-          "height": 3200
-        },
-        {
-          "src": "/images/generated/work-1325-2500.avif",
-          "width": 2500,
-          "height": 3333
-        }
-      ],
-      "webp": [
-        {
-          "src": "/images/generated/work-1325-480.webp",
-          "width": 480,
-          "height": 640
-        },
-        {
-          "src": "/images/generated/work-1325-768.webp",
-          "width": 768,
-          "height": 1024
-        },
-        {
-          "src": "/images/generated/work-1325-1200.webp",
-          "width": 1200,
-          "height": 1600
-        },
-        {
-          "src": "/images/generated/work-1325-1800.webp",
-          "width": 1800,
-          "height": 2400
-        },
-        {
-          "src": "/images/generated/work-1325-2400.webp",
-          "width": 2400,
-          "height": 3200
-        },
-        {
-          "src": "/images/generated/work-1325-2500.webp",
-          "width": 2500,
-          "height": 3333
-        }
-      ]
-    }
-  },
-  "work-1533": {
-    "src": "/images/originals/work-1533.jpg",
-    "width": 2500,
-    "height": 3333,
-    "blurDataURL": "data:image/webp;base64,UklGRhgBAABXRUJQVlA4IAwBAACQBgCdASoYACAAPxl0slEspqSisAgBkCMJQBgcXgO0FMpVgN/6BjkTfvG4qGmX7G1OBnIOf4fx7V0LBUoAAOFc4vW1Sr1IEhH7MZ2+SH/61CkbESinZYiHDmj5C+UdZ0Bnh6i55q17ud8Mh8N7v3CPh92+L9lhgmBZNPAk5GvC9+urU4VZs376XptbsqQms/LvwwRser6gw3XVNPtSoO1JUB2L8hHMGMQSMWae0Wnnqnr8cuskgPW/EH5J3JM2YNpm14mcH064tho+CRkAjJFJ3C1LIEK02Ch4XgkU9MF11tWKsd/S5FSEFqei4judVfyzSqMtWk0UiE6jqcen71ZA0hILis4RvZkwgAAA",
-    "formats": {
-      "avif": [
-        {
-          "src": "/images/generated/work-1533-480.avif",
-          "width": 480,
-          "height": 640
-        },
-        {
-          "src": "/images/generated/work-1533-768.avif",
-          "width": 768,
-          "height": 1024
-        },
-        {
-          "src": "/images/generated/work-1533-1200.avif",
-          "width": 1200,
-          "height": 1600
-        },
-        {
-          "src": "/images/generated/work-1533-1800.avif",
-          "width": 1800,
-          "height": 2400
-        },
-        {
-          "src": "/images/generated/work-1533-2400.avif",
-          "width": 2400,
-          "height": 3200
-        },
-        {
-          "src": "/images/generated/work-1533-2500.avif",
-          "width": 2500,
-          "height": 3333
-        }
-      ],
-      "webp": [
-        {
-          "src": "/images/generated/work-1533-480.webp",
-          "width": 480,
-          "height": 640
-        },
-        {
-          "src": "/images/generated/work-1533-768.webp",
-          "width": 768,
-          "height": 1024
-        },
-        {
-          "src": "/images/generated/work-1533-1200.webp",
-          "width": 1200,
-          "height": 1600
-        },
-        {
-          "src": "/images/generated/work-1533-1800.webp",
-          "width": 1800,
-          "height": 2400
-        },
-        {
-          "src": "/images/generated/work-1533-2400.webp",
-          "width": 2400,
-          "height": 3200
-        },
-        {
-          "src": "/images/generated/work-1533-2500.webp",
-          "width": 2500,
-          "height": 3333
-        }
-      ]
-    }
-  },
-  "work-1616": {
-    "src": "/images/originals/work-1616.jpg",
-    "width": 2500,
-    "height": 3333,
-    "blurDataURL": "data:image/webp;base64,UklGRuIAAABXRUJQVlA4INYAAABQBQCdASoYACAAPxl6s1Msp6SiqA1RkCMJZAC7ABDSZE94PVpJIBwlO1RUPtPbYnyIB4AA/tMYDMW/MUyerEA/J46VHVjjP+Szqxx0151KzsdmAOopyhQ8yZnTn/WjCY3V1Zl6AmMYRWFDh55qCzCo0s8krYgiOl03MKZHWfAz0v5A6lw+963mLj8Pmh/AExhXWIla8VNTPdfr7lC4/Gby+7NK38vTCx8Jemx6v5BV9jrRE6QWAGKGJn9+60CCEh79idv5o6kbm4rX12XqhNrRxg9CyAAA",
-    "formats": {
-      "avif": [
-        {
-          "src": "/images/generated/work-1616-480.avif",
-          "width": 480,
-          "height": 640
-        },
-        {
-          "src": "/images/generated/work-1616-768.avif",
-          "width": 768,
-          "height": 1024
-        },
-        {
-          "src": "/images/generated/work-1616-1200.avif",
-          "width": 1200,
-          "height": 1600
-        },
-        {
-          "src": "/images/generated/work-1616-1800.avif",
-          "width": 1800,
-          "height": 2400
-        },
-        {
-          "src": "/images/generated/work-1616-2400.avif",
-          "width": 2400,
-          "height": 3200
-        },
-        {
-          "src": "/images/generated/work-1616-2500.avif",
-          "width": 2500,
-          "height": 3333
-        }
-      ],
-      "webp": [
-        {
-          "src": "/images/generated/work-1616-480.webp",
-          "width": 480,
-          "height": 640
-        },
-        {
-          "src": "/images/generated/work-1616-768.webp",
-          "width": 768,
-          "height": 1024
-        },
-        {
-          "src": "/images/generated/work-1616-1200.webp",
-          "width": 1200,
-          "height": 1600
-        },
-        {
-          "src": "/images/generated/work-1616-1800.webp",
-          "width": 1800,
-          "height": 2400
-        },
-        {
-          "src": "/images/generated/work-1616-2400.webp",
-          "width": 2400,
-          "height": 3200
-        },
-        {
-          "src": "/images/generated/work-1616-2500.webp",
-          "width": 2500,
-          "height": 3333
-        }
-      ]
-    }
-  },
-  "work-2225": {
-    "src": "/images/originals/work-2225.jpg",
-    "width": 2500,
-    "height": 3333,
-    "blurDataURL": "data:image/webp;base64,UklGRt4AAABXRUJQVlA4INIAAAAQBQCdASoYACAAPxl4sVEspySisAgBkCMJYgCw7CFTGvNEcSqPID5l31k2GhQu33mgAP6TdVATfOWgKlno+ozcuvyaVFUTumwDaGdLe3W8YRM5a9qXUk1Z568i5PdVEc5exTIEK2e13Ju2bKeFZxutUXQgeFsgzjn3n6/fNFaQzzAb7nzD+Exa05AGe8fYDDo5T3tJ2YMzbcA5AfnuU6hwlVVo0v+WdwjCRMdvLZcT18zqjogjFZHYxOqeZ7ZobMGg/7PR9c6FnWCAJn1+6QBgAAA=",
-    "formats": {
-      "avif": [
-        {
-          "src": "/images/generated/work-2225-480.avif",
-          "width": 480,
-          "height": 640
-        },
-        {
-          "src": "/images/generated/work-2225-768.avif",
-          "width": 768,
-          "height": 1024
-        },
-        {
-          "src": "/images/generated/work-2225-1200.avif",
-          "width": 1200,
-          "height": 1600
-        },
-        {
-          "src": "/images/generated/work-2225-1800.avif",
-          "width": 1800,
-          "height": 2400
-        },
-        {
-          "src": "/images/generated/work-2225-2400.avif",
-          "width": 2400,
-          "height": 3200
-        },
-        {
-          "src": "/images/generated/work-2225-2500.avif",
-          "width": 2500,
-          "height": 3333
-        }
-      ],
-      "webp": [
-        {
-          "src": "/images/generated/work-2225-480.webp",
-          "width": 480,
-          "height": 640
-        },
-        {
-          "src": "/images/generated/work-2225-768.webp",
-          "width": 768,
-          "height": 1024
-        },
-        {
-          "src": "/images/generated/work-2225-1200.webp",
-          "width": 1200,
-          "height": 1600
-        },
-        {
-          "src": "/images/generated/work-2225-1800.webp",
-          "width": 1800,
-          "height": 2400
-        },
-        {
-          "src": "/images/generated/work-2225-2400.webp",
-          "width": 2400,
-          "height": 3200
-        },
-        {
-          "src": "/images/generated/work-2225-2500.webp",
-          "width": 2500,
-          "height": 3333
+          "src": "/images/generated/wedding-veil-1320.webp",
+          "width": 1320,
+          "height": 1962
         }
       ]
     }

@@ -214,6 +214,7 @@
 .wedding-timeline__step p { margin: 0; color: var(--color-sand); }
 .filmstrip--bridal .filmstrip__item { width: min(58vw, 48rem); }
 .filmstrip--bridal .filmstrip__button { height: 76vh; }
+.filmstrip--bridal .filmstrip__image { object-position: center 25%; }
 
 .inquiry-layout { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(16rem, 0.7fr); gap: clamp(4rem, 9vw, 9rem); margin-block-start: 5rem; }
 .inquiry-form { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem 2rem; }
@@ -234,6 +235,8 @@
 .finance-step h3 { margin-block: 2rem 1rem; }
 .finance-step p { margin: 0; color: var(--color-umber); }
 .finance-step__index { color: var(--color-umber); }
+.finance-steps--ways { grid-template-columns: repeat(2, 1fr); }
+.finance-way__points { margin-block: 2rem; }
 .cherry-frame { position: relative; min-height: 30rem; border-block: 0.0625rem solid var(--color-sand); padding-block: 2rem; }
 .cherry-skeleton { position: absolute; inset: 2rem 0; z-index: 2; display: grid; align-items: center; background: var(--color-sand); color: var(--color-umber); padding: clamp(2rem, 6vw, 5rem); }
 .cherry-skeleton > div { display: grid; max-width: 34rem; gap: 1.25rem; }
@@ -387,7 +390,7 @@
   .gallery-viewer { grid-template-columns: minmax(0, 8fr) minmax(16rem, 4fr); gap: clamp(2rem, 4vw, 5rem); padding-block-start: 2rem; }
   .gallery-viewer__main { height: min(78svh, 54rem); }
   .gallery-viewer__index { grid-template-rows: auto minmax(0, 1fr); max-height: min(78svh, 54rem); padding-block: 1rem 0; }
-  .gallery-viewer__thumbs { grid-auto-flow: row; grid-auto-columns: auto; grid-template-columns: repeat(2, minmax(0, 1fr)); overflow-x: hidden; overflow-y: auto; padding-inline-end: 0.5rem; }
+  .gallery-viewer__thumbs { grid-auto-flow: row; grid-auto-columns: auto; grid-template-columns: repeat(2, minmax(0, 1fr)); align-content: start; overflow-x: hidden; overflow-y: auto; padding-inline-end: 0.5rem; }
   .gallery-viewer__thumb { height: 9.5rem; }
 }
 
@@ -480,9 +483,9 @@
 
 /* Aesthetics */
 .aesthetics-hero { min-height: 82svh; }
-.aesthetics-hero__copy { grid-column: 1 / 9; }
-.aesthetics-hero__media { grid-column: 10 / 13; }
-.aesthetics-hero__media img { object-position: center; }
+.aesthetics-hero__copy { grid-column: 1 / 7; }
+.aesthetics-hero__media { grid-column: 7 / 13; align-self: center; display: grid; grid-template-columns: 1fr 1fr; align-items: start; gap: clamp(1rem, 2vw, 2rem); }
+.aesthetics-hero__media img { width: 100%; aspect-ratio: 3 / 4; height: auto; object-fit: cover; object-position: center; }
 .treatment-group + .treatment-group { margin-block-start: 8rem; }
 .treatment-group__header { margin-block-end: 3rem; }
 .treatment-group .disclosure { border-block-end: 0; }
@@ -502,6 +505,7 @@
 @media (max-width: 1023px) {
   .page-hero__copy { grid-column: 1 / 8; }
   .page-hero__media { grid-column: 9 / 13; }
+  .aesthetics-hero__media { grid-column: 1 / 13; margin-block-start: 4rem; }
   .story-hero__portrait { margin-block-end: -10rem; }
   .principles { grid-template-columns: 1fr; }
   .principle { border-inline-end: 0.0625rem solid var(--color-sand); border-block-end: 0.0625rem solid var(--color-sand); }
@@ -514,7 +518,8 @@
   .story-hero { padding-block-start: 7rem; }
   .page-hero { min-height: auto; padding-block: 8rem 5rem; }
   .page-hero__copy, .story-hero__copy, .aesthetics-hero__copy { grid-column: 1 / 7; }
-  .page-hero__media, .aesthetics-hero__media { grid-column: 2 / 7; margin-block-start: 4rem; }
+  .page-hero__media { grid-column: 2 / 7; margin-block-start: 4rem; }
+  .aesthetics-hero__media { grid-column: 1 / 7; margin-block-start: 4rem; }
   .story-hero__standfirst { grid-column: 1 / 7; }
   .story-hero__portrait { grid-column: 2 / 7; margin-block: 4rem -9rem; }
   .story-craft { padding-block-start: 13rem; }

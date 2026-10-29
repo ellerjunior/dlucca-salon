@@ -26,7 +26,8 @@ export const BOOKING_URL =
   "https://book.squareup.com/appointments/1qxvwmck0vibcb/location/LDSYEV6DSTW7W/services";
 export const CHERRY_URL =
   "https://pay.withcherry.com/d-lucca-hair-beauty?utm_source=merchant&utm_medium=website";
-export const INSTAGRAM_URL = "https://instagram.com/dluccahairbeauty";
+export const INSTAGRAM_URL = "https://www.instagram.com/dluccahairbeauty";
+export const FACEBOOK_URL = "https://www.facebook.com/Flavianohairstylist";
 export const MAPS_URL =
   "https://www.google.com/maps/dir/?api=1&destination=904+N+California+Ave,+Chicago,+IL+60622";
 export const MAP_EMBED_URL =

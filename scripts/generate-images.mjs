@@ -47,10 +47,10 @@ await mkdir(ogDir, { recursive: true });
 const ogSources = {
   home: "hero-blonde-2026.png",
   story: "flaviano-wide.jpg",
-  hair: "work-1533.jpg",
-  aesthetics: "aesthetics-room.png",
+  hair: "hair-copper-layers.jpg",
+  aesthetics: "aesthetics-suite.png",
   weddings: "wedding-hero.jpg",
-  gallery: "work-0847.jpg",
+  gallery: "hair-copper-gloss.jpg",
   financing: "salon-interior.jpg",
   contact: "salon-interior.jpg",
 };
