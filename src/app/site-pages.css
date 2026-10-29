@@ -67,6 +67,12 @@
 .home-invitation__copy .body-copy { margin-block-start: 3rem; font-size: var(--type-subhead); }
 .home-invitation__image { grid-column: 8 / 13; margin-block-start: 7rem; }
 .home-invitation__image img { aspect-ratio: 4 / 5; object-fit: cover; }
+.home-pets__image { grid-column: 1 / 6; }
+.home-pets__image img { aspect-ratio: 4 / 5; object-fit: cover; }
+.home-pets__copy { grid-column: 7 / 12; align-self: center; display: grid; gap: 1.5rem; }
+.home-pets__label { color: var(--color-umber); }
+.home-pets__copy .body-copy { margin: 0; font-size: var(--type-subhead); }
+.studio-pets { margin: 0; color: var(--color-umber); }
 
 .home-work { padding-block: clamp(7rem, 12vw, 11rem) 4rem; overflow: hidden; }
 .home-work__header { width: min(100%, var(--content-max)); margin-inline: auto; padding-inline: var(--gutter); margin-block-end: 4rem; }
@@ -172,6 +178,8 @@
   .home-hero__cue { display: none; }
   .home-invitation__copy { grid-column: 1 / 7; }
   .home-invitation__image { grid-column: 2 / 7; margin-block-start: 4rem; }
+  .home-pets__image { grid-column: 2 / 7; }
+  .home-pets__copy { grid-column: 1 / 7; margin-block-start: 3rem; }
   .filmstrip { padding-inline: var(--gutter) 20vw; }
   .filmstrip__item { width: 78vw; }
   .filmstrip__button { height: 58vh; min-height: 24rem; }

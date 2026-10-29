@@ -78,6 +78,7 @@ export function RootDocument({ locale, children }: { locale: Locale; children: R
     image: `${SITE_URL}/og/home.jpg`,
     priceRange: "$$$",
     sameAs: [INSTAGRAM_URL, FACEBOOK_URL],
+    amenityFeature: [{ "@type": "LocationFeatureSpecification", name: "Pet-friendly", value: true }],
     address: { "@type": "PostalAddress", streetAddress: "904 N California Ave", addressLocality: "Chicago", addressRegion: "IL", postalCode: "60622", addressCountry: "US" },
     geo: { "@type": "GeoCoordinates", latitude: 41.8976569, longitude: -87.6970995 },
     areaServed: "Chicago",
