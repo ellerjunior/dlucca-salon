@@ -1050,6 +1050,22 @@ img {
 .footer-signature a:focus-visible { opacity: 1; transform: translateY(-0.125rem); }
 .footer-signature img { display: block; width: 100%; height: auto; }
 
+/* Assinatura que se escreve: só fica escondida depois que o script a armou. */
+.signature.sig-armed:not(.is-written) {
+  clip-path: inset(0 100% 0 0);
+}
+.signature.is-written {
+  animation: sig-write 1.4s cubic-bezier(0.45, 0, 0.55, 1) backwards;
+}
+@keyframes sig-write {
+  from { clip-path: inset(0 100% 0 0); }
+  to   { clip-path: inset(0 0 0 0); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .signature.sig-armed:not(.is-written) { clip-path: none; }
+  .signature.is-written { animation: none; }
+}
+
 @media (max-width: 1180px) {
   .site-nav__link { font-size: 0.57rem; letter-spacing: 0.1em; }
   .site-nav__group { gap: 0.75rem; }

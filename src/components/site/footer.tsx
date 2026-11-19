@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { BrandWordmark } from "@/components/site/brand-wordmark";
+import { SignatureWrite } from "@/components/site/signature-write";
 import { NewsletterForm } from "@/components/site/newsletter-form";
 import { getCommon } from "@/i18n/common";
 import type { Locale } from "@/i18n/config";
@@ -23,9 +24,10 @@ export function Footer({ locale }: { locale: Locale }) {
           <NewsletterForm copy={copy.newsletter} />
         </div>
         <div className="footer-signature">
-          <a href="https://linktr.ee/EllerBarboza" {...EXTERNAL_PROPS} aria-label={copy.footer.credit}>
+          <a className="signature" href="https://linktr.ee/EllerBarboza" {...EXTERNAL_PROPS} aria-label={copy.footer.credit}>
             <Image src="/credits/eller-jr-signature.png" alt={copy.footer.credit} width={1193} height={167} sizes="(max-width: 1023px) 11.5rem, 12.4rem" />
           </a>
+          <SignatureWrite />
         </div>
         <div className="footer-legal label"><span>© 2026 Flaviano D’Lucca Hair & Beauty</span><span>{copy.footer.city}</span></div>
       </div>
