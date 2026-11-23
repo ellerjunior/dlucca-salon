@@ -9,9 +9,10 @@ import { MobileActionBar } from "@/components/site/mobile-action-bar";
 import { Navigation } from "@/components/site/navigation";
 import { RouteCurtain } from "@/components/site/route-curtain";
 import { getCommon } from "@/i18n/common";
-import { localeDetails, type Locale } from "@/i18n/config";
+import { localeDetails, locales, type Locale } from "@/i18n/config";
 import { getPages } from "@/i18n/pages";
 import { ADDRESS, EMAIL, FACEBOOK_URL, INSTAGRAM_URL, PHONE_DISPLAY, SITE_URL } from "@/lib/constants";
+import { ES_ZONES, PT_ZONES, langRedirectScript } from "@/lib/lang-redirect";
 
 const display = localFont({
   src: [
@@ -89,6 +90,20 @@ export function RootDocument({ locale, children }: { locale: Locale; children: R
   return (
     <html lang={localeDetails[locale].html} className={`${display.variable} ${body.variable} ${label.variable}`}>
       <body>
+        {/* Primeira visita numa página em inglês: leva ao idioma do visitante (veja lib/lang-redirect.ts).
+            O destino sai dos alternates de localizedPageMetadata, porque os slugs mudam por idioma. */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: langRedirectScript({
+              key: "dlucca-lang",
+              langs: [...locales],
+              def: "en",
+              page: locale,
+              rest: "en",
+              zones: { pt: PT_ZONES, es: ES_ZONES },
+            }),
+          }}
+        />
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-WCL2PLSJF7"
           strategy="afterInteractive"

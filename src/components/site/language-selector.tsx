@@ -39,7 +39,7 @@ export function LanguageSelector({ locale, page, label, className = "" }: { loca
         {locales.map((option) => {
           const detail = localeDetails[option];
           return (
-            <a key={option} href={routeFor(option, page)} lang={detail.html} aria-current={option === locale ? "page" : undefined} onClick={() => setOpen(false)}>
+            <a key={option} href={routeFor(option, page)} hrefLang={detail.html} lang={detail.html} aria-current={option === locale ? "page" : undefined} onClick={() => setOpen(false)}>
               <Image className="language-selector__flag" src={detail.flagSrc} alt="" width={24} height={16} aria-hidden="true" /><span>{detail.label}</span><span className="label">{detail.short}</span>
             </a>
           );
